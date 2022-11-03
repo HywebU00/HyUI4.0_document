@@ -15,7 +15,7 @@
 
 可在 <font color="#EE428B">\_variable.scss</font> 自訂斷點，預設是以 <font color="#EE428B">1400px</font> 、 <font color="#EE428B">992px</font> 、 <font color="#EE428B">768px</font> 、 <font color="#EE428B">576px</font> 為分界
 
-```sass=
+```sass
 //mediaquery breakpoint
 $screen-lg:        1400px !default;        //電腦
 $screen-md:        992px  !default;        //平板
@@ -29,7 +29,7 @@ $screen-xs:        576px  !default;        //極小尺寸
 
 <font color="#ff0000">請注意順序，如果是使用 HyUI 預設斷點 mixin 是由較寬螢幕至最小寬度依序設定，避免被覆蓋。</font>
 
-```sass=
+```sass
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -48,7 +48,7 @@ $screen-xs:        576px  !default;        //極小尺寸
 
 ### CSS 輸出
 
-```css=
+```sass
 .wrapper {
     margin: 0 auto;
     width: 100%; }

@@ -46,4 +46,3 @@ max-width:95%;
 max-width:95%;
 }
 </style>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-sass.js"></script>
