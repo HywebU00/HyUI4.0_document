@@ -30,7 +30,6 @@
   - [qp(意見信箱)](example-page/qp.md)
   - [form(表單)](example-page/form.md)
   - [sitemap(網站地圖)](example-page/sitemap.md)
-  - [form(表單 beta 版)](example-page/form-beta.md)
   - [Google Search 頁面](example-page/google-search.md)
   - [404 網站錯誤](example-page/404page.md)
 

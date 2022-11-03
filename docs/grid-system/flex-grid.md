@@ -139,7 +139,7 @@ $m-gutter: 4px;
 均分Ｘ自由分配
 :::
 
-```sass=
+```sass
 // step 0、設定共用的 margin gutter
 $m-gutter: 4px;
 
