@@ -28,7 +28,7 @@
 
 ### 自動偵測模組存在設定
 
-```javascript=
+```javascript
 $('.navigation').has('.language').addClass('have_language');
 ```
 

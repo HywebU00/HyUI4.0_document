@@ -32,14 +32,17 @@
 
 ## JQuery 設定:round_pushpin:
 
-```javascript=
+```javascript
 /*-----------------------------------*/
 /////////// category active  //////////
 /*-----------------------------------*/
-$('.category').find('a').off().click(function(event) {
+$('.category')
+  .find('a')
+  .off()
+  .click(function (event) {
     $(this).parent('li').siblings().find('a').removeClass('active');
     $(this).addClass('active');
-});
+  });
 ```
 
 <style>

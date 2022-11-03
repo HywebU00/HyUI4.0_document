@@ -64,7 +64,7 @@ flex grid system 分割方式有兩種：
 算式：<span class="focus2">100% ÷ 欄數</span>
 :::
 
-```sass=
+```sass
 // step 0、設定共用的 margin gutter
 $m-gutter: 4px;
 
@@ -99,7 +99,7 @@ $m-gutter: 4px;
 算式：<span class="focus2">(100% ÷ 12) × 欄數</span>
 :::
 
-```sass=
+```sass
 // step 0、設定共用的 margin gutter
 $m-gutter: 4px;
 

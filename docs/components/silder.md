@@ -29,24 +29,24 @@ slick 屬於外掛，故放在 <font color="#EE428B">vendor</font> 資料夾裡�
 
 使用設定以 slick 官方文件為準。
 
-```javascript=
-$(document).ready(function(){
+```javascript
+$(document).ready(function () {
   $('.your-class').slick({
-    arrows: true,                       //左右箭頭
-    autoplay: false,                    //自動播放
-    autoplaySpeed: 3000,                //自動播放秒數
-    dots: false,                        //顯示圓點
-    dotsClass:  'slick-dots',           //原點css
-    draggable: true,                    //滑鼠可以拖曳
-    infinite: true,                     //無限輪播
-    pauseOnHover: true,                 //滑鼠移過後暫停自動撥放
-    pauseOnDotsHover: false,            //滑鼠移過圓點後暫停自動撥放
-    rtl: false,                         //改變輪播方向
-    slidesToShow: 1,                    //一次顯示幾張
-    slidesToScroll: 1,                  //一次輪播幾張
-    vertical: false ,                   //改成垂直方向
-    fade: true,                         // 淡入
-    centerMode: true,                   //圖片中心模式
+    arrows: true, //左右箭頭
+    autoplay: false, //自動播放
+    autoplaySpeed: 3000, //自動播放秒數
+    dots: false, //顯示圓點
+    dotsClass: 'slick-dots', //原點css
+    draggable: true, //滑鼠可以拖曳
+    infinite: true, //無限輪播
+    pauseOnHover: true, //滑鼠移過後暫停自動撥放
+    pauseOnDotsHover: false, //滑鼠移過圓點後暫停自動撥放
+    rtl: false, //改變輪播方向
+    slidesToShow: 1, //一次顯示幾張
+    slidesToScroll: 1, //一次輪播幾張
+    vertical: false, //改成垂直方向
+    fade: true, // 淡入
+    centerMode: true, //圖片中心模式
   });
 });
 ```
@@ -249,18 +249,18 @@ $(document).ready(function(){
 
 ## hyui.js 範例
 
-```javascript=
+```javascript
 //不同語系
 //無障礙切換slick箭頭語系
-if ($('html')[0].hasAttribute("labg")) {
-    var weblang = $('html').attr('lang');
-    if (weblang.substring(0, 2) == 'zh') {
-        $('.slick-prev').attr('title', '上一筆');
-        $('.slick-next').attr('title', '下一筆');
-    } else if (weblang.substring(0, 2) !== 'zh') {
-        $('.slick-prev').attr('title', 'previous');
-        $('.slick-next').attr('title', 'next');
-    }
+if ($('html')[0].hasAttribute('labg')) {
+  var weblang = $('html').attr('lang');
+  if (weblang.substring(0, 2) == 'zh') {
+    $('.slick-prev').attr('title', '上一筆');
+    $('.slick-next').attr('title', '下一筆');
+  } else if (weblang.substring(0, 2) !== 'zh') {
+    $('.slick-prev').attr('title', 'previous');
+    $('.slick-next').attr('title', 'next');
+  }
 }
 ```
 
@@ -270,7 +270,7 @@ if ($('html')[0].hasAttribute("labg")) {
 
 <font color="#009ee7">在所需 slider 做 js 調整</font>
 
-```javascript=
+```javascript
 取文字
 customPaging: function(slider, i) {
                 var title = $(slider.$slides[i]).find('.title').html().trim();

@@ -12,7 +12,7 @@
 原始設定：../sass/common/mixins/<span class="focus2">\_extend.scss</span>
 :::
 
-```sass=
+```sass
 // 繼承
 @extend %slash;              // 斜線
 @extend %arrow_setting;      // 箭頭
@@ -32,7 +32,7 @@
 原始設定：../sass/common/mixins/<span class="focus2">\_mediaquery.scss</span>
 :::
 
-```sass=
+```sass
 @include screen('desktop'){}            // min-width: 1400px
 @include screen('notebook'){}           // max-width: 1399px
 @include screen('tablet'){}             // max-width: 991px
@@ -48,7 +48,7 @@
 原始設定：：../sass/common/mixins/<span class="focus2">\_bootstrap-grid.scss</span>
 :::
 
-```sass=
+```sass
 .col{
     @include make-xs-column(12);              // xs_mobile
     @include make-sm-column(6);               // mobile
@@ -70,7 +70,7 @@
 [『均分』、『自由分配』的算式原理](https://hackmd.io/@lizewu/r1eU6MPBw) :arrow_right:
 :::
 
-```sass=
+```sass
 // step 0、設定 flex 的 margin gutter
 $m-gutter: 4px;
 
@@ -120,7 +120,7 @@ $m-gutter: 4px;
 原始設定：：../sass/common/mixins/<span class="focus2">\_gradient.scss</span>
 :::
 
-```sass=
+```sass
 @include gradient(#07c, #06f, vertical);      // 水平
 @include gradient(#07c, #06f, horizontal);    // 垂直
 @include gradient(#07c, #06f, diagonal);      // 對角線
@@ -133,7 +133,7 @@ $m-gutter: 4px;
 原始設定：：../sass/common/mixins/<span class="focus2">\_text-overflow.scss</span>
 :::
 
-```sass=
+```sass
 @include text-overflow;                        // 單行
 @include text-line(2,23px);                    // 多行（行數、行高）
 ```
@@ -144,7 +144,7 @@ $m-gutter: 4px;
 原始設定：：../sass/common/mixins/<span class="focus2">\_li-reset.scss</span>
 :::
 
-```sass=
+```sass
 @include li-reset;                            // 清除li預設
 @include img-responsive;                      // 圖片
 ```
@@ -155,7 +155,7 @@ $m-gutter: 4px;
 原始設定：../sass/common/mixins/<span class="focus2">\_image.scss</span>
 :::
 
-```sass=
+```sass
 @include aspect-ratio(4,3);                   // 圖片比例，4:3
 ```
 

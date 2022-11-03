@@ -43,13 +43,13 @@
 
 ## JQuery 設定:round_pushpin:
 
-```javascript=
+```javascript
 /*-----------------------------------*/
 //////////// notice訊息區塊 ////////////
 /*-----------------------------------*/
-$('[class*="notice"] a.close').click(function(e) {
-    $(this).parent('[class*="notice"]').hide();
-    e.preventDefault();
+$('[class*="notice"] a.close').click(function (e) {
+  $(this).parent('[class*="notice"]').hide();
+  e.preventDefault();
 });
 ```
 

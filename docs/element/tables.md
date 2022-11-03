@@ -184,59 +184,63 @@ table 加上<span class="focus3">table_sprite</span>的 classname
 按照專案經驗，在客戶資料上稿常常出現表格會撐出畫面或是破圖的情況，這部分可以使用預設提供之 JQuery 設定，讓文章內容頁面的表格自動產生響應式橫向捲軸，以防止畫面跑版。<br/>
 目前判斷如果<span class="focus3">table</span>父層沒有<span class="focus3">.tablie_list</span>或是<span class="focus3">.fix_th_table</span>的 table，一律在<span class="focus">寬度小於 545px</span>時，<span class="focus3">table</span>套用<span class="focus3">scroltable();</span>的外掛
 
-```javascript=
+```javascript
 /*------------------------------------*/
 ///////table 加上響應式 scroltable-wrapper/////
 //*------------------------------------*/
-$('table').each(function(index, el) {
-    //判斷沒有table_list
-    if ($(this).parents('.table_list').length == 0 && $(this).parents('.fix_th_table').length == 0) {
-        $(this).scroltable();
-    }
+$('table').each(function (index, el) {
+  //判斷沒有table_list
+  if ($(this).parents('.table_list').length == 0 && $(this).parents('.fix_th_table').length == 0) {
+    $(this).scroltable();
+  }
 });
 // tablearrow arrow，為了設定箭頭
 $('.scroltable-nav-left').append('<div class="tablearrow_left" style="display:none;"></div>');
 $('.scroltable-nav-right').append('<div class="tablearrow_right"  style="display:none;"></div>');
 // 固定版頭
 function table_Arrow() {
-    if ($('table').parents('.table_list').length == 0 && $('table').parents('.fix_th_table').length == 0) {
-        if ($('.scroltable-wrapper').length > 0) {
-            var stickyArrowTop = Math.floor($('.scroltable-wrapper').offset().top),
-                thisScroll = Math.floor($(this).scrollTop());
-            if (thisScroll > stickyArrowTop - 230) {
-                $('.scroltable-wrapper .tablearrow_left').css('display', 'block');
-                $('.scroltable-wrapper .tablearrow_left').css({ "top": thisScroll - stickyArrowTop + 220 }, 100, 'easeOutQuint');
-                $('.scroltable-wrapper .tablearrow_right').css('display', 'block');
-                $('.scroltable-wrapper .tablearrow_right').css({ "top": thisScroll - stickyArrowTop + 220 }, 100, 'easeOutQuint');
-            } else {
-                $('.scroltable-wrapper .tablearrow_left').css({
-                    top: '10px',
-                    display: 'none'
-                });
-                $('.scroltable-wrapper .tablearrow_right').css({
-                    top: '10px',
-                    display: 'none'
-                });
-            }
-        }
+  if ($('table').parents('.table_list').length == 0 && $('table').parents('.fix_th_table').length == 0) {
+    if ($('.scroltable-wrapper').length > 0) {
+      var stickyArrowTop = Math.floor($('.scroltable-wrapper').offset().top),
+        thisScroll = Math.floor($(this).scrollTop());
+      if (thisScroll > stickyArrowTop - 230) {
+        $('.scroltable-wrapper .tablearrow_left').css('display', 'block');
+        $('.scroltable-wrapper .tablearrow_left').css({ top: thisScroll - stickyArrowTop + 220 }, 100, 'easeOutQuint');
+        $('.scroltable-wrapper .tablearrow_right').css('display', 'block');
+        $('.scroltable-wrapper .tablearrow_right').css({ top: thisScroll - stickyArrowTop + 220 }, 100, 'easeOutQuint');
+      } else {
+        $('.scroltable-wrapper .tablearrow_left').css({
+          top: '10px',
+          display: 'none',
+        });
+        $('.scroltable-wrapper .tablearrow_right').css({
+          top: '10px',
+          display: 'none',
+        });
+      }
     }
+  }
 }
-$(window).scroll(function(event) {
-    table_Arrow();
+$(window).scroll(function (event) {
+  table_Arrow();
 });
 // /*------------------------------------*/
 // //////////table 加上 data-title//////////
 // /*------------------------------------*/
 function rwdTable() {
-    $('.table_list').find('table').each(function() {
-        var $row = $(this).find('tr');
-        rowCount = $row.length;
-        for (var n = 1; n <= rowCount; n++) {
-            $(this).find('th').each(function(index) {
-                var thText = $(this).text();
-                $row.eq(n).find('td').eq(index).attr('data-title', thText);
-            });
-        }
+  $('.table_list')
+    .find('table')
+    .each(function () {
+      var $row = $(this).find('tr');
+      rowCount = $row.length;
+      for (var n = 1; n <= rowCount; n++) {
+        $(this)
+          .find('th')
+          .each(function (index) {
+            var thText = $(this).text();
+            $row.eq(n).find('td').eq(index).attr('data-title', thText);
+          });
+      }
     });
 }
 rwdTable();

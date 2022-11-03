@@ -32,24 +32,24 @@
 
 ## JQuery 設定:round_pushpin:
 
-```javascript=
+```javascript
 /*-----------------------------------*/
 //////////// Accordion設定 ////////////
 /*-----------------------------------*/
-$('.accordion').each(function() {
-    $(this).find('.accordion-content').hide();
-    var _accordionItem = $(this).children('ul').children('li').children('a');
-    _accordionItem.each(function() {
-        function accordion(e) {
-            $(this).parent('li').siblings().children('a').removeClass('active');
-            $(this).toggleClass('active');
-            $(this).parent('li').siblings().children('.accordion-content').slideUp();
-            $(this).next('.accordion-content').slideToggle();
-            e.preventDefault();
-        }
-        $(this).click(accordion);
-        $(this).keyup(accordion);
-    });
+$('.accordion').each(function () {
+  $(this).find('.accordion-content').hide();
+  var _accordionItem = $(this).children('ul').children('li').children('a');
+  _accordionItem.each(function () {
+    function accordion(e) {
+      $(this).parent('li').siblings().children('a').removeClass('active');
+      $(this).toggleClass('active');
+      $(this).parent('li').siblings().children('.accordion-content').slideUp();
+      $(this).next('.accordion-content').slideToggle();
+      e.preventDefault();
+    }
+    $(this).click(accordion);
+    $(this).keyup(accordion);
+  });
 });
 ```
 
@@ -112,22 +112,21 @@ $('.accordion').each(function() {
 
 ## JQuery 設定
 
-```javascript=
-$(".accordionblock").each(function() {
-    var _accordionItem2 = $(this).children(".Q");
-    _accordionItem2.each(function() {
-        function accordion2(e) {
-            $(this).next(".A").slideToggle();
-            $(this).parent().siblings().children(".A").slideUp();
-            $(this).parent().siblings().children(".Q").removeClass("turnicon");
-            $(this).toggleClass("turnicon");
-            e.preventDefault();
-        }
-        $(this).click(accordion2);
-        $(this).keyup(accordion2);
-    });
+```javascript
+$('.accordionblock').each(function () {
+  var _accordionItem2 = $(this).children('.Q');
+  _accordionItem2.each(function () {
+    function accordion2(e) {
+      $(this).next('.A').slideToggle();
+      $(this).parent().siblings().children('.A').slideUp();
+      $(this).parent().siblings().children('.Q').removeClass('turnicon');
+      $(this).toggleClass('turnicon');
+      e.preventDefault();
+    }
+    $(this).click(accordion2);
+    $(this).keyup(accordion2);
+  });
 });
-
 ```
 
 <style>
