@@ -1,9 +1,5 @@
 # 下載
 
-[![hackmd-github-sync-badge](https://hackmd.io/jl0--k2DS6We66c_xbZDaA/badge)](https://hackmd.io/jl0--k2DS6We66c_xbZDaA)
-
-###### tags: `HyUI`
-
 從 GitHub 網站下載完整的 hyUI kit 原始程式碼。
 
 <style>
@@ -25,7 +21,7 @@ vertical-align: middle;
 }
 </style>
 
-### <div class="download" > [ :arrow_down: GitHub 檔案下載](https://github.com/HywebU00/hyui_flex)</div>
+### <div class="download" > [GitHub 檔案下載](https://github.com/HywebU00/hyui_flex)</div>
 
 下載之後您會得到以下的檔案
 
@@ -41,10 +37,6 @@ vertical-align: middle;
 
 ## 檔案結構
 
-:link: 可連結至 [hyUI 文件架構](https://gitmind.com/app/doc/c6c2222194) (GitMind)
-
-![](https://i.imgur.com/L75ypus.jpg)
-
 <style>
 
 .ui-infobar{
@@ -54,3 +46,4 @@ max-width:95%;
 max-width:95%;
 }
 </style>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-sass.js"></script>
