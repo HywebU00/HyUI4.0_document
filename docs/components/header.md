@@ -1,7 +1,5 @@
 # Header 頁首
 
-###### tags: `HyUI`
-
 檔案名稱：sass/modual/\_header.scss
 檔案名稱：sass/modual/\_menu.scss
 

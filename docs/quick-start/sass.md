@@ -1,12 +1,8 @@
 # SASS 架構
 
-###### tags: `HyUI` `Lize`
-
-:::warning
-SASS 架構簡介：
+?>SASS 架構簡介：
 全站的美容設計寶典。
 詳細架構：[SASS 架構（gitmind）](https://gitmind.com/app/doc/e332040020):arrow_right:
-:::
 
 <style>
 /* 顏色設定 <span class="blue"></span>*/
@@ -47,7 +43,7 @@ SASS 架構簡介：
 
 ---
 
-### <span class="title" id="item-1">\_variable.scss</span>
+## variable.scss
 
 :::warning
 全站的基本定義，顏色、字型、格線系統
@@ -60,14 +56,14 @@ SASS 架構簡介：
 
 ---
 
-### <span class="title" id="item-2">sass</span>
+## sass
 
 :::warning
 分成三個資料夾：共通 common、 元件 element、 模組 modual
 詳細架構：[SASS 架構（gitmind）](https://gitmind.com/app/doc/e332040020):arrow_right:
 :::
 
-#### <span class="sub-title">1、共通 common</span>
+### 共通 common
 
 - <span class="focus">mixins 資料夾：</span>基礎物件設定或算式，內含 extend、mixin 設定。
 - <span class="focus">網頁基本設定：</span>mediaquery、格線系統 grid、reset、瀏覽器修正...等。
@@ -89,19 +85,19 @@ SASS 架構簡介：
 
 ![共通](https://i.imgur.com/NFrmp4K.jpg)
 
-#### <span class="sub-title">2、元件 element</span>
+### 元件 element
 
 - 文字、語言、按鈕、麵包屑...等，共 11 組元件。
 
 ![元件](https://i.imgur.com/NaRpBj0.png)
 
-#### <span class="sub-title">3、模組 modual</span>
+### 模組 module
 
 - header、menu、固定側邊欄...等，目前共 18 個模組。
 
 ![模組2](https://i.imgur.com/Y50CqEg.png)
 
-### <span class="title" id="item-3">page</span>
+## page
 
 :::warning
 客製（mp）、固定應用（cp、sitemap...等）頁面。

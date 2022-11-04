@@ -1,16 +1,8 @@
 # mixin / extend 引用列表
 
-[![hackmd-github-sync-badge](https://hackmd.io/jf1_RTDUTVaQRlk3J1Gc1w/badge)](https://hackmd.io/jf1_RTDUTVaQRlk3J1Gc1w)
+## extend
 
-###### tags: `HyUI` `切切切`
-
-## <font color=purple> extend </font>
-
-### extend
-
-:::warning
-原始設定：../sass/common/mixins/<span class="focus2">\_extend.scss</span>
-:::
+?>原始設定：../sass/common/mixins/`extend.scss`
 
 ```sass
 // 繼承
@@ -24,7 +16,7 @@
 @extend %flex_set;           // 啟動 display:flex
 ```
 
-## <font color=purple> mixin </font>
+## mixin
 
 ### 1、瀏覽器斷點
 

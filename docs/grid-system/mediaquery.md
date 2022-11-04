@@ -1,19 +1,14 @@
 # Mediaquery
 
-###### tags: `HyUI`
-
-檔案名稱：sass/common/mixins/\_mediaquery.scss
-檔案名稱：sass/common/\_mixin.scss
-
 ## 選擇優雅降級(Graceful Degradation)的開發流程
 
-> 目前大部分的網站規格是以 IE9+、FireFox、Chrome 以及 Safari 為主流瀏覽器，且 UI 設計師產出之 mockup 大部分以 PC 版本作為風格確認，因此先以主流瀏覽器為測試對象，再往下兼容行動版以及各種不同瀏覽器的呈現。[color=#009ee7]
+?> 目前大部分的網站規格是以 IE9+、FireFox、Chrome 以及 Safari 為主流瀏覽器，且 UI 設計師產出之 mockup 大部分以 PC 版本作為風格確認，因此先以主流瀏覽器為測試對象，再往下兼容行動版以及各種不同瀏覽器的呈現。
 
 ![](https://i.imgur.com/7de2I7B.jpg)
 
 ### 如何自訂自己的斷點
 
-可在 <font color="#EE428B">\_variable.scss</font> 自訂斷點，預設是以 <font color="#EE428B">1400px</font> 、 <font color="#EE428B">992px</font> 、 <font color="#EE428B">768px</font> 、 <font color="#EE428B">576px</font> 為分界
+可在`variable.scss`自訂斷點，預設是以 `1400px`、`992px`、 `768px` 、 `576px` 為分界
 
 ```sass
 //mediaquery breakpoint
@@ -25,9 +20,9 @@ $screen-xs:        576px  !default;        //極小尺寸
 
 ### SCSS 設定
 
-針對不同的瀏覽器寬度斷點設定，HyUI 提供快速套用變數的 <font color="#EE428B">mixin</font> ，供開發者直覺地且輕易地在樣式表分別寫出不同的效果
+針對不同的瀏覽器寬度斷點設定，HyUI 提供快速套用變數的 `mixin` ，供開發者直覺地且輕易地在樣式表分別寫出不同的效果
 
-<font color="#ff0000">請注意順序，如果是使用 HyUI 預設斷點 mixin 是由較寬螢幕至最小寬度依序設定，避免被覆蓋。</font>
+!>請注意順序，如果是使用 HyUI 預設斷點 mixin 是由較寬螢幕至最小寬度依序設定，避免被覆蓋。
 
 ```sass
 .wrapper {
