@@ -33,7 +33,7 @@ HyUI 不限制於開發政府網站，可用此框架開發任何您想要開發
 
 預設支援 `Mac` 與 `Windows` 每種主要平台預設瀏覽器的最新版本，當然！也包括`Android` 及 `iOS`上的以下瀏覽器。因為使用 `CSS3` 技術，因此版本最低可支援到 Internet Explorer 9，但仍有部分 CSS3 因 IE9 不完全支援或其全部功能需要前輟屬性而出現錯誤，開發人員如有疑慮可參考 CAN I USE 網站查詢屬性。(N/A：代表該平台無此瀏覽器)
 
-|         | ![](https://imgur.com/iqebRkp.png ':size=50')<br>IE7,8 | ![](https://imgur.com/2p2OfuF.png ':size=50')<br>Edge | ![](https://imgur.com/xSzB4vI.png ':size=50')<br>Firefox | ![](https://imgur.com/s8HNVJN.png ':size=50')<br>Chrome | ![](https://imgur.com/kzHcjAt.png ':size=50')<br>Safari |
+|         | ![](https://imgur.com/iqebRkp.png ':size=50')<br>IE7,8 | ![](https://imgur.com/wl0d0jZ.png ':size=50')<br>Edge | ![](https://imgur.com/xSzB4vI.png ':size=50')<br>Firefox | ![](https://imgur.com/ANLenj2.png ':size=50')<br>Chrome | ![](https://imgur.com/kzHcjAt.png ':size=50')<br>Safari |
 | ------- | :----------------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------------: | :-----------------------------------------------------: | :-----------------------------------------------------: |
 | Windows |                         不支援                         |                         支援                          |                           支援                           |                          支援                           |                         不支援                          |
 | MAC OS  |                          N/A                           |                          N/A                          |                           支援                           |                          支援                           |                          支援                           |
