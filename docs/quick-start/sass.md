@@ -2,46 +2,41 @@
 
 ?>SASS 架構簡介：
 全站的美容設計寶典。
-詳細架構：[SASS 架構（gitmind）](https://gitmind.com/app/doc/e332040020):arrow_right:
-
-<style>
-/* 顏色設定 <span class="blue"></span>*/
-.title{
-    font-size: 26px; color: #fff;
-    background:#00469C; display:inline-block;
-    padding: 10px 20px 10px 30px;
-    border-radius: 4px;
-}
-.sub-title{ font-size: 20px; color: #00469C; }
-.box{
-    padding: 1em 2em;
-    background:#f5f5f5;
-    margin: 10px 0;
-}
-
-.focus { color: #B20050; }
-.focus2 {
-    color: #222; border: solid 1px #c8c8c8;
-    display: inline-block;
-    padding: 2px 10px; margin: 0 4px;
-    border-radius: 4px;
-    background: #fff;
-}
-.link{ font-size: 20px; color: #B20050;}
-.ui-infobar{ max-width:95%; }
-.markdown-body{ max-width:95%; }
-</style>
 
 ## 架構內容
 
-1. **<span class="focus">[\_variable.scss](#item-1):arrow_down:</span>**：全站樣式定義
+- <font >variable.scs 資全站樣式定義</font>
+- <font >sass 資料夾</font>
+- <font >page 資料夾</font>
+- <font >hyui.scss 資料夾</font>
+
+<!-- 1. **<span class="focus">[\_variable.scss](#item-1):arrow_down:</span>**：全站樣式定義
 2. **<span class="focus">[sass](#item-2):arrow_down:</span>**：模組
 3. **<span class="focus">[page](#item-3):arrow_down:</span>**：特殊頁面
-4. **<span class="focus">hyui.scss</span>**：將所需設定，從以上三項中 import 至 <span class="focus2">hyui.scss</span>，產出最終的 CSS
+4. **<span class="focus">hyui.scss</span>**：將所需設定，從以上三項中 import 至 <span class="focus2">hyui.scss</span>，產出最終的 CSS -->
 
-![SASS架構](https://i.imgur.com/j5QimXA.png)
+```text
+├── sass/
+   ├── page/
+   │   ├── _color.scss                 // color
+   │   ├── _cp.scss                    // cp
+   │   ├── _leftBlock.scss             // leftBlock
+   │   ├── _mp.scss                    // mp
+   │   ├── _sitemap.scss               // sitemap
+   │   └── _template.scss              // template
+   │
+   ├── sass/                           // scss所有檔案
+   │   ├── common/
+   │   ├── element/
+   │   ├── module/
+   │   └── ...
+   │
+   ├── _help.scss                      // 變數
+   ├── _variable.scss                  // 變數
+   └── style.scss                      // 統一匯出之主要SCSS
 
----
+
+```
 
 ## variable.scss
 

@@ -2,43 +2,38 @@
 
 ## extend
 
-?>原始設定：../sass/common/mixins/`extend.scss`
+?> 原始設定：../sass/common/mixins/`extend.scss`
 
 ```sass
 // 繼承
 @extend %slash;              // 斜線
-@extend %arrow_setting;      // 箭頭
-@extend %arrow_down;         // 箭頭：下
-@extend %arrow_right;        // 箭頭：右
-@extend %arrow_up;           // 箭頭：上
-@extend %arrow_left;         // 箭頭：左
-@extend %clearfix;           // 清除浮動
-@extend %flex_set;           // 啟動 display:flex
+@extend %arrowSetting;      // 箭頭
+@extend %arrowDown;         // 箭頭：下
+@extend %arrowRight;        // 箭頭：右
+@extend %arrowUp;           // 箭頭：上
+@extend %arrowLeft;         // 箭頭：左
+@extend %flexSet;           // 啟動 display:flex
 ```
 
 ## mixin
 
-### 1、瀏覽器斷點
+### 瀏覽器斷點
 
-:::warning
-原始設定：../sass/common/mixins/<span class="focus2">\_mediaquery.scss</span>
-:::
+?> 原始設定：../sass/common/mixins/`mediaquery.scss`
 
 ```sass
 @include screen('desktop'){}            // min-width: 1400px
 @include screen('notebook'){}           // max-width: 1399px
 @include screen('tablet'){}             // max-width: 991px
 @include screen('mobile'){}             // max-width: 767px
-@include screen('xs_mobile'){}          // max-width: 575px
+@include screen('xsMobile'){}          // max-width: 575px
 ```
 
-### 2、格線系統
+### 格線系統
 
-#### 2-1 bootstrap 格線系統
+#### bootstrap 格線系統
 
-:::warning
-原始設定：：../sass/common/mixins/<span class="focus2">\_bootstrap-grid.scss</span>
-:::
+?> 原始設定：：../sass/common/mixins/`bootstrapGrid.scss`
 
 ```sass
 .col{
@@ -50,17 +45,16 @@
 }
 ```
 
-#### 2-2 flex 格線系統
+#### flex 格線系統
 
-:::warning
-原始設定：../sass/common/mixins/<span class="focus2">\_flex-grid.scss</span>
+?> 原始設定：../sass/common/mixins/`flex-grid.scss`
 
-使用 flex 分割欄位，有兩種分割方式：
-1、均分：每欄 <b class="focus">欄寬都相同</b>
-2、自由分配：每欄 <b class="focus">欄寬不相同，加總等於 12</b>。
+使用 flex 分割欄位，有兩種分割方式：<br>
 
-[『均分』、『自由分配』的算式原理](https://hackmd.io/@lizewu/r1eU6MPBw) :arrow_right:
-:::
+- 均分：每欄 <b >欄寬都相同</b><br>
+- 自由分配：每欄 <b >欄寬不相同，加總等於 12</b>。
+
+[『均分』、『自由分配』的算式原理](https://hackmd.io/@lizewu/r1eU6MPBw)
 
 ```sass
 // step 0、設定 flex 的 margin gutter
@@ -86,7 +80,7 @@ $m-gutter: 4px;
 }
 
 // 自由搭配
-.flex-8-4{
+.flex_8_4{
     @extend %flex_set;
     .col{
         @include flex-xs(12, 0px);
@@ -106,11 +100,9 @@ $m-gutter: 4px;
 
 ```
 
-### 3、漸層
+### 漸層
 
-:::warning
-原始設定：：../sass/common/mixins/<span class="focus2">\_gradient.scss</span>
-:::
+?> 原始設定：：../sass/common/mixins/`gradient.scss`
 
 ```sass
 @include gradient(#07c, #06f, vertical);      // 水平
@@ -119,60 +111,49 @@ $m-gutter: 4px;
 @include gradient(#07c, #06f, circle);        // 圓形
 ```
 
-### 4、文字刪節號
+### 文字刪節號
 
-:::warning
-原始設定：：../sass/common/mixins/<span class="focus2">\_text-overflow.scss</span>
-:::
+?> 原始設定：：../sass/common/mixins/`text-overflow.scss`
 
 ```sass
 @include text-overflow;                        // 單行
 @include text-line(2,23px);                    // 多行（行數、行高）
 ```
 
-### 5、清除 li 格式
+### 清除 li 格式
 
-:::warning
-原始設定：：../sass/common/mixins/<span class="focus2">\_li-reset.scss</span>
-:::
+?> 原始設定：：../sass/common/mixins/`li-reset.scss`
 
 ```sass
 @include li-reset;                            // 清除li預設
 @include img-responsive;                      // 圖片
 ```
 
-### 6、圖片比例
+### 圖片比例
 
-:::warning
-原始設定：../sass/common/mixins/<span class="focus2">\_image.scss</span>
-:::
+?> 原始設定：../sass/common/mixins/`image.scss`
 
 ```sass
 @include aspect-ratio(4,3);                   // 圖片比例，4:3
 ```
 
-<div class="box">
-    <h3>附加說明</h3>
-    <ol>
-        <li>上述檔案，全部引用至../sass/common/<span class="focus2">_mixin.scss</span></li>
-</ol>
-</div>
+<h4>附加說明</h4>
+
+> 上述檔案，全部引用至../sass/common/`mixin.scss`
 
 <style>
+    .block-style{
+  padding:2.2em 3em !important;
+  background:#f8f8f8;
+}
 /* 顏色設定 <span class="blue"></span>*/
-.title{
+/* .title{
     font-size: 26px; color: #fff;
     background:#00469C; display:inline-block;
     padding: 10px 20px 10px 30px;
     border-radius: 4px;
 }
 .sub-title{ font-size: 20px; color: #00469C; }
-.box{
-    padding: 1em 2em;
-    background:#f5f5f5;
-    margin: 10px 0;
-    border: solid 1px #aaa;
-}
 
 .focus { color: #B20050; }
 .focus2 {
@@ -184,5 +165,5 @@ $m-gutter: 4px;
 }
 .link{ font-size: 20px; color: #B20050;}
 .ui-infobar{ max-width:95%; }
-.markdown-body{ max-width:95%; }
+.markdown-body{ max-width:95%; } */
 </style>

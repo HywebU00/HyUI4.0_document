@@ -6,8 +6,7 @@
 
 鑑於政府近幾年宣導提升政府網站服務品質，且因應瀏覽器版本更新和國人行動載具普及化的現象，並配合國發會政府網站版型與內容管理規範 ​，以及國家通訊傳播委員會頒布之無障礙網頁開發規範，凌網設計團隊開發此 HyUI kit 前端框架。 期望在政府網站設計的前端視覺互動、快速建置、網頁效能上獲得大幅的改善。在視覺設計上的部分，以「使用者體驗」(User Experience)出發， 針對介面操作體驗的友善性、流暢的視覺動線、​ 文字的閱讀舒適性，和色彩管理計畫皆有預設設定，且適用於所有載具的瀏覽呈現，期望本框架能全面提升政府網站的設計品質服務，並給予政府機關單位及民眾有更好的使用者體驗。
 
-![](https://imgur.com/KTCYqAM.png ':size=450')
-![](https://imgur.com/CvvFQGt.png ':size=200')
+![](https://imgur.com/hZvW4UJ.png ':size=650')
 
 ## HyUI kit 特點有
 
@@ -34,22 +33,9 @@ HyUI 不限制於開發政府網站，可用此框架開發任何您想要開發
 
 預設支援 `Mac` 與 `Windows` 每種主要平台預設瀏覽器的最新版本，當然！也包括`Android` 及 `iOS`上的以下瀏覽器。因為使用 `CSS3` 技術，因此版本最低可支援到 Internet Explorer 9，但仍有部分 CSS3 因 IE9 不完全支援或其全部功能需要前輟屬性而出現錯誤，開發人員如有疑慮可參考 CAN I USE 網站查詢屬性。(N/A：代表該平台無此瀏覽器)
 
-|         | ![](https://imgur.com/iqebRkp.png ':size=50')<br>IE7,8 | ![](https://imgur.com/roquu2G.jpg ':size=50')<br>Edge | ![](https://imgur.com/xSzB4vI.png ':size=50')<br>Firefox | ![](https://imgur.com/0zGDNUH.jpg ':size=50')<br>Chrome | ![](https://imgur.com/kzHcjAt.png ':size=50')<br>Safari |
+|         | ![](https://imgur.com/iqebRkp.png ':size=50')<br>IE7,8 | ![](https://imgur.com/2p2OfuF.png ':size=50')<br>Edge | ![](https://imgur.com/xSzB4vI.png ':size=50')<br>Firefox | ![](https://imgur.com/s8HNVJN.png ':size=50')<br>Chrome | ![](https://imgur.com/kzHcjAt.png ':size=50')<br>Safari |
 | ------- | :----------------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------------: | :-----------------------------------------------------: | :-----------------------------------------------------: |
 | Windows |                         不支援                         |                         支援                          |                           支援                           |                          支援                           |                         不支援                          |
 | MAC OS  |                          N/A                           |                          N/A                          |                           支援                           |                          支援                           |                          支援                           |
 | Android |                          N/A                           |                         支援                          |                           支援                           |                          支援                           |                           N/A                           |
 | iOS     |                          N/A                           |                          N/A                          |                           支援                           |                          支援                           |                          支援                           |
-
-<style>
-.ui-infobar{
-max-width:95%;
-}
-.block-style{
-  padding:2.2em 3em !important;
-  background:#f8f8f8;
-}
-.markdown-body{
-max-width:95%;
-}
-</style>
