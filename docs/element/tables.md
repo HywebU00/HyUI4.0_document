@@ -2,17 +2,11 @@
 
 ###### tags: `HyUI`
 
-:::warning
-檔案名稱：sass / modual / <span class="focus2">\_table.scss</span>
-:::
-
-1. **<span class="focus">[基本表格樣式](#item-1):arrow_down:</span>**
-2. **<span class="focus">[支援響應式條列式重新排版表格](#item-2):arrow_down:</span>**
-3. **<span class="focus">[固定左邊表頭，資料可水平捲動](#item-3):arrow_down:</span>**
+?>檔案名稱：sass / modual / <span class="focus2">\_table.scss</span>
 
 ---
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-1">01. </span>基本表格樣式
+## 基本表格樣式
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="基本表格樣式" src="https://codepen.io/u00hyui/embed/PomoQLj?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/PomoQLj">
@@ -77,7 +71,7 @@ table 加上<span class="focus3">table_sprite</span>的 classname
 
 ---
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-2">02. </span>支援響應式條列式重新排版表格
+## 支援響應式條列式重新排版表格
 
 使用<span class="focus3">before</span>取代<span class="focus3">th</span>，在<span class="focus3">table</span>上一層使用<span class="focus">**`<div class="table_list"></div>`**</span>將<span class="focus3">table</span>包覆住，即可於手機版重新排版表格樣式。
 
@@ -130,7 +124,7 @@ table 加上<span class="focus3">table_sprite</span>的 classname
 </div>
 ```
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-3">03. </span>固定左邊表頭，資料可水平捲動
+## 固定左邊表頭，資料可水平捲動
 
 適用於左側有<span class="focus3">th</span>的資料，在手機版可做成固定<span class="focus3">th</span>，其餘 td 可橫向水平捲動，在<span class="focus3">table</span>最外層請用<span class="focus3">fix_th_tablediv</span>包覆。
 

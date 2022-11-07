@@ -2,7 +2,7 @@
 
 ###### tags: `HyUI`
 
-## <font color="#EE428B">一般情況下，請盡量不使用 Bootstrap 之格線系統，期望網站開發者於 tag 放置有語意之 class 名稱。</font>
+!> 一般情況下，請盡量不使用 Bootstrap 之格線系統，期望網站開發者於 tag 放置有語意之 class 名稱。
 
 bootstrap 是一個基本的響應式網頁格線，他有兩個基本概念，第一個概念是把一個 <font color="#009ee7">網頁分為 12 欄</font>，第二個概念就是斷點(breakpoint)，bootstrap 已經先把裝置尺寸分為四類分別是 <font color="#009ee7">XS</font>、 <font color="#009ee7">SM</font> 、 <font color="#009ee7">MD</font> 、 <font color="#009ee7">LG</font> ，而 HyUI 預設提供使用 bootstrap 3 float 的格線系統，建立完成基本的格線。
 :::warning

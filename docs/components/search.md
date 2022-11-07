@@ -1,7 +1,5 @@
 # Search 搜尋
 
-###### tags: `HyUI`
-
 檔案名稱：檔案名稱：sass/modual/\_header.scss
 
 <iframe height="265" style="width: 100%;" scrolling="no" title="search 搜尋" src="https://codepen.io/u00hyui/embed/LYxwjyz?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">

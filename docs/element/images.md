@@ -1,20 +1,12 @@
 # Images / 圖片及多媒體設定
 
-:::warning
-檔案名稱：sass / element / <span class="focus2">\_image.scss</span>
-:::
-
-1. **<span class="focus">[圖片形狀](#item-1):arrow_down:</span>**
-2. **<span class="focus">[設定圖片外框比例](#item-2):arrow_down:</span>**
-3. **<span class="focus">[設定圖片 object-fit 屬性](#item-3):arrow_down:</span>**
-4. **<span class="focus">[使用 Lazyload 延遲載入](#item-4):arrow_down:</span>**
-5. **<span class="focus">[Picturefill 搭配 Lazyload](#item-5):arrow_down:</span>**
+?>檔案名稱：sass / element / <span class="focus2">\_image.scss</span>
 
 ---
 
 圖片在網頁上需要設定的細節非常多，HyUI 提供以下快速設定：
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-1">01. </span>圖片形狀
+## 圖片形狀
 
 直接在<span class="focus3">img</span>加上所需要的<span class="focus3">class</span>立即產生效果
 
@@ -32,7 +24,7 @@
 
 ---
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-2">02. </span>設定圖片外框比例
+## 設定圖片外框比例
 
 在單圖的部分也可在 SASS 設定比例，<span class="focus3">任何比例</span>都可以，<span class="focus3">1:1</span>、<span class="focus3">4:3</span>、<span class="focus3">16:9</span> 為常見比例，設定方法請在<span class="focus3">img</span>父層標籤設定<span class="focus3">@include aspect-ratio(寬度值,高度值)</span>即可，如以下範例：
 
@@ -64,7 +56,7 @@
 
 ---
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-3">03. </span>設定圖片 object-fit 屬性
+## 設定圖片 object-fit 屬性
 
 因外框已設定比例，但內含之圖片往往不盡然與外框比例相符，針對不同圖片呈現需求可於<span class="focus3">img</span>標籤中設定不同的 classname 給予不同之圖片效果，包括<span class="focus3">none</span>、<span class="focus3">contain</span>、<span class="focus3">fill</span>、<span class="focus3">cover</span>，屬性與<span class="focus3">object-fit</span>之 css 設定相同。
 
@@ -88,7 +80,7 @@
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-```html=
+```html
 <div class="img-container1"><iframe src="..."></iframe></div>
 <div class="img-container2"><iframe src="..."></iframe></div>
 <div class="img-container3"><iframe src="..."></iframe></div>
@@ -104,11 +96,11 @@
 
 ### 圖片比例，以 object-fit css 做設定
 
-```html=
-<div class="img-container"><img src="..." class="none" ></div>
-<div class="img-container"><img src="..." class="contain" ></div>
-<div class="img-container"><img src="..." class="fill" ></div>
-<div class="img-container"><img src="..." class="cover" ></div>
+```html
+<div class="img-container"><img src="..." class="none" /></div>
+<div class="img-container"><img src="..." class="contain" /></div>
+<div class="img-container"><img src="..." class="fill" /></div>
+<div class="img-container"><img src="..." class="cover" /></div>
 ```
 
 ## JQuery 設定:round_pushpin:
@@ -139,7 +131,7 @@ if (ie) {
 
 ---
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-4">04. </span>使用 Lazyload 延遲載入
+## 使用 Lazyload 延遲載入
 
 <iframe height="650" style="width: 100%;" scrolling="no" title="圖片形狀" src="https://codepen.io/u00hyui/embed/gOWOyLZ?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/gOWOyLZ">
@@ -177,7 +169,7 @@ if ($('img.lazy').length > 0) {
 
 ---
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-5">05. </span>Picturefill 搭配 Lazyload
+## Picturefill 搭配 Lazyload
 
 <iframe height="380" style="width: 100%;" scrolling="no" title="" src="https://codepen.io/u00hyui/embed/ExmxJow?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/ExmxJow">
@@ -251,7 +243,7 @@ if ($('img.lazy').length > 0) {
 <style>
 /* 顏色設定 <span class="blue"></span>*/
 
-.title{
+/* .title{
     font-size: 26px; color: #fff;
     background:#00469C; display:inline-block;
     padding: 10px 20px 10px 30px;
@@ -289,5 +281,5 @@ if ($('img.lazy').length > 0) {
 }
 .link{ font-size: 20px; color: #B20050;}
 .ui-infobar{ max-width:95%; }
-.markdown-body{ max-width:95%; }
+.markdown-body{ max-width:95%; } */
 </style>

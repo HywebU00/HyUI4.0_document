@@ -56,7 +56,7 @@ flex grid system 分割方式有兩種：
 2. 『<span class="focus">[自由分配](#item-2):arrow_down:</span>』
 3. 『<span class="focus">[混合運用](#item-3):arrow_down:</span>』
 
-### <span class="title" id="item-1">均分（equal）</span>
+### 均分（equal）
 
 :::warning
 每欄<b class="focus">欄寬都相同</b>，目前預設 2-12 欄均分，未來可能會調降最多欄數。
@@ -91,7 +91,7 @@ $m-gutter: 4px;
 
 ---
 
-### <span class="title" id="item-2">自由分配</span>
+### 自由分配
 
 :::warning
 每欄<b class="focus">欄寬不相同，加總等於 12</b>。
@@ -133,7 +133,7 @@ $m-gutter: 4px;
 
 ---
 
-### <span class="title" id="item-3">混合運用</span>
+### 混合運用
 
 :::warning
 均分Ｘ自由分配

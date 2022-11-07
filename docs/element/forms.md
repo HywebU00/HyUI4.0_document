@@ -1,28 +1,14 @@
 # Forms / 表單
 
-###### tags: `HyUI`
-
-:::warning
-檔案名稱：sass / modual / <span class="focus2">\_form.scss</span>
-:::
-
-1. **<span class="focus">[文字表單](#item-1):arrow_down:</span>**
-2. **<span class="focus">[核取與單選](#item-2):arrow_down:</span>**
-3. **<span class="focus">[下拉選單](#item-3):arrow_down:</span>**
-4. **<span class="focus">[檔案瀏覽 or 上傳檔案](#item-4):arrow_down:</span>**
-5. **<span class="focus">[有 icon 的 input](#item-5):arrow_down:</span>**
-6. **<span class="focus">[表單排版範例](#item-6):arrow_down:</span>**
+?>檔案名稱：sass / modual / <span class="focus2">\_form.scss</span>
 
 ---
 
-注意 :zap:
-
-- 表單外層以 <span class="focus">**`<div class="flex-form"></div>`**</span>包覆，css<span class=focus>不寫在<form></span>上
-- 為符合無障礙標準須加上<span class="focus">**`<label></label>`**</span>，但是不想要在畫面上出現文字時，加上 classname <span class="focus3">**label_hidden**</span>隱藏 label 文字
+!> 注意 :zap:表單外層以 `<div class="flex-form"></div>`包覆，css `<form>`上為符合無障礙標準須加上`<label></label>`，但是不想要在畫面上出現文字時，加上 classname `label_hidden`隱藏 label 文字
 
 ---
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-1">01. </span>文字表單
+## 文字表單
 
 ### 預設文字表單
 
@@ -74,7 +60,7 @@
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-2">02. </span>核取與單選
+## 核取與單選
 
 ### 預設核取方塊
 
@@ -108,7 +94,7 @@
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-3">03. </span>下拉選單
+## 下拉選單
 
 <iframe height="200" style="width: 100%;" scrolling="no" title="下拉選單" src="https://codepen.io/u00hyui/embed/zYZVXqa?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/zYZVXqa">
@@ -124,7 +110,7 @@
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-4">04. </span>檔案瀏覽 or 上傳檔案
+## 檔案瀏覽 or 上傳檔案
 
 ### 單個檔案上傳
 
@@ -164,7 +150,7 @@ $(document).on('change', '.check_file', function () {
 });
 ```
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-5">05. </span>有 Icon 的 input
+## 有 Icon 的 input
 
 在需帶有 icon 的<span class="focus3"><input></span>外層包覆<span class="focus">**`<div class="input-i"></div>`**</span>
 
@@ -174,7 +160,7 @@ $(document).on('change', '.check_file', function () {
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-## <span style="font-size:2em;margin-right:.2em;color:#21BAFF;" id="item-6">06. </span>表單排版範例
+## 表單排版範例
 
 ### 格線式表單
 
