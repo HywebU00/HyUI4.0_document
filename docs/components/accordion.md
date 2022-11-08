@@ -6,7 +6,7 @@
 
 ## HTML 範本 1
 
-<iframe height="350" style="width: 100%;" scrolling="no" title="Accordion 收合式選單" src="https://codepen.io/u00hyui/embed/mdEZoEr?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="350" style="width: 100%; " scrolling="no" title="Accordion 收合式選單" src="https://codepen.io/u00hyui/embed/mdEZoEr?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/u00hyui/pen/mdEZoEr'>Accordion 收合式選單</a> by u00hyui
   (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -54,6 +54,9 @@ $('.accordion').each(function () {
 ```
 
 ## HTML 範本 2-使用 button 寫法
+
+<!-- panels:start -->
+<!-- panels:end -->
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="Accordion 收合式選單-button按鈕" src="https://codepen.io/u00hyui/embed/JjWYJrp?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/u00hyui/pen/JjWYJrp'>Accordion 收合式選單-button按鈕</a> by u00hyui

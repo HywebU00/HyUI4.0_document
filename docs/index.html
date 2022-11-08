@@ -7,11 +7,20 @@
     <meta name="description" content="Description" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+    <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+    <!-- 展示 DemoCode 套件 -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-demo@latest/dist/index.min.css" /> -->
   </head>
   <style>
-    /* body {
-      background-color: aqua;
-    } */
+    .tag:before {
+      background-image: none;
+    }
+    .demo-copy-code-button {
+      display: none;
+    }
+    .docsify-tabs--material > .docsify-tabs__tab {
+      border-radius: 0px;
+    }
   </style>
   <body>
     <div id="app"></div>
@@ -51,6 +60,20 @@
           },
           pathNamespaces: ['/components', '/element', '/example-page', '/grid-system', '/quick-start'],
         },
+        //進度條
+        progress: {
+          position: 'top',
+          color: '#3F51B5',
+          height: '3px',
+        },
+        // tabs
+        tabs: {
+          persist: true, // default
+          sync: true, // default
+          theme: 'material', // default
+          tabComments: true, // default
+          tabHeadings: true, // default
+        },
       };
     </script>
     <!-- Docsify v4 -->
@@ -60,8 +83,15 @@
     <!-- 搜尋列 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <!-- 封面 -->
-    <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
     <!-- 代码高亮主题 -->
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-sass.js"></script>
+    <!-- 展示 DemoCode1 套件 -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-demo@latest/dist/index.min.js"></script> -->
+    <!-- 進度條 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+    <!-- docsify-tabs (latest v1.x.x) -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <!-- docsify-example-panels (latest) -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-example-panels"></script>
   </body>
 </html>
