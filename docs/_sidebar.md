@@ -68,3 +68,10 @@
   - [Images 圖片](element/images.md)
   - [Icon 圖示](element/icon.md)
   - [hr & divider 分隔線](element/divider.md)
+  - [測試頁面](element/thisistestpage.md)
+
+<style>
+  .search {
+    display: block !important;
+}
+</style>

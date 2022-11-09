@@ -10,35 +10,28 @@
 - 按鈕可添加大小
 
 <!-- panels:start -->
-
-<section>
-  <form action="">
-    <div class="btnGrp">
-    <h2>主要、次要、一般按鈕</h2>
-    <h3>button：default、disabled、readonly</h3>
-      <button type="button" class="btn btnPrimary">主要按鈕</button>
-                    <button type="button" class="btn btnSecondary">次要按鈕</button>
-                    <button type="button" class="btn btnNormal">一般按鈕</button>
-                    <br />
-                    <!--  disabled  -->
-                    <button type="button" class="btn btnPrimary" disabled>主要按鈕</button>
-                    <button type="button" class="btn btnSecondary" disabled>次要按鈕</button>
-                    <button type="button" class="btn btnNormal" disabled>一般按鈕</button>
-                    <br />
+<h2>主要、次要、一般按鈕</h2>
+<h3>button：default、disabled、readonly</h3>
+<button type="button" class="btn btnPrimary">主要按鈕</button>
+        <button type="button" class="btn btnSecondary">次要按鈕</button>
+        <button type="button" class="btn btnNormal">一般按鈕</button>
+        <br />
+        <!--  disabled  -->
+        <button type="button" class="btn btnPrimary" disabled>主要按鈕</button>
+        <button type="button" class="btn btnSecondary" disabled>次要按鈕</button>
+        <button type="button" class="btn btnNormal" disabled>一般按鈕</button>
+        <br />
                     <!--  readonly  -->
-                    <button type="button" class="btn btnPrimary" readonly>主要按鈕</button>
-                    <button type="button" class="btn btnSecondary" readonly>次要按鈕</button>
-                    <button type="button" class="btn btnNormal" readonly>一般按鈕</button>              
-    </div>
-  </form>
-</section>
+        <button type="button" class="btn btnPrimary" readonly>主要按鈕</button>
+        <button type="button" class="btn btnSecondary" readonly>次要按鈕</button>
+        <button type="button" class="btn btnNormal" readonly>一般按鈕</button>
 <!-- panels:end -->
 
 <!-- tabs:start -->
 
 #### **HTML**
 
-```html preview
+```html
 <!-- button：default、disabled、readonly -->
 <div class="btnGrp">
   <div class="btnGrp">
@@ -64,23 +57,17 @@
 <!-- panels:start -->
 
 <!-- input：default、disabled、readonly icon -->
-<section>
-  <form action="">
-    <div class="btnGrp">
-      <h3>input：default、disabled、readonly</h3>
+<h3 >input：default、disabled、readonly</h3>
       <input type="button" class="btn btnPrimary" value="主要按鈕" />
       <input type="button" class="btn btnSecondary" value="次要按鈕" />
       <input type="button" class="btn btnNormal" value="一般按鈕" />
       <br />
-    </div>
-  </form>
-</section>
 <!-- panels:end -->
 <!-- tabs:start -->
 
 #### **HTML**
 
-```html preview
+```html
 <!-- input：default、disabled、readonly -->
 <div class="btnGrp">
   <div class="btnGrp">
@@ -105,10 +92,7 @@
 
 <!-- panels:start -->
 
-<section>
-  <form action="">
-    <div class="btnGrp">
-    <h3>a連結按鈕：default、disabled、readonly</h3>
+<h3>a連結按鈕：default、disabled、readonly</h3>
     <a role="button" href="#" class="btn btnPrimary">主要按鈕</a>
     <a role="button" href="#" class="btn btnSecondary">次要按鈕</a>
     <a role="button" href="#" class="btn btnNormal">一般按鈕</a>
@@ -123,15 +107,12 @@
     <a role="button" href="#" class="btn btnSecondary readonly">次要按鈕</a>
     <a role="button" href="#" class="btn btnNormal readonly">一般按鈕</a>
       <br />
-    </div>
-  </form>
-</section>
 <!-- panels:end -->
 <!-- tabs:start -->
 
 #### **HTML**
 
-```html preview
+```html
 <!-- a連結按鈕：default、disabled、readonly -->
 <div class="btnGrp">
   <div class="btnGrp">
@@ -156,25 +137,19 @@
 <!-- panels:start -->
 
 <!-- input：default、disabled、readonly icon -->
-<section>
-  <form action="">
-    <div class="btnGrp">
-    <h3>按鈕顏色</h3>
+<h3>按鈕顏色</h3>
     <button type="button" class="btn btnBlue">按鈕</button>
     <button type="button" class="btn btnGreen">按鈕</button>
     <button type="button" class="btn btnOrange">按鈕</button>
     <button type="button" class="btn btnYellow">按鈕</button>
     <button type="button" class="btn btnPurple">按鈕</button>
     <button type="button" class="btn btnRed">按鈕</button>
-  </div>
-  </form>
-</section>
 <!-- panels:end -->
 <!-- tabs:start -->
 
 #### **HTML**
 
-```html preview
+```html
 <!-- 按鈕顏色 -->
 <div class="btnGrp">
   <div class="btnGrp">
@@ -192,33 +167,29 @@
 <!-- panels:start -->
 
 <!-- input：default、disabled、readonly icon -->
-<section>
-  <form action="">
-    <div class="btnGrp">
-     <h3>按鈕大小</h3>
+<h3>按鈕大小</h3>
+<div class="btnGrp" style="text-align: start;">
+     <!-- <h3>按鈕大小</h3> -->
     <button class="btn btnXl">特大按鈕</button>
     <button class="btn btnLg">大按鈕</button>
     <button class="btn">按鈕</button>
     <button class="btn btnSm">小按鈕</button>
     <button class="btn btnXs">小小按鈕</button>
     <br />
-    </div>
-  </form>
-</section>
+</div>
 <!-- panels:end -->
 <!-- tabs:start -->
 
 #### **HTML**
 
-```html preview
+```html
 <!-- 按鈕大小 -->
 <div class="btnGrp">
-    <button class="btn btnXl">特大按鈕</button>
-    <button class="btn btnLg">大按鈕</button>
-    <button class="btn">按鈕</button>
-    <button class="btn btnSm">小按鈕</button>
-    <button class="btn btnXs">小小按鈕</button>
-  </div>
+  <button class="btn btnXl">特大按鈕</button>
+  <button class="btn btnLg">大按鈕</button>
+  <button class="btn">按鈕</button>
+  <button class="btn btnSm">小按鈕</button>
+  <button class="btn btnXs">小小按鈕</button>
 </div>
 ```
 
@@ -226,11 +197,11 @@
 <!-- panels:start -->
 
 <!-- 深色 icon -->
+<h2>button + 深色 icon</h2>
 <section>
   <form action="">
     <!-- button + 深色 icon -->
-    <div class="btnGrp">
-      <h2>button + 深色 icon</h2>
+    <div class="btnGrp" style="text-align: left;">
       <button class="btn"><i class="i_apple_deep"></i>IOS</button>
       <button class="btn"><i class="i_arrowLeft_deep"></i>上一頁</button>
       <button class="btn">下一頁<i class="i_arrowRight_deep"></i></button>
@@ -252,7 +223,7 @@
       <button class="btn"><i class="i_rss_deep"></i>RSS</button>
       <button class="btn"><i class="i_setting_deep"></i>設定</button>
       <button class="btn"><i class="i_star_deep"></i>評比</button>
-      <button class="btn"><i class="i_twitte_deepr"></i>twitter</button>
+      <button class="btn"><i class="i_twitter_deep"></i>twitter</button>
       <button class="btn"><i class="i_video_deep"></i>video</button>
       <button class="btn"><i class="i_vimeo_deep"></i>vimeo</button>
       <button class="btn"><i class="i_youtube_deep"></i>youtube</button>
@@ -278,7 +249,7 @@
 
 #### **HTML**
 
-```html preview
+```html
 <!-- button + 深色 icon -->
 <div class="btnGrp">
   <h2>button + 深色 icon</h2>
@@ -303,7 +274,7 @@
   <button class="btn"><i class="i_rss_deep"></i>RSS</button>
   <button class="btn"><i class="i_setting_deep"></i>設定</button>
   <button class="btn"><i class="i_star_deep"></i>評比</button>
-  <button class="btn"><i class="i_twitte_deepr"></i>twitter</button>
+  <button class="btn"><i class="i_twitter_deep"></i>twitter</button>
   <button class="btn"><i class="i_video_deep"></i>video</button>
   <button class="btn"><i class="i_vimeo_deep"></i>vimeo</button>
   <button class="btn"><i class="i_youtube_deep"></i>youtube</button>
@@ -327,10 +298,10 @@
 <!-- panels:start -->
 
 <!-- 白色 icon -->
+<h2>button + 白色 icon</h2>
 <section>
   <form action="">
-    <div class="btnGrp">
-      <h2>button + 白色 icon</h2>
+    <div class="btnGrp" style="text-align: left;">
       <button class="btn btnBlue"><i class="i_apple"></i>IOS</button>
       <button class="btn btnBlue"><i class="i_arrowLeft"></i>上一頁</button>
       <button class="btn btnBlue">下一頁<i class="i_arrowRight"></i></button>
@@ -377,7 +348,7 @@
 
 #### **HTML**
 
-```html preview
+```html
 <!-- button + 白色 icon -->
 <div class="btnGrp">
   <button class="btn btnBlue"><i class="i_apple"></i>IOS</button>
@@ -421,3 +392,6 @@
 ```
 
 <!-- tabs:end -->
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<!-- <script src="https://hywebu00.github.io/HyUI_v4.0/js/main.js"></script>
+<script src="https://hywebu00.github.io/HyUI_v4.0/js/customize.js"></script> -->
