@@ -1,6 +1,6 @@
 # Images / 圖片及多媒體設定
 
-?>檔案名稱：sass / element / <span class="focus2">\_image.scss</span>
+?>檔案名稱：sass / element /`image.scss`
 
 ---
 
@@ -8,128 +8,243 @@
 
 ## 圖片形狀
 
-直接在<span class="focus3">img</span>加上所需要的<span class="focus3">class</span>立即產生效果
+直接在`img`加上所需要的`class`立即產生效果
 
-<iframe height="450" style="width: 100%;" scrolling="no" title="" src="https://codepen.io/u00hyui/embed/RwVwqmy?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<!-- panels:start -->
+<section class="pic_list"> 
+     <div class="col">
+        <div class="imgContainer">
+             <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/11.jpg" alt=""   class="lazy loaded cover" src="https://hywebu00.github.io/hyui_flex/images/demo/11.jpg" data-was-processed="true">
+        </div>
+        <h3>無class</h3>
+      </div>
+      <div class="col">
+        <div class="imgContainer">
+             <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/11.jpg" alt=""   class="lazy imgCircle loaded cover" src="https://hywebu00.github.io/hyui_flex/images/demo/11.jpg" data-was-processed="true">
+        </div>
+        <h3>class="imgCircle"</h3>
+      </div>
+      <div class="col">
+        <div class="imgContainer">
+             <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/11.jpg" alt=""   class="lazy imgRounded loaded cover" src="https://hywebu00.github.io/hyui_flex/images/demo/11.jpg" data-was-processed="true">
+        </div>
+        <h3>class="imgRounded"</h3>
+      </div>
+</section>
+<!-- panels:end -->
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<img src="..." />
+<img src="..." class="imgCircle" />
+<img src="..." class="imgRounded" /> //可用變數控制導角數值
+```
+
+<!-- tabs:end -->
+<!-- <iframe height="450" style="width: 100%;" scrolling="no" title="" src="https://codepen.io/u00hyui/embed/RwVwqmy?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/RwVwqmy">
   </a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-
-```html=
-<img src="..." >
-<img src="..." class="img_circle">
-<img src="..." class="img_rounded">          //可用變數控制導角數值
-```
+</iframe> -->
 
 ---
 
 ## 設定圖片外框比例
 
-在單圖的部分也可在 SASS 設定比例，<span class="focus3">任何比例</span>都可以，<span class="focus3">1:1</span>、<span class="focus3">4:3</span>、<span class="focus3">16:9</span> 為常見比例，設定方法請在<span class="focus3">img</span>父層標籤設定<span class="focus3">@include aspect-ratio(寬度值,高度值)</span>即可，如以下範例：
+在單圖的部分也可在 SASS 設定比例，`任何比例`都可以，`1:1`、`4:3`、`16:9`為常見比例，設定方法請在`img`父層標籤設定`@include aspectRatio(寬度值,高度值)`即可，如以下範例：
 
-<iframe height="430" style="width: 100%;" scrolling="no" title="設定圖片外框比例" src="https://codepen.io/u00hyui/embed/OJmJdam?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<!-- panels:start-->
+<div class="single_setting">
+  <div class="thumbnail">
+    <div class="imgContainer"><img data-src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" alt="" class="lazy loaded" src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" data-was-processed="true">
+    </div>
+    <h3>1:1</h3>
+  </div>
+  <div class="thumbnail">
+    <div class="imgContainer">
+      <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" alt="" class="lazy loaded" src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" data-was-processed="true">
+    </div>
+    <h3>4:3</h3>
+  </div>
+  <div class="thumbnail">
+    <div class="imgContainer"><img data-src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" alt="" class="lazy loaded" src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" data-was-processed="true">
+    </div>
+    <h3>16:9</h3>
+  </div>
+</div>
+<!-- panels:end -->
+
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<div class="imgContainer1"><img src="..." alt="..." /></div>
+<div class="imgContainer2"><img src="..." alt="..." /></div>
+<div class="imgContainer3"><img src="..." alt="..." /></div>
+```
+
+#### **css**
+
+```sass
+.imgContainer1{
+    @include aspectRatio(1,1);      //設定比例 1:1
+}
+.imgContainer2{
+    @include aspectRatio(4,3);      //設定比例 4:3
+}
+.imgContainer3{
+    @include aspectRatio(16,9);     //設定比例 16:9
+}
+```
+
+<!-- tabs:end -->
+
+<!-- <iframe height="430" style="width: 100%;" scrolling="no" title="設定圖片外框比例" src="https://codepen.io/u00hyui/embed/OJmJdam?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/OJmJdam">
   設定圖片外框比例</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-
-```html=
-<div class="img-container1"><img src="..." alt="..."></div>
-<div class="img-container2"><img src="..." alt="..."></div>
-<div class="img-container3"><img src="..." alt="..."></div>
-```
-
-### SCSS 設定
-
-```css=
-.img-container1{
-    @include aspect-ratio(1,1);      //設定比例 1:1
-}
-.img-container2{
-    @include aspect-ratio(4,3);      //設定比例 4:3
-}
-.img-container3{
-    @include aspect-ratio(16,9);     //設定比例 16:9
-}
-```
+</iframe> -->
 
 ---
 
 ## 設定圖片 object-fit 屬性
 
-因外框已設定比例，但內含之圖片往往不盡然與外框比例相符，針對不同圖片呈現需求可於<span class="focus3">img</span>標籤中設定不同的 classname 給予不同之圖片效果，包括<span class="focus3">none</span>、<span class="focus3">contain</span>、<span class="focus3">fill</span>、<span class="focus3">cover</span>，屬性與<span class="focus3">object-fit</span>之 css 設定相同。
+因外框已設定比例，但內含之圖片往往不盡然與外框比例相符，針對不同圖片呈現需求可於`img`標籤中設定不同的 classname 給予不同之圖片效果，包括`none`、`contain`、`fill`、`cover`，屬性與`object-fit`之 css 設定相同。
 
-<iframe height="430" style="width: 100%;" scrolling="no" title="設定圖片object-fit屬性" src="https://codepen.io/u00hyui/embed/BaRabLY?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<!-- panels:start -->
+
+<div class="single_setting">
+  <div class="thumbnail">
+    <div class="imgContainer"><img data-src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" data-was-processed="true">
+    </div>
+    <h3>1:1 (object-fit:cover)</h3>
+  </div>
+  <div class="thumbnail">
+    <div class="imgContainer">
+      <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" data-was-processed="true">
+    </div>
+    <h3>4:3 (object-fit:cover)</h3>
+  </div>
+  <div class="thumbnail">
+    <div class="imgContainer"><img data-src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon.png" data-was-processed="true">
+    </div>
+    <h3>16:9 (object-fit:cover)</h3>
+  </div>
+</div>
+
+<!-- panels:end -->
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<div class="imgContainer1"><img src="..." alt="..." class="cover" /></div>
+<div class="imgContainer2"><img src="..." alt="..." class="cover" /></div>
+<div class="imgContainer3"><img src="..." alt="..." class="cover" /></div>
+```
+
+<!-- tabs:end -->
+
+<!-- <iframe height="430" style="width: 100%;" scrolling="no" title="設定圖片object-fit屬性" src="https://codepen.io/u00hyui/embed/BaRabLY?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/BaRabLY">
   設定圖片object-fit屬性</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-
-```html=
-<div class="img-container1"><img src="..." alt="..." class="cover"></div>
-<div class="img-container2"><img src="..." alt="..." class="cover"></div>
-<div class="img-container3"><img src="..." alt="..." class="cover"></div>
-```
+</iframe> -->
 
 ### 嵌入 iframe 的結構完全如上述圖片設定
 
-<iframe height="430" style="width: 100%;" scrolling="no" title="嵌入iframe的結構" src="https://codepen.io/u00hyui/embed/MWmWxmd?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<!-- <iframe height="430" style="width: 100%;" scrolling="no" title="嵌入iframe的結構" src="https://codepen.io/u00hyui/embed/MWmWxmd?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/MWmWxmd">
   嵌入iframe的結構</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+</iframe> -->
+
+<!-- panels:start -->
+<div class="single_setting">
+  <div class="thumbnail">
+    <div class="imgContainer"><iframe src="https://www.youtube.com/embed/FxyrmBOiSqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    <h3>1:1</h3>
+  </div>
+  <div class="thumbnail">
+    <div class="imgContainer">
+      <iframe src="https://www.youtube.com/embed/FxyrmBOiSqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    <h3>4:3</h3>
+  </div>
+  <div class="thumbnail">
+    <div class="imgContainer"><iframe src="https://www.youtube.com/embed/FxyrmBOiSqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    <h3>16:9</h3>
+  </div>
+</div>
+<!-- panels:end -->
+
+<!-- tabs:start -->
+
+#### **HTML**
 
 ```html
-<div class="img-container1"><iframe src="..."></iframe></div>
-<div class="img-container2"><iframe src="..."></iframe></div>
-<div class="img-container3"><iframe src="..."></iframe></div>
+<div class="imgContainer1"><iframe src="..."></iframe></div>
+<div class="imgContainer2"><iframe src="..."></iframe></div>
+<div class="imgContainer3"><iframe src="..."></iframe></div>
 ```
+
+<!-- tabs:end -->
 
 ### 不同 object-fit 效果
 
-<iframe height="360" style="width: 100%;" scrolling="no" title="不同object-fit效果" src="https://codepen.io/u00hyui/embed/LYyYazR?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+圖片比例，以 object-fit css 做設定
+
+<!-- panels:start -->
+<section class="pic_list">
+  <div class="col">
+    <div class="imgContainer">
+      <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon1.png" alt="" class="lazy loaded none" src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon1.png" data-was-processed="true">
+    </div>
+    <h3>none</h3>
+  </div>
+  <div class="col">
+    <div class="imgContainer">
+      <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon1.png" alt="" class="lazy loaded contain" src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon1.png" data-was-processed="true">
+    </div>
+    <h3>contain</h3>
+  </div>
+  <div class="col">
+    <div class="imgContainer">
+      <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon1.png" alt="" class="lazy loaded fill" src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon1.png" data-was-processed="true">
+    </div>
+    <h3>fill</h3>
+  </div>
+  <div class="col">
+    <div class="imgContainer">
+      <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon1.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/hyui_flex/images/demo/doraemon1.png" data-was-processed="true">
+    </div>
+    <h3>cover</h3>
+  </div>
+</section>
+<!-- panels:end -->
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<div class="imgContainer"><img src="..." class="none" /></div>
+<div class="imgContainer"><img src="..." class="contain" /></div>
+<div class="imgContainer"><img src="..." class="fill" /></div>
+<div class="imgContainer"><img src="..." class="cover" /></div>
+```
+
+<!-- tabs:end -->
+
+<!-- <iframe height="360" style="width: 100%;" scrolling="no" title="不同object-fit效果" src="https://codepen.io/u00hyui/embed/LYyYazR?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/LYyYazR">
   不同object-fit效果</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-
-### 圖片比例，以 object-fit css 做設定
-
-```html
-<div class="img-container"><img src="..." class="none" /></div>
-<div class="img-container"><img src="..." class="contain" /></div>
-<div class="img-container"><img src="..." class="fill" /></div>
-<div class="img-container"><img src="..." class="cover" /></div>
-```
-
-## JQuery 設定:round_pushpin:
-
-```javascript
-/*--------------------------------------------------------*/
-/////設定img 在IE9+ SAFARI FIREFOX CHROME 可以object-fit/////
-/*--------------------------------------------------------*/
-var userAgent, ieReg, ie;
-userAgent = window.navigator.userAgent;
-ieReg = /msie|Trident.*rv[ :]*11\./gi;
-ie = ieReg.test(userAgent);
-if (ie) {
-  $('.img-container').each(function () {
-    var imgUrl = $(this).find('img').attr('data-src');
-    var $container = $(this);
-    $container.has('.none').addClass('ie-object-none');
-    $container.has('.none').css('backgroundImage', 'url(' + imgUrl + ')');
-    $container.has('.cover').addClass('ie-object-cover');
-    $container.has('.cover').css('backgroundImage', 'url(' + imgUrl + ')');
-    $container.has('.fill').addClass('ie-object-fill');
-    $container.has('.fill').css('backgroundImage', 'url(' + imgUrl + ')');
-    $container.has('.contain').addClass('ie-object-contain');
-    $container.has('.contain').css('backgroundImage', 'url(' + imgUrl + ')');
-  });
-}
-```
-
----
+</iframe> -->
 
 ## 使用 Lazyload 延遲載入
 
@@ -139,12 +254,21 @@ if (ie) {
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-```html=
-<div class="img-container">
-    <img data-src="..." alt="圖片說明" class="lazy">
-    <noscript><img src="..."></noscript> <!-- 關閉js無障礙用-->
+<!-- panels:start -->
+<!-- panels:end -->
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<div class="imgContainer">
+  <img data-src="..." alt="圖片說明" class="lazy" />
+  <noscript><img src="..." /></noscript>
+  <!-- 關閉js無障礙用-->
 </div>
 ```
+
+<!-- tabs:end -->
 
 :::warning
 請注意 :warning: slick 套件本身有 lazyload 設定，請參考 [slider.htm](/Rd3leLQ0S3KGfHlJ3oS8ag)
@@ -240,46 +364,242 @@ if ($('img.lazy').length > 0) {
 </picture>
 ```
 
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+
 <style>
 /* 顏色設定 <span class="blue"></span>*/
+.pic_list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  overflow: hidden;
+}
+.pic_list .col {
+  width: calc(100% * 0.33333);
+  flex-basis: calc(100% * 0.33333);
+  padding: 1em;
+}
+@media screen and (max-width: 991px) {
+  .pic_list .col {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+.pic_list h3 {
+  color: #000;
+  text-align: center;
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+.pic_list .imgContainer {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
 
-/* .title{
-    font-size: 26px; color: #fff;
-    background:#00469C; display:inline-block;
-    padding: 10px 20px 10px 30px;
-    border-radius: 4px;
 }
-.sub-title{ font-size: 20px; color: #00469C; }
-.box{
-    padding: 1em 2em;
-    background:#f5f5f5;
-    margin: 10px 0;
-    border: solid 1px #aaa;
+.pic_list .imgContainer:before {
+  display: inline-block;
+  content: "";
+  padding-top: 100%;
 }
 
-.focus { color: #B20050; }
-.focus2 {
-    color: #222; 
-    border: solid 1px #c8c8c8;
-    display: inline-block;
-    padding: 2px 10px; margin: 0 4px;
-    border-radius: 4px;
-    background: #fff;
+/* 設定圖片外匡比例 start */
+.single_setting {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  overflow: hidden;
+  padding: 1em;
+  align-items: flex-start;
 }
-.focus3{
-    display: inline-block;
-    background: #f1f1f1;
-    padding: 0.1em 0.8em;
-    border: 1px solid #f1f1f1;
-    margin: 0px 5px;
-    line-height: 1.35em;
-    border-radius: 4px;
-    color: #B20050;
-    margin-top: 2px;
-    font-size: 15px;
-    font-weight: bold;
+.single_setting .thumbnail {
+  width: calc(100% * 0.33333 - 2em);
+  flex-basis: calc(100% * 0.33333 - 2em);
+  margin: 1em;
 }
-.link{ font-size: 20px; color: #B20050;}
-.ui-infobar{ max-width:95%; }
-.markdown-body{ max-width:95%; } */
+@media screen and (max-width: 575px) {
+  .single_setting .thumbnail {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+.single_setting .thumbnail:nth-child(1) .imgContainer:before {
+  padding-top: 100%;
+}
+.single_setting .thumbnail:nth-child(2) .imgContainer:before {
+  padding-top: calc(3 / 4 * 100%);
+}
+.single_setting .thumbnail:nth-child(3) .imgContainer:before {
+  padding-top: calc(9 / 16 * 100%);
+}
+.single_setting h3 {
+  color: #000;
+  text-align: center;
+}
+.single_setting .imgContainer {
+  width: 100%;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+.single_setting .imgContainer:before {
+  display: inline-block;
+  content: "";
+}
+.single_setting .imgContainer img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+/* 設定圖片外匡比例 end */
+/* 設定圖片 object-fit 屬性 start */
+.single_setting {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  overflow: hidden;
+  padding: 1em;
+  align-items: flex-start;
+}
+.single_setting .thumbnail {
+  width: calc(100% * 0.33333 - 2em);
+  flex-basis: calc(100% * 0.33333 - 2em);
+  margin: 1em;
+}
+@media screen and (max-width: 575px) {
+  .single_setting .thumbnail {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+.single_setting .thumbnail:nth-child(1) .imgContainer:before {
+  padding-top: 100%;
+}
+.single_setting .thumbnail:nth-child(2) .imgContainer:before {
+  padding-top: calc(3 / 4 * 100%);
+}
+.single_setting .thumbnail:nth-child(3) .imgContainer:before {
+  padding-top: calc(9 / 16 * 100%);
+}
+.single_setting h3 {
+  color: #000;
+  text-align: center;
+}
+.single_setting .imgContainer {
+  width: 100%;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+.single_setting .imgContainer:before {
+  display: inline-block;
+  content: "";
+}
+.single_setting .imgContainer img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+/* 設定圖片 object-fit 屬性 end */
+
+/* 嵌入 iframe 的結構完全如上述圖片設定start */
+.single_setting {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  overflow: hidden;
+  padding: 1em;
+  align-items: flex-start;
+}
+.single_setting .thumbnail {
+  width: calc(100% * 0.33333 - 2em);
+  flex-basis: calc(100% * 0.33333 - 2em);
+  margin: 1em;
+}
+@media screen and (max-width: 575px) {
+  .single_setting .thumbnail {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+.single_setting .thumbnail:nth-child(1) .imgContainer:before {
+  padding-top: 100%;
+}
+.single_setting .thumbnail:nth-child(2) .imgContainer:before {
+  padding-top: calc(3 / 4 * 100%);
+}
+.single_setting .thumbnail:nth-child(3) .imgContainer:before {
+  padding-top: calc(9 / 16 * 100%);
+}
+.single_setting h3 {
+  color: #000;
+  text-align: center;
+}
+.single_setting .imgContainer {
+  width: 100%;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+.single_setting .imgContainer:before {
+  display: inline-block;
+  content: "";
+}
+.single_setting .imgContainer img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+/* 嵌入 iframe 的結構完全如上述圖片設定end */
+
+/* 不同 object-fit 效果 start */
+.pic_list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  overflow: hidden;
+}
+.pic_list .col {
+  width: 25%;
+  flex-basis: 25%;
+  padding: 1em;
+}
+@media screen and (max-width: 575px) {
+  .pic_list .col {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+.pic_list h3 {
+  color: #000;
+  text-align: center;
+}
+.pic_list .imgContainer {
+  width: 100%;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+.pic_list .imgContainer:before {
+  display: inline-block;
+  content: "";
+  padding-top: 100%;
+}
+
+/* 不同 object-fit 效果 end */
+
 </style>

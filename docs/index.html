@@ -12,18 +12,21 @@
     <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-demo@latest/dist/index.min.css" /> -->
   </head>
   <style>
+    /* hyuiu樣式被框架吃到 */
     .tag:before {
       background-image: none;
     }
+    /* 隱藏套件按鈕 */
     .demo-copy-code-button {
       display: none;
     }
+    /* 修改套件頁籤的樣式 */
     .docsify-tabs--material > .docsify-tabs__tab {
       border-radius: 0px;
     }
-    .content {
+    /* .content {
       overflow: auto;
-    }
+    } */
   </style>
   <body>
     <div id="app"></div>
@@ -41,6 +44,8 @@
         alias: {
           '/.*/_sidebar.md': '/_sidebar.md',
         },
+        //換頁在最頂端
+        auto2top: true,
         //替换主题色
         themeColor: '#3F51B5',
         //封面
