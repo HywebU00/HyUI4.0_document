@@ -393,5 +393,3 @@
 
 <!-- tabs:end -->
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
-<!-- <script src="https://hywebu00.github.io/HyUI_v4.0/js/main.js"></script>
-<script src="https://hywebu00.github.io/HyUI_v4.0/js/customize.js"></script> -->
