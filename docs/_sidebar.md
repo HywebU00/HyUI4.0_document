@@ -18,7 +18,6 @@
 - 範例頁面
 
   - [mp(首頁)](example-page/mp.md)
-  <!-- - [mp(首頁)](https://hywebu00.github.io/hyui_flex/mp_template.htm) -->
   - [flex(flex grid)](example-page/flex.md)
   - [lp(列表頁)](example-page/lp.md)
   - [lp_table(列表頁-表格)](example-page/lp-table.md)
@@ -74,6 +73,4 @@
   .search {
     display: block !important;
 }
-
-
 </style>
