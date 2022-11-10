@@ -1,21 +1,63 @@
 # Table / 表格
 
-###### tags: `HyUI`
-
 ?>檔案名稱：sass / modual / <span class="focus2">\_table.scss</span>
 
 ---
 
 ## 基本表格樣式
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="基本表格樣式" src="https://codepen.io/u00hyui/embed/PomoQLj?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/PomoQLj">
-  基本表格樣式</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+<!-- panels:start -->
 
-```html=
 <table>
+ <caption>
+  無障礙表格標題
+ </caption>
+  <thead>
+    <tr>
+      <th>編號</th>
+      <th>姓名</th>
+      <th>性別</th>
+      <th>年齡</th>
+      <th>居住地</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>王大明</td>
+      <td>男</td>
+      <td>39</td>
+      <td>台北市</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>李小強</td>
+      <td>男</td>
+      <td>25</td>
+      <td>宜蘭縣</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>林珍珍</td>
+      <td>女</td>
+      <td>33</td>
+      <td>新竹市</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- panels:end -->
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<table>
+  <caption>
+    障礙表格標題
+    <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
+    <!-- <span class="summary">表格摘要</span> -->
+  </caption>
   <thead>
     <tr>
       <th>...</th>
@@ -26,116 +68,304 @@
   <tbody>
     <tr>
       <td>...</td>
-      <td>...</td>
+    </tr>
+    <tr>
       <td>...</td>
     </tr>
   </tbody>
 </table>
 ```
 
+<!-- tabs:end -->
+<!-- <iframe height="300" style="width: 100%;" scrolling="no" title="基本表格樣式" src="https://codepen.io/u00hyui/embed/PomoQLj?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/u00hyui/pen/PomoQLj">
+  基本表格樣式</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe> -->
+
 ### td 有 hover 效果
 
-table 加上<span class="focus3">table_hover</span>的 classname
+table 加上`tableHover`的 className
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="基本表格樣式 - td有hover效果" src="https://codepen.io/u00hyui/embed/mdmdLgN?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<!-- panels:start -->
+<table class="tableHover">
+ <caption>
+    表格有Hover效果
+    <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
+    <!-- <span class="summary">表格摘要</span> -->
+  </caption>
+  <thead>
+    <tr>
+      <th>編號</th>
+      <th>姓名</th>
+      <th>性別</th>
+      <th>年齡</th>
+      <th>居住地</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>王大明</td>
+      <td>男</td>
+      <td>39</td>
+      <td>台北市</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>李小強</td>
+      <td>男</td>
+      <td>25</td>
+      <td>宜蘭縣</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>林珍珍</td>
+      <td>女</td>
+      <td>33</td>
+      <td>新竹市</td>
+    </tr>
+  </tbody>
+</table>
+<!-- panels:end -->
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<table class="tableHover"></table>
+```
+
+<!-- tabs:end -->
+
+<!-- <iframe height="300" style="width: 100%;" scrolling="no" title="基本表格樣式 - td有hover效果" src="https://codepen.io/u00hyui/embed/mdmdLgN?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/mdmdLgN">
   基本表格樣式 - td有hover效果</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-
-```html=
-<table class="table_hover">
-```
+</iframe> -->
 
 ### td 有間隔不同背景色
 
-table 加上<span class="focus3">table_sprite</span>的 classname
+table 加上`table_sprite`的 className
 
-<iframe height="350" style="width: 100%;" scrolling="no" title="基本表格樣式 - td有間隔不同背景色" src="https://codepen.io/u00hyui/embed/zYwYJOo?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<!-- panels:start -->
+<table class="tableSprite">
+<caption>
+    td間隔不同背景色
+  </caption>
+    <thead>
+        <tr>
+            <th>編號</th>
+            <th>姓名</th>
+            <th>性別</th>
+            <th>年齡</th>
+            <th>居住地</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>王大明</td>
+            <td>男</td>
+            <td>39</td>
+            <td>台北市</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>李小強</td>
+            <td>男</td>
+            <td>25</td>
+            <td>宜蘭縣</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>林珍珍</td>
+            <td>女</td>
+            <td>33</td>
+            <td>新竹市</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>黃志明</td>
+            <td>男</td>
+            <td>44</td>
+            <td>台南市</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>郭春嬌</td>
+            <td>女</td>
+            <td>37</td>
+            <td>台中市</td>
+        </tr>
+    </tbody>
+</table>
+<!-- panels:end -->
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<table class="tableSprite"></table>
+```
+
+<!-- tabs:end -->
+<!-- <iframe height="350" style="width: 100%;" scrolling="no" title="基本表格樣式 - td有間隔不同背景色" src="https://codepen.io/u00hyui/embed/zYwYJOo?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/zYwYJOo">
   基本表格樣式 - td有間隔不同背景色</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+</iframe> -->
 
-```html=
-<table class="table_sprite">
-```
+## 響應式排版表格
 
-### 範例：一般內容式表格
+支援響應式條列式重新排版表格
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="範例：一般內容式表格" src="https://codepen.io/u00hyui/embed/poPoOvv?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/poPoOvv">
-  範例：一般內容式表格</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+使用`before`取代`th`，在`table`上一層使用`<div class="tableList"></div>`將`table`包覆住，即可於手機版重新排版表格樣式。
 
----
-
-## 支援響應式條列式重新排版表格
-
-使用<span class="focus3">before</span>取代<span class="focus3">th</span>，在<span class="focus3">table</span>上一層使用<span class="focus">**`<div class="table_list"></div>`**</span>將<span class="focus3">table</span>包覆住，即可於手機版重新排版表格樣式。
-
-<iframe height="500" style="width: 100%;" scrolling="no" title="響應式條列式重新排版表格" src="https://codepen.io/u00hyui/embed/eYWYLNz?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="響應式條列式重新排版表格" src="https://codepen.io/u00hyui/embed/eYWYLNz?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/u00hyui/pen/eYWYLNz">
   響應式條列式重新排版表格</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+</iframe> -->
 
-```html=
-<div class="table_list">
+<!-- panels:start -->
+<div class="tableList">
     <table>
-      <thead>
-        <tr>
-          <th>編號</th>
-          <th>據點</th>
-          <th>地址</th>
-          <th>電話</th>
-          <th>傳真</th>
-          <th>信箱</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>03</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-      </tbody>
+        <thead>
+            <tr>
+                <th>編號</th>
+                <th>據點</th>
+                <th>地址</th>
+                <th>電話</th>
+                <th>傳真</th>
+                <th>信箱</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>總公司</td>
+                <td>新竹縣竹北市台元一街8號5樓之6</td>
+                <td>02-12345678</td>
+                <td>02-12345678</td>
+                <td><a href="#"><img src="https://hywebu00.github.io/hyui_flex/images/icon/icon_mail.svg" alt=""></a></td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>臺北分公司</td>
+                <td>臺北市重慶南路二段51號5樓</td>
+                <td>02-12345678</td>
+                <td>02-12345678</td>
+                <td><a href="#"><img src="https://hywebu00.github.io/hyui_flex/images/icon/icon_mail.svg" alt=""></a></td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>臺中分公司</td>
+                <td>臺中市西屯區臺灣大道三段658號6樓A1</td>
+                <td>02-12345678</td>
+                <td>02-12345678</td>
+                <td><a href="#"><img src="https://hywebu00.github.io/hyui_flex/images/icon/icon_mail.svg" alt=""></a></td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>高雄分公司</td>
+                <td>高雄市新興區中正三路55號26樓之5</td>
+                <td>02-12345678</td>
+                <td>02-12345678</td>
+                <td><a href="#"><img src="https://hywebu00.github.io/hyui_flex/images/icon/icon_mail.svg" alt=""></a></td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>曼谷分公司</td>
+                <td>Room No.2009, 20th F1., Le Concorde Tower, 202 Ratchadapisek Rd., Huaykwang, Bangkok 10310</td>
+                <td>02-12345678</td>
+                <td>02-12345678</td>
+                <td><a href="#"><img src="https://hywebu00.github.io/hyui_flex/images/icon/icon_mail.svg" alt=""></a></td>
+            </tr>
+            <tr>
+                <td>06</td>
+                <td>北京</td>
+                <td>北京市海淀区安宁庄西路9号院29号楼金泰富地大厦105室</td>
+                <td>02-12345678</td>
+                <td>02-12345678</td>
+                <td><a href="#"><img src="https://hywebu00.github.io/hyui_flex/images/icon/icon_mail.svg" alt=""></a></td>
+            </tr>
+        </tbody>
     </table>
+</div>
+<!-- panels:end -->
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<div class="tableList">
+  <table>
+    <caption>
+      障礙表格標題
+      <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
+      <!-- <span class="summary">表格摘要</span> -->
+    </caption>
+    <thead>
+      <tr>
+        <th>...</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 ```
 
-## 固定左邊表頭，資料可水平捲動
+#### **JavaScript**
 
-適用於左側有<span class="focus3">th</span>的資料，在手機版可做成固定<span class="focus3">th</span>，其餘 td 可橫向水平捲動，在<span class="focus3">table</span>最外層請用<span class="focus3">fix_th_tablediv</span>包覆。
+```javascript
+//在 table 增加 data-* 標籤
+function tableAddDataAttributes(obj) {
+  const el = document.querySelectorAll(obj.elemClass);
+  function setTrAttr(i) {
+    const thList = i.querySelectorAll('th');
+    const trList = i.querySelectorAll('tr');
+    trList.forEach((trItem) => {
+      const tdList = trItem.querySelectorAll('td');
+      tdList.forEach((i, idx) => {
+        tdList[idx].setAttribute(`data-${obj.dataName}`, `${thList[idx].textContent}`);
+      });
+    });
+  }
+  el.forEach((i) => {
+    const tableItem = i.querySelectorAll('table');
+    tableItem.forEach((i) => {
+      setTrAttr(i);
+    });
+  });
+}
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="固定左邊表頭，資料可水平捲動表格" src="https://codepen.io/u00hyui/embed/GRmRXqw?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/GRmRXqw">
-  固定左邊表頭，資料可水平捲動表格</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+tableAddDataAttributes({
+  elemClass: '.tableList', // 目標table
+  dataName: 'title', // tableList樣式 加上 data-title
+});
+```
 
-```html=
-<div class="fix_th_table">
+<!-- tabs:end -->
+
+## 固定左側表頭
+
+固定左邊表頭，資料可水平捲動
+
+適用於左側有`th`的資料，在手機版可做成固定`th`，其餘 `td` 可橫向水平捲動，在`table`最外層請用`fixThTable`包覆。
+
+<!-- panels:start -->
+<div class="fixThTable">
     <table>
         <tr>
             <th>th 1</th>
@@ -171,115 +401,305 @@ table 加上<span class="focus3">table_sprite</span>的 classname
         </tr>
     </table>
 </div>
+<!-- panels:end -->
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<div class="fixThTable">
+  <caption>
+    障礙表格標題
+    <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
+    <!-- <span class="summary">表格摘要</span> -->
+  </caption>
+  <table>
+    <tr>
+      <th>th 1</th>
+      <th>th 2</th>
+      <th>th 3</th>
+      <th>th 4</th>
+      <th>th 5</th>
+      <th>th 6</th>
+    </tr>
+    <tr>
+      <th>th A</th>
+      <td>td 資料</td>
+      <td>td 資料</td>
+      <td>td 資料</td>
+      <td>td 資料</td>
+      <td>td 資料</td>
+    </tr>
+    <tr>
+      <th>th B</th>
+      <td>td 資料</td>
+      <td>td 資料</td>
+      <td>td 資料</td>
+      <td>td 資料</td>
+      <td>td 資料</td>
+    </tr>
+    <tr>
+      <th>th C</th>
+      <td>td 資料</td>
+      <td>td 資料</td>
+      <td>td 資料</td>
+      <td>td 資料</td>
+      <td>td 資料</td>
+    </tr>
+  </table>
+</div>
 ```
 
-## JQuery 設定:round_pushpin:
+<!-- tabs:end -->
 
-按照專案經驗，在客戶資料上稿常常出現表格會撐出畫面或是破圖的情況，這部分可以使用預設提供之 JQuery 設定，讓文章內容頁面的表格自動產生響應式橫向捲軸，以防止畫面跑版。<br/>
-目前判斷如果<span class="focus3">table</span>父層沒有<span class="focus3">.tablie_list</span>或是<span class="focus3">.fix_th_table</span>的 table，一律在<span class="focus">寬度小於 545px</span>時，<span class="focus3">table</span>套用<span class="focus3">scroltable();</span>的外掛
+<!-- <iframe height="300" style="width: 100%;" scrolling="no" title="固定左邊表頭，資料可水平捲動表格" src="https://codepen.io/u00hyui/embed/GRmRXqw?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/u00hyui/pen/GRmRXqw">
+  固定左邊表頭，資料可水平捲動表格</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe> -->
+
+## Scroll 表格設定
+
+> 按照專案經驗，在客戶資料上稿常常出現表格會撐出畫面或是破圖的情況，這部分可以使用預設提供之 JavaScript 設定，讓文章內容頁面的表格自動產生響應式橫向捲軸，以防止畫面跑版。<br/>
+> 若要表格能夠左右滾動 則須在最外層增加 `tableWrapper`的 className
+> 在 `table` 同層 增加 `scrollTable`的 className
+
+<!-- panels:start -->
+<!-- panels:end -->
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<!-- 如果要能夠左右滾動 則須在最外層增加 class “tableWrapper”
+  在table同層 增加 class "scrolTable" -->
+<div class="tableWrapper">
+  <table class="scrollTable ">
+    <caption>
+      無障礙表格標題可以srcoll
+      <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
+    </caption>
+    <thead>
+      <tr>
+        <th>...</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+#### **JavaScript**
 
 ```javascript
-/*------------------------------------*/
-///////table 加上響應式 scroltable-wrapper/////
-//*------------------------------------*/
-$('table').each(function (index, el) {
-  //判斷沒有table_list
-  if ($(this).parents('.table_list').length == 0 && $(this).parents('.fix_th_table').length == 0) {
-    $(this).scroltable();
-  }
-});
-// tablearrow arrow，為了設定箭頭
-$('.scroltable-nav-left').append('<div class="tablearrow_left" style="display:none;"></div>');
-$('.scroltable-nav-right').append('<div class="tablearrow_right"  style="display:none;"></div>');
-// 固定版頭
-function table_Arrow() {
-  if ($('table').parents('.table_list').length == 0 && $('table').parents('.fix_th_table').length == 0) {
-    if ($('.scroltable-wrapper').length > 0) {
-      var stickyArrowTop = Math.floor($('.scroltable-wrapper').offset().top),
-        thisScroll = Math.floor($(this).scrollTop());
-      if (thisScroll > stickyArrowTop - 230) {
-        $('.scroltable-wrapper .tablearrow_left').css('display', 'block');
-        $('.scroltable-wrapper .tablearrow_left').css({ top: thisScroll - stickyArrowTop + 220 }, 100, 'easeOutQuint');
-        $('.scroltable-wrapper .tablearrow_right').css('display', 'block');
-        $('.scroltable-wrapper .tablearrow_right').css({ top: thisScroll - stickyArrowTop + 220 }, 100, 'easeOutQuint');
-      } else {
-        $('.scroltable-wrapper .tablearrow_left').css({
-          top: '10px',
-          display: 'none',
-        });
-        $('.scroltable-wrapper .tablearrow_right').css({
-          top: '10px',
-          display: 'none',
-        });
-      }
-    }
-  }
-}
-$(window).scroll(function (event) {
-  table_Arrow();
-});
-// /*------------------------------------*/
-// //////////table 加上 data-title//////////
-// /*------------------------------------*/
-function rwdTable() {
-  $('.table_list')
-    .find('table')
-    .each(function () {
-      var $row = $(this).find('tr');
-      rowCount = $row.length;
-      for (var n = 1; n <= rowCount; n++) {
-        $(this)
-          .find('th')
-          .each(function (index) {
-            var thText = $(this).text();
-            $row.eq(n).find('td').eq(index).attr('data-title', thText);
-          });
+function scrollTables(obj) {
+  let el = document.querySelectorAll(obj) || null; // --- 按鈕列表名稱
+
+  // --- 檢查父層有沒有 tableList
+  function appendEle() {
+    el.forEach((i) => {
+      let _appendLeftEle;
+      let _appendRightEle;
+      let _leftBtn;
+      let _rightBtn;
+      let _hasItem = i.parentElement.classList.contains('tableList');
+      let _hasNavLeft = i.parentElement.querySelector('.scrollTableNavLeft');
+      if (!_hasItem && _hasNavLeft === null) {
+        _appendLeftEle = document.createElement('div');
+        _appendLeftEle.setAttribute('class', 'scrollTableNav scrollTableNavLeft');
+        _appendLeftEle.style.height = `${i.parentElement.clientHeight}px`;
+        _appendRightEle = document.createElement('div');
+        _appendRightEle.setAttribute('class', 'scrollTableNav scrollTableNavRight');
+        _appendRightEle.style.height = `${i.parentElement.clientHeight}px`;
+        i.parentElement.style.position = 'relative';
+        i.parentElement.prepend(_appendLeftEle, _appendRightEle);
+        // --- 增加左邊按鈕
+        _leftBtn = document.createElement('div');
+        _leftBtn.setAttribute('class', 'scrollTableLeftBtn');
+        _appendLeftEle.appendChild(_leftBtn);
+        // --- 增加右邊按鈕
+        _rightBtn = document.createElement('div');
+        _rightBtn.setAttribute('class', 'scrollTableRightBtn');
+        _appendRightEle.appendChild(_rightBtn);
+        displayNoneEle();
       }
     });
+  }
+
+  // --- 開關遮罩功能
+  function displayNoneEle() {
+    el.forEach((i) => {
+      let _hasItem = i.parentElement.classList.contains('tableList');
+      if (!_hasItem) {
+        hiddenEle(i);
+      }
+      function hiddenEle(el) {
+        // --- 父層元素的寬;
+        let _table = el.parentElement.clientWidth;
+        // --- 子層元素的寬
+        let _tableItem = el.scrollWidth;
+        // --- 左邊遮罩
+        let _rightEle = el.parentElement.querySelector('.scrollTableNavRight');
+        // --- 右邊遮罩
+        let _leftEle = el.parentElement.querySelector('.scrollTableNavLeft');
+        // --- 如果沒有建立遮罩
+        if (_rightEle == null) {
+          return;
+        }
+        // --- 如果子層跟父層一樣寬度
+        if (_table === _tableItem) {
+          _leftEle.style.display = 'none';
+          _rightEle.style.display = 'none';
+        } else {
+          el.parentElement.scrollLeft = '0';
+          _rightEle.style.display = 'block';
+          _rightEle.style.opacity = '1';
+        }
+        eleScroll();
+      }
+    });
+  }
+  // --- 當父層滾輪滾動
+  function eleScroll() {
+    el.forEach((i) => {
+      i.parentElement.addEventListener('scroll', () => {
+        // --- 父層元素的寬
+        let _table = i.parentElement.clientWidth;
+        // --- 子層元素的寬
+        let _tableItem = i.scrollWidth;
+        // --- 左邊遮罩
+        let _rightEle = i.parentElement.querySelector('.scrollTableNavRight');
+        // --- 右邊遮罩
+        let _leftEle = i.parentElement.querySelector('.scrollTableNavLeft');
+        // --- 捲軸位置
+        let _scrollPosition = i.parentElement.scrollLeft;
+        _rightEle.style.right = `-${i.parentElement.scrollLeft}px`;
+        _leftEle.style.left = `${i.parentElement.scrollLeft}px`;
+
+        if (_scrollPosition === 0) {
+          _leftEle.style.opacity = 0;
+          _rightEle.style.opacity = 1;
+        }
+        // --- 如果捲軸位置還沒到底
+        if (_scrollPosition > 0) {
+          _leftEle.style.opacity = 1;
+        }
+        // --- 如果捲軸位置＋父層寬度 ＝ 子層寬度
+        if (_scrollPosition + _table === _tableItem) {
+          _rightEle.style.opacity = 0;
+          _leftEle.style.opacity = 1;
+          _leftEle.style.display = 'block';
+        }
+        // --- 如果捲軸位置＋父層寬度 < 子層寬度
+        if (_scrollPosition + _table < _tableItem) {
+          _rightEle.style.opacity = 1;
+        }
+      });
+    });
+  }
+
+  // --- 點擊左右按鈕時滾動畫面
+  function clickEleBtn() {
+    // --- 點擊左邊按鈕
+    const leftBtn = document.querySelectorAll('.scrollTableLeftBtn');
+    if (leftBtn.length !== 0) {
+      leftBtn.forEach((i) => {
+        i.addEventListener('click', (item) => {
+          i.parentElement.parentElement.scrollLeft -= 200;
+        });
+      });
+    }
+    // --- 點擊右邊按鈕
+    const rightBtn = document.querySelectorAll('.scrollTableRightBtn');
+    if (rightBtn.length !== 0) {
+      rightBtn.forEach((i) => {
+        i.addEventListener('click', (item) => {
+          i.parentElement.parentElement.scrollLeft += 200;
+        });
+      });
+    }
+  }
+
+  appendEle();
+  clickEleBtn();
+  // --- resize
+  window.addEventListener('resize', () => {
+    let _hasItem;
+    el.forEach((i) => {
+      _hasItem = i.parentElement.classList.contains('tableList');
+      if (!_hasItem) {
+        displayNoneEle();
+      }
+    });
+  });
 }
-rwdTable();
+scrollTables('table'); // table捲動功能
 ```
 
+<!-- tabs:end -->
+
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>
-/* 顏色設定 <span class="blue"></span>*/
-
-.title{
-    font-size: 26px; color: #fff;
-    background:#00469C; display:inline-block;
-    padding: 10px 20px 10px 30px;
-    border-radius: 4px;
+/* 取消 markdown 預設狀態 */
+.markdown-section p.tip, .markdown-section tr:nth-child(2n) {
+    background-color:unset;
 }
-.sub-title{ font-size: 20px; color: #00469C; }
-.box{
-    padding: 1em 2em;
-    background:#f5f5f5;
-    margin: 10px 0;
-    border: solid 1px #aaa;
+.markdown-section table{
+  display:table;
 }
-
-.focus { color: #B20050; }
-.focus2 {
-    color: #222; 
-    border: solid 1px #c8c8c8;
-    display: inline-block;
-    padding: 2px 10px; margin: 0 4px;
-    border-radius: 4px;
-    background: #fff;
+@media screen and (max-width: 575px){
+  .markdown-section td{
+    padding-left: 0.5em !important;
+    padding-top: 2em;
 }
-.focus3{
-    display: inline-block;
-    background: #f1f1f1;
-    padding: 0.1em 0.8em;
-    border: 1px solid #f1f1f1;
-    margin: 0px 5px;
-    line-height: 1.35em;
-    border-radius: 4px;
-    color: #B20050;
-    margin-top: 2px;
-    font-size: 15px;
-    font-weight: bold;
 }
-.link{ font-size: 20px; color: #B20050;}
-.ui-infobar{ max-width:95%; }
-.markdown-body{ max-width:95%; }
+table caption{
+  text-align: center;
+}
+table.tableHover tr:hover {
+    background: #f3f3f3 !important;
+}
+table.tableSprite tr:nth-child(even) {
+    background: #f5f5f5 !important;
+}
+td img{
+   max-width: 20px !important;
+}
+.fixThTable table{
+  display:block;
+}
+.fixThTable td,.fixThTable th{
+padding: 0.8em 0;
+}
 </style>
+<script>
+  function tableAddDataAttributes(obj) {
+  const el = document.querySelectorAll(obj.elemClass);
+  function setTrAttr(i) {
+    const thList = i.querySelectorAll('th');
+    const trList = i.querySelectorAll('tr');
+    trList.forEach((trItem) => {
+      const tdList = trItem.querySelectorAll('td');
+      tdList.forEach((i, idx) => {
+        tdList[idx].setAttribute(`data-${obj.dataName}`, `${thList[idx].textContent}`);
+      });
+    });
+  }
+  el.forEach((i) => {
+    const tableItem = i.querySelectorAll('table');
+    tableItem.forEach((i) => {
+      setTrAttr(i);
+    });
+  });
+}
+</script>
