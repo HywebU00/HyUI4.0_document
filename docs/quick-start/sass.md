@@ -55,7 +55,6 @@
 
 :::warning
 分成三個資料夾：共通 common、 元件 element、 模組 modual
-詳細架構：[SASS 架構（gitmind）](https://gitmind.com/app/doc/e332040020):arrow_right:
 :::
 
 ### 共通 common
@@ -68,35 +67,29 @@
 <ol>
     <li><span class="focus2">客製MIXIN</span> 引用 <span class="focus">mixins 資料夾</span> 內的設定，引用項目依需求而定。</li>
     <li><span class="focus2">_grid</span> 引用 <span class="focus">mixins 資料夾</span> 的 <span class="focus2">_flex-set.scss</span> 設定</li>
-    <li>hyui-flex 目前有 <span class="focus2">_bootstrap-grid</span> 與 <span class="focus2">_flex-set</span> 兩支格線系統。</li>
+    <li>下圖列出結構以及比較常會使用的項目</li>
 </ol>
 </div>
 
----
-
-- [**<span class="focus">hyui flex extend / mixin 引用列表</span>**](/jf1_RTDUTVaQRlk3J1Gc1w?view) :arrow_right:
-
----
-
-![共通](https://i.imgur.com/NFrmp4K.jpg)
+<iframe style="border:none" width="100%" height="600" src="https://whimsical.com/embed/TnP7TaSjcRULShoTNjwQRs@VsSo8s35UvF22CfLJmd6x6"></iframe>
 
 ### 元件 element
 
 - 文字、語言、按鈕、麵包屑...等，共 11 組元件。
 
-![元件](https://i.imgur.com/NaRpBj0.png)
+<iframe style="border:none" width="100%" height="450" src="https://whimsical.com/embed/TnP7TaSjcRULShoTNjwQRs@2Ux7TurymQ8Sp7NQ2UTL"></iframe>
 
 ### 模組 module
 
 - header、menu、固定側邊欄...等，目前共 18 個模組。
 
-![模組2](https://i.imgur.com/Y50CqEg.png)
+<iframe style="border:none" width="100%" height="450" src="https://whimsical.com/embed/TnP7TaSjcRULShoTNjwQRs@LUSUr8hW69X4QfGQB2"></iframe>
 
 ## page
 
 :::warning
-客製（mp）、固定應用（cp、sitemap...等）頁面。
-新增的樣式，建議寫入 <span class="focus2">\_template</span>
+客制（mp）、固定應用（cp、sitemap...等）頁面。
+<span class="focus2">\_template</span>為通用樣式，每個頁面如果要通用請寫在這邊
 :::
 
-![頁面](https://i.imgur.com/b7xN6WA.png)
+<iframe style="border:none" width="100%" height="450" src="https://whimsical.com/embed/TnP7TaSjcRULShoTNjwQRs@LUSUr8hW5mgnK3teyH"></iframe>
