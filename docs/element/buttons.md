@@ -10,21 +10,29 @@
 - 按鈕可添加大小
 
 <!-- panels:start -->
-<h2>主要、次要、一般按鈕</h2>
-<h3>button：default、disabled、readonly</h3>
+
+## 主要、次要、一般按鈕
+
+### button 樣式按鈕
+
 <button type="button" class="btn btnPrimary">主要按鈕</button>
-        <button type="button" class="btn btnSecondary">次要按鈕</button>
-        <button type="button" class="btn btnNormal">一般按鈕</button>
-        <br />
-        <!--  disabled  -->
-        <button type="button" class="btn btnPrimary" disabled>主要按鈕</button>
-        <button type="button" class="btn btnSecondary" disabled>次要按鈕</button>
-        <button type="button" class="btn btnNormal" disabled>一般按鈕</button>
-        <br />
-                    <!--  readonly  -->
-        <button type="button" class="btn btnPrimary" readonly>主要按鈕</button>
-        <button type="button" class="btn btnSecondary" readonly>次要按鈕</button>
-        <button type="button" class="btn btnNormal" readonly>一般按鈕</button>
+<button type="button" class="btn btnSecondary">次要按鈕</button>
+<button type="button" class="btn btnNormal">一般按鈕</button>
+<br />
+
+<!--  disabled  -->
+
+<button type="button" class="btn btnPrimary" disabled>主要按鈕</button>
+<button type="button" class="btn btnSecondary" disabled>次要按鈕</button>
+<button type="button" class="btn btnNormal" disabled>一般按鈕</button>
+<br />
+
+<!--  readonly  -->
+
+<button type="button" class="btn btnPrimary" readonly>主要按鈕</button>
+<button type="button" class="btn btnSecondary" readonly>次要按鈕</button>
+<button type="button" class="btn btnNormal" readonly>一般按鈕</button>
+
 <!-- panels:end -->
 
 <!-- tabs:start -->
@@ -57,12 +65,28 @@
 <!-- panels:start -->
 
 <!-- input：default、disabled、readonly icon -->
-<h3 >input：default、disabled、readonly</h3>
-      <input type="button" class="btn btnPrimary" value="主要按鈕" />
-      <input type="button" class="btn btnSecondary" value="次要按鈕" />
-      <input type="button" class="btn btnNormal" value="一般按鈕" />
-      <br />
+
+### input 樣式按鈕
+
+<p>
+<input type="button" class="btn btnPrimary" value="主要按鈕" />
+<input type="button" class="btn btnSecondary" value="次要按鈕" />
+<input type="button" class="btn btnNormal" value="一般按鈕" />
+<br />
+</p>
+<p>
+ <!--  disabled  -->
+    <input type="button" class="btn btnPrimary" value="主要按鈕" disabled />
+    <input type="button" class="btn btnSecondary" value="次要按鈕" disabled />
+    <input type="button" class="btn btnNormal" value="一般按鈕" disabled />
+    <br />
+    </p>
+    <!--  readonly  -->
+    <input type="button" class="btn btnPrimary" value="主要按鈕" readonly />
+    <input type="button" class="btn btnSecondary" value="次要按鈕" readonly />
+    <input type="button" class="btn btnNormal" value="一般按鈕" readonly />
 <!-- panels:end -->
+
 <!-- tabs:start -->
 
 #### **HTML**
@@ -92,21 +116,27 @@
 
 <!-- panels:start -->
 
-<h3>a連結按鈕：default、disabled、readonly</h3>
-    <a role="button" href="#" class="btn btnPrimary">主要按鈕</a>
-    <a role="button" href="#" class="btn btnSecondary">次要按鈕</a>
-    <a role="button" href="#" class="btn btnNormal">一般按鈕</a>
-    <br />
-    <!--  disabled  -->
-    <a role="button" href="#" class="btn btnPrimary disabled">主要按鈕</a>
-    <a role="button" href="#" class="btn btnSecondary disabled">次要按鈕</a>
-    <a role="button" href="#" class="btn btnNormal disabled">一般按鈕</a>
-    <br />
-    <!--  readonly  -->
-    <a role="button" href="#" class="btn btnPrimary readonly">主要按鈕</a>
-    <a role="button" href="#" class="btn btnSecondary readonly">次要按鈕</a>
-    <a role="button" href="#" class="btn btnNormal readonly">一般按鈕</a>
-      <br />
+### a 連結樣式按鈕
+
+<a role="button" href="#" class="btn btnPrimary">主要按鈕</a>
+<a role="button" href="#" class="btn btnSecondary">次要按鈕</a>
+<a role="button" href="#" class="btn btnNormal">一般按鈕</a>
+<br />
+
+<!--  disabled  -->
+
+<a role="button" href="#" class="btn btnPrimary disabled">主要按鈕</a>
+<a role="button" href="#" class="btn btnSecondary disabled">次要按鈕</a>
+<a role="button" href="#" class="btn btnNormal disabled">一般按鈕</a>
+<br />
+
+<!--  readonly  -->
+
+<a role="button" href="#" class="btn btnPrimary readonly">主要按鈕</a>
+<a role="button" href="#" class="btn btnSecondary readonly">次要按鈕</a>
+<a role="button" href="#" class="btn btnNormal readonly">一般按鈕</a>
+<br />
+
 <!-- panels:end -->
 <!-- tabs:start -->
 
@@ -134,16 +164,20 @@
 ```
 
 <!-- tabs:end -->
+
+## 按鈕顏色
+
 <!-- panels:start -->
 
 <!-- input：default、disabled、readonly icon -->
-<h3>按鈕顏色</h3>
-    <button type="button" class="btn btnBlue">按鈕</button>
-    <button type="button" class="btn btnGreen">按鈕</button>
-    <button type="button" class="btn btnOrange">按鈕</button>
-    <button type="button" class="btn btnYellow">按鈕</button>
-    <button type="button" class="btn btnPurple">按鈕</button>
-    <button type="button" class="btn btnRed">按鈕</button>
+
+<button type="button" class="btn btnBlue">按鈕</button>
+<button type="button" class="btn btnGreen">按鈕</button>
+<button type="button" class="btn btnOrange">按鈕</button>
+<button type="button" class="btn btnYellow">按鈕</button>
+<button type="button" class="btn btnPurple">按鈕</button>
+<button type="button" class="btn btnRed">按鈕</button>
+
 <!-- panels:end -->
 <!-- tabs:start -->
 
@@ -167,7 +201,9 @@
 <!-- panels:start -->
 
 <!-- input：default、disabled、readonly icon -->
-<h3>按鈕大小</h3>
+
+## 按鈕大小
+
 <div class="btnGrp" style="text-align: start;">
      <!-- <h3>按鈕大小</h3> -->
     <button class="btn btnXl">特大按鈕</button>
@@ -197,7 +233,9 @@
 <!-- panels:start -->
 
 <!-- 深色 icon -->
-<h2>button + 深色 icon</h2>
+
+## button + 深色 icon
+
 <section>
   <form action="">
     <!-- button + 深色 icon -->
@@ -298,7 +336,9 @@
 <!-- panels:start -->
 
 <!-- 白色 icon -->
-<h2>button + 白色 icon</h2>
+
+## button + 白色 icon
+
 <section>
   <form action="">
     <div class="btnGrp" style="text-align: left;">
