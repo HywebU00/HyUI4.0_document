@@ -8,7 +8,7 @@
 - <font >variable.scs 資全站樣式定義</font>
 - <font >sass 資料夾</font>
 - <font >page 資料夾</font>
-- <font >hyui.scss 資料夾</font>
+- <font >style.scss 整合所有 scss</font>
 
 <!-- 1. **<span class="focus">[\_variable.scss](#item-1):arrow_down:</span>**：全站樣式定義
 2. **<span class="focus">[sass](#item-2):arrow_down:</span>**：模組
@@ -31,14 +31,20 @@
    │   ├── module/
    │   └── ...
    │
-   ├── _help.scss                      // 變數
+   ├── _help.scss                      // ＠extend、@include使用參考
    ├── _variable.scss                  // 變數
    └── style.scss                      // 統一匯出之主要SCSS
 
 
 ```
 
-## variable.scss
+## \_help.scss
+
+可查詢常用的＠extend、@include 使用方式<
+
+---
+
+## \_variable.scss
 
 :::warning
 全站的基本定義，顏色、字型、格線系統
@@ -48,6 +54,14 @@
   See the Pen <a href='https://codepen.io/Lize/pen/ExWaZXp'>_variable</a> by Lize wu
   (<a href='https://codepen.io/Lize'>@Lize</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+---
+
+## style.scss
+
+導入簡易的@layer 功能，讓實際撰寫內容不被原本 UI 架構影響。<br/>
+只要在@layer webScss{} 之外的 scss 檔案權重都會比較高。<br/>
+寫 CSS 可以減少使用!important 的用法，以及可以自行整理 css 而不被架構影響。
 
 ---
 
@@ -84,6 +98,8 @@
 - header、menu、固定側邊欄...等，目前共 18 個模組。
 
 <iframe style="border:none" width="100%" height="450" src="https://whimsical.com/embed/TnP7TaSjcRULShoTNjwQRs@LUSUr8hW69X4QfGQB2"></iframe>
+
+---
 
 ## page
 

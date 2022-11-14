@@ -12,7 +12,7 @@
 - 排版系統
 
   - [Mediaquery](grid-system/mediaquery.md)
-  - [Bootstrap grid system](grid-system/bootstrap.md)
+  <!-- - [Bootstrap grid system](grid-system/bootstrap.md) -->
   - [flex grid system](grid-system/flex-grid.md)
 
 - 範例頁面

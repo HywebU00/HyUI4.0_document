@@ -1,8 +1,8 @@
-# mixin / extend 引用列表
+# mixin / extend / function 引用列表
 
 ## extend
 
-?> 原始設定：../sass/common/mixins/`extend.scss`
+?> 原始設定：../sass/common/mixins/`_extend.scss`
 
 ```sass
 // 繼承
@@ -19,35 +19,45 @@
 
 ### 瀏覽器斷點
 
-?> 原始設定：../sass/common/mixins/`mediaquery.scss`
+?> 原始設定：../sass/common/mixins/`_mediaquery.scss`
 
 ```sass
-@include screen('desktop'){}            // min-width: 1400px
-@include screen('notebook'){}           // max-width: 1399px
-@include screen('tablet'){}             // max-width: 991px
-@include screen('mobile'){}             // max-width: 767px
-@include screen('xsMobile'){}          // max-width: 575px
+//max-width
+@include screen('notebook'){}         // max-width: 1399px
+@include screen('tablet'){}           // max-width: 991px
+@include screen('mobile'){}           // max-width: 767px
+@include screen('xsMobile'){}         // max-width: 575px
+
+//min-width
+@include screen('desktop'){}          // min-width: 1400px
+@include screen('tabletMin'){}        // min-width: 991px
+@include screen('mobileMin'){}        // min-width: 767px
+@include screen('xsMobileMin'){}      // min-width: 575px
+
+//自訂
+@include screenWidth('1200'){}        // max-width: 1200px
+@include screenWidthMin('1200'){}        // min-width: 1200px
 ```
 
 ### 格線系統
 
 #### bootstrap 格線系統
 
-?> 原始設定：：../sass/common/mixins/`bootstrapGrid.scss`
+?> 原始設定：：../sass/common/mixins/`_bootstrapGrid.scss`
 
 ```sass
 .col{
-    @include make-xs-column(12);              // xs_mobile
-    @include make-sm-column(6);               // mobile
-    @include make-md-column(3);               // tablet
-    @include make-lg-column(3);               // desktop
+    @include makeXsColumn(12);              // xs_mobile
+    @include makeXmColumn(6);               // mobile
+    @include makeMdColumn(3);               // tablet
+    @include makeLgColumn(3);               // desktop
     @include gutter();                        // 容器內距 padding
 }
 ```
 
 #### flex 格線系統
 
-?> 原始設定：../sass/common/mixins/`flex-grid.scss`
+?> 原始設定：../sass/common/`_gridflex.scss`
 
 使用 flex 分割欄位，有兩種分割方式：<br>
 
@@ -58,7 +68,7 @@
 
 ```sass
 // step 0、設定 flex 的 margin gutter
-$m-gutter: 4px;
+$mGutter: 4px;
 
 // 均分 equal
 .papa{
@@ -66,15 +76,16 @@ $m-gutter: 4px;
     // 1. display: flex;
     // 2. flex-flow: row wrap;
     // 3. justify-content: space-between;
-    @extend %flex_set;
+    @extend %flexSet;
+    @include flexSet;
 
     // step 2、子層設定：欄數、margin gutter
     // margin、padding，務必加上『單位』才能計算！
     .col{
-        @include flex-xs-equal(1, 0px);
-        @include flex-sm-equal(2, $m-gutter);
-        @include flex-md-equal(2, $m-gutter);
-        @include flex-lg-equal(2, $m-gutter);
+        @include flexXsEqual(1, 0px);
+        @include flexSmEqual(2, $mGutter);
+        @include flexMdEqual(2, $mGutter);
+        @include flexLgEqual(2, $mGutter);
         @include gutter();
     }
 }
@@ -83,17 +94,17 @@ $m-gutter: 4px;
 .flex_8_4{
     @extend %flex_set;
     .col{
-        @include flex-xs(12, 0px);
-        @include flex-sm(6, $m-gutter);
-        @include flex-md(8, $m-gutter);
-        @include flex-lg(8, $m-gutter);
+        @include flexXs(12, 0px);
+        @include flexXm(6, $mGutter);
+        @include flexMd(8, $mGutter);
+        @include flexLg(8, $mGutter);
         @include gutter();
 
         &:nth-child(2){
-            @include flex-xs(12, 0px);
-            @include flex-sm(6, $m-gutter);
-            @include flex-md(4, $m-gutter);
-            @include flex-lg(4, $m-gutter);
+          @include flexXs(12, 0px);
+          @include flexXm(6, $mGutter);
+          @include flexMd(4, $mGutter);
+          @include flexLg(4, $mGutter);
         }
     }
 }
@@ -102,7 +113,7 @@ $m-gutter: 4px;
 
 ### 漸層
 
-?> 原始設定：：../sass/common/mixins/`gradient.scss`
+?> 原始設定：：../sass/common/mixins/`_gradient.scss`
 
 ```sass
 @include gradient(#07c, #06f, vertical);      // 水平
@@ -113,33 +124,40 @@ $m-gutter: 4px;
 
 ### 文字刪節號
 
-?> 原始設定：：../sass/common/mixins/`text-overflow.scss`
+?> 原始設定：：../sass/common/mixins/`_text.scss`
 
 ```sass
-@include text-overflow;                        // 單行
-@include text-line(2,23px);                    // 多行（行數、行高）
+@include textOverflow;                        // 單行
+@include textLine(2,23px);                    // 多行（行數、行高）
 ```
 
 ### 清除 li 格式
 
-?> 原始設定：：../sass/common/mixins/`li-reset.scss`
+?> 原始設定：：../sass/common/mixins/`_lireset.scss`
 
 ```sass
-@include li-reset;                            // 清除li預設
-@include img-responsive;                      // 圖片
+@include liReset;                            // 清除li預設
 ```
 
 ### 圖片比例
 
-?> 原始設定：../sass/common/mixins/`image.scss`
+?> 原始設定：../sass/common/mixins/`_image.scss`
 
 ```sass
-@include aspect-ratio(4,3);                   // 圖片比例，4:3
+@include aspectRatio(4,3);                   // 圖片比例，4:3
+```
+
+### 文字大小轉換 px > rem
+
+?> 原始設定：../sass/common/mixins/`_text.scss`
+
+```sass
+font-size:rem(16);                   // 文字大小，16px = 1rem
 ```
 
 <h4>附加說明</h4>
 
-> 上述檔案，全部引用至../sass/common/`mixin.scss`
+> 上述檔案，全部引用至../sass/`common` 資料夾內
 
 <style>
     .block-style{

@@ -12,13 +12,13 @@
 
 ```sass
 //mediaquery breakpoint
-$screen-lg:        1400px !default;        //電腦
-$screen-md:        992px  !default;        //平板
-$screen-sm:        768px  !default;        //手機
-$screen-xs:        576px  !default;        //極小尺寸
+$screenLg:        1400px !default;        //電腦
+$screenMd:        992px  !default;        //平板
+$screenSm:        768px  !default;        //手機
+$screenXs:        576px  !default;        //極小尺寸
 ```
 
-### SCSS 設定
+### SCSS 設定 max
 
 針對不同的瀏覽器寬度斷點設定，HyUI 提供快速套用變數的 `mixin` ，供開發者直覺地且輕易地在樣式表分別寫出不同的效果
 
@@ -28,27 +28,23 @@ $screen-xs:        576px  !default;        //極小尺寸
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  @include screen('desktop') {
-      width: 90%; }
   @include screen('notebook') {
       width: 85%; }
   @include screen('tablet') {
       width: 55%; }
   @include screen('mobile') {
       width: 85%; }
-  @include screen('xs_mobile') {
+  @include screen('xsMobile') {
       width: 85%; }
 }
 ```
 
-### CSS 輸出
+CSS 輸出
 
 ```sass
 .wrapper {
     margin: 0 auto;
     width: 100%; }
-@media screen and (min-width: 1400px) {
-    .wrapper {width: 90%; } }
 @media screen and (max-width: 1399px) {
     .wrapper {width: 85%; } }
 @media screen and (max-width: 991px) {
@@ -56,6 +52,39 @@ $screen-xs:        576px  !default;        //極小尺寸
 @media screen and (max-width: 767px) {
     .wrapper {width: 85%; } }
 @media screen and (max-width: 575px) {
+    .wrapper {width: 85%; } }
+```
+
+### SCSS 設定 min
+
+```sass
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  @include screen('desktop') {
+      width: 90%; }
+  @include screen('tabletMin') {
+      width: 55%; }
+  @include screen('mobileMin') {
+      width: 85%; }
+  @include screen('xsMobileMin') {
+      width: 85%; }
+}
+```
+
+CSS 輸出
+
+```sass
+.wrapper {
+    margin: 0 auto;
+    width: 100%; }
+@media screen and (min-width: 1400px) {
+    .wrapper {width: 90%; } }
+@media screen and (min-width: 991px) {
+    .wrapper {width: 55%; } }
+@media screen and (min-width: 767px) {
+    .wrapper {width: 85%; } }
+@media screen and (min-width: 575px) {
     .wrapper {width: 85%; } }
 ```
 

@@ -41,111 +41,111 @@ bootstrap 是一個基本的響應式網頁格線，他有兩個基本概念，�
 // 兩欄 6-6
 .col-6-6 {
     .col {
-        @include make-xs-column(12);
-        @include make-sm-column(6);
-        @include make-md-column(6);
-        @include make-lg-column(6);
+        @include makeXsColumn(12);
+        @include makeSmColumn(6);
+        @include makeMdColumn(6);
+        @include makeLgColumn(6);
     }
 }
 // 三欄 4-4-4
 .col-4-4-4 {
     .col {
-        @include make-xs-column(12);
-        @include make-sm-column(4);
-        @include make-md-column(4);
-        @include make-lg-column(4);
+        @include makeXsColumn(12);
+        @include makeSmColumn(4);
+        @include makeMdColumn(4);
+        @include makeLgColumn(4);
     }
 }
 // 四欄 3-3-3
 .col-3-3-3-3 {
     .col {
-        @include make-xs-column(12);
-        @include make-sm-column(6);
-        @include make-md-column(3);
-        @include make-lg-column(3);
+        @include makeXsColumn(12);
+        @include makeSmColumn(6);
+        @include makeMdColumn(3);
+        @include makeLgColumn(3);
     }
 }
 // 雙欄 8-4
 .col-8-4 {
     .col {
-        @include make-xs-column(12);
-        @include make-sm-column(8);
-        @include make-md-column(8);
-        @include make-lg-column(8);
+        @include makeXsColumn(12);
+        @include makeSmColumn(8);
+        @include makeMdColumn(8);
+        @include makeLgColumn(8);
     }
     .col:nth-of-type(2n) {
-        @include make-xs-column(12);
-        @include make-sm-column(4);
-        @include make-md-column(4);
-        @include make-lg-column(4);
+        @include makeXsColumn(12);
+        @include makeSmColumn(4);
+        @include makeMdColumn(4);
+        @include makeLgColumn(4);
     }
 }
 // 雙欄 4-8
 .col-4-8 {
     .col {
-        @include make-xs-column(12);
-        @include make-sm-column(4);
-        @include make-md-column(4);
-        @include make-lg-column(4);
+        @include makeXsColumn(12);
+        @include makeSmColumn(4);
+        @include makeMdColumn(4);
+        @include makeLgColumn(4);
     }
     .col:nth-of-type(2n) {
-        @include make-xs-column(12);
-        @include make-sm-column(8);
-        @include make-md-column(8);
-        @include make-lg-column(8);
+        @include makeXsColumn(12);
+        @include makeSmColumn(8);
+        @include makeMdColumn(8);
+        @include makeLgColumn(8);
     }
 }
 // 六欄 2-2-2-2-2-2
 .col-2-2-2-2-2-2 {
     .col {
-        @include make-xs-column(6);
-        @include make-sm-column(2);
-        @include make-md-column(2);
-        @include make-lg-column(2);
+        @include makeXsColumn(6);
+        @include makeSmColumn(2);
+        @include makeMdColumn(2);
+        @include makeLgColumn(2);
     }
 }
 // 進階設定：自行命名
 .cssname {
     .news {
-        @include make-xs-column(12);
-        @include make-sm-column(8);
-        @include make-md-column(8);
-        @include make-lg-column(8);
+        @include makeXsColumn(12);
+        @include makeSmColumn(8);
+        @include makeMdColumn(8);
+        @include makeLgColumn(8);
     }
     .video {
-        @include make-xs-column(12);
-        @include make-sm-column(4);
-        @include make-md-column(4);
-        @include make-lg-column(4);
+        @include makeXsColumn(12);
+        @include makeSmColumn(4);
+        @include makeMdColumn(4);
+        @include makeLgColumn(4);
     }
 }
 // 進階設定：非均等欄位
 .col-3-6-3 {
     .col {
-        @include make-xs-column(12);
-        @include make-sm-column(3);
-        @include make-md-column(3);
-        @include make-lg-column(3);
+        @include makeXsColumn(12);
+        @include makeSmColumn(3);
+        @include makeMdColumn(3);
+        @include makeLgColumn(3);
         &:nth-child(2) {
-            @include make-xs-column(12);
-            @include make-sm-column(6);
-            @include make-md-column(6);
-            @include make-lg-column(6);
+            @include makeXsColumn(12);
+            @include makeSmColumn(6);
+            @include makeMdColumn(6);
+            @include makeLgColumn(6);
         }
     }
 }
 // 進階設定：五欄
 .col-5 {
     .col {
-        @include make-xs-column(12);
-        @include make-sm-column(2);
-        @include make-md-column(2);
-        @include make-lg-column(2);
+        @include makeXsColumn(12);
+        @include makeSmColumn(2);
+        @include makeMdColumn(2);
+        @include makeLgColumn(2);
         &:first-child {
-            @include make-xs-column-offset(0);
-            @include make-sm-column-offset(1);
-            @include make-md-column-offset(1);
-            @include make-lg-column-offset(1);
+            @include makeXsColumnOffset(0);
+            @include makeSmColumnOffset(1);
+            @include makeMdColumnOffset(1);
+            @include makeLgColumnOffset(1);
         }
     }
 }
