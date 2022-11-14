@@ -88,6 +88,9 @@
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>
+  footer{
+    margin:4em 0;
+  }
     .markdown-section a{
         color:#fff;
         font-weight:400;

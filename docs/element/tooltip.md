@@ -49,6 +49,9 @@
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>
+.tooltip {
+    margin:4em 0;
+}
     .tooltip span {
     display: inline-block;
     background: #DEDEDE;

@@ -51,10 +51,11 @@
     <li><a href=javascript:;>蘋果</a></li>
   </ul>
 </div>
-</section>
 <section class="cp">
   <!-- tag 文章標籤 -->
   <p><a href="#">連結文字樣式 </a>隨著蘋果開發者大會（WWDC）落幕，果粉目光轉擺在接下來蘋果（Apple）的大活動──iPhone 發表會。雖然去年 iPhone 12 系列延到 10 月才推出，不過許多人都認為，今年新 iPhone 仍會維持傳統，9 月時亮相。據 Wedbush 分析師 Dan Ives 近期給客戶的報告顯示，iPhone 13 可能於 9 月第三週亮相，按照蘋果過去於週二舉辦發表會的規則推算，iPhone 13 應於美國時間 9 月 14 日亮相，且會在隔一週的週五（9 月 24 日）正式上市。</p>
+</section>
+
 </section>
 
 <!-- tabs:start -->
@@ -89,8 +90,9 @@
 
 ## 列表頁範例
 
+<div class="demo">
 <h3 class="title">最新消息</h3>
-<section class="lp demo">
+<section class="lp">
   <div class="list">
     <ul>
       <li>
@@ -141,6 +143,7 @@
     </ul>
   </div>
 </section>
+</div>
 
 <!-- tabs:start -->
 
@@ -186,6 +189,9 @@
 </iframe> -->
 
 <style>
+.demo{
+  margin:4em 0;
+}
 .demo .tag {
   margin-bottom: 1em;
   position: relative;

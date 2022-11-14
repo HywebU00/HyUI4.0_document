@@ -21,9 +21,9 @@
                 <span>字型大小：</span>
                 <!-- 英文用<span>font-size：</span> -->
                 <ul>
-                  <li><a role="button" href="#" class="small">小</a></li>
-                  <li><a role="button" href="#" class="medium">中</a></li>
-                  <li><a role="button" href="#" class="large">大</a></li>
+                  <li><a role="button" href="javascript:;" class="small">小</a></li>
+                  <li><a role="button" href="javascript:;" class="medium">中</a></li>
+                  <li><a role="button" href="javascript:;" class="large">大</a></li>
                 </ul>
               </div>
               <!-- function功能區塊 -->
@@ -131,6 +131,9 @@
 <!-- tabs:end -->
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>
+  .functionPanel{
+    margin:4em 0;
+  }
   .functionPanel .share ul{
     padding-left: 0.5rem;
   }
@@ -141,7 +144,7 @@
     color: #000 !important;
     font-weight: 400 !important;
   }
-  .fontSize a:hover{
+  .fontSize a:hover ,.fontSize a:focus{
     color:#fff !important;
   }
 </style>

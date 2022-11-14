@@ -154,6 +154,9 @@ fontSize();
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>
+  .fontSize{
+    margin:4em 0;
+  }
   .fontSize a{
     color: #000 !important;
     font-weight: 400 !important;

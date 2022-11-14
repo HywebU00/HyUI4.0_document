@@ -663,6 +663,9 @@ scrollTables('table'); // table捲動功能
     padding-top: 2em;
 }
 }
+table{
+  margin:4em 0 !important;
+}
 table caption{
   text-align: center;
 }

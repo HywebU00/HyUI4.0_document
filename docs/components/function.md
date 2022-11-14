@@ -1,8 +1,6 @@
 # Function / 回上一頁、友善列印、轉寄友人
 
-###### tags: `HyUI`
-
-檔案名稱：sass/modual/\_function_panel.scss
+?>檔案名稱：sass/ module /`function_panel.scss`
 
 ## HTML 範本 1
 

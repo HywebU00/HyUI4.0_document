@@ -228,6 +228,9 @@ fatFooter(); // fatFooter是否要展開
     .markdown-section ul{
         padding: 0;
     }
+    .fatFooter{
+      margin:4em 0;
+    }
     .fatFooter ul li ul li a{
         font-weight:400;
         color:#000;
