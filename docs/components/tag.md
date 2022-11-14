@@ -1,6 +1,6 @@
 # Tag / 標籤
 
-?>檔案名稱：sass/element/`tag.scss`
+?>檔案名稱：sass/ element /`tag.scss`
 
 此區塊可用於 `列表頁` 、 `內容頁`，屬於文章或資料類型的多重關鍵字標籤
 
@@ -39,7 +39,7 @@
   (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> -->
 
-## 一般內容頁範例：
+## 內容頁範例
 
 <section class="demo">
     <h3 class="title">
@@ -87,7 +87,7 @@
   on <a href="https://codepen.io">CodePen</a>.
 </iframe> -->
 
-## 列表頁範例：
+## 列表頁範例
 
 <h3 class="title">最新消息</h3>
 <section class="lp demo">

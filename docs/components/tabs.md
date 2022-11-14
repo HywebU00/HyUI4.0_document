@@ -1,160 +1,291 @@
 # Tabs / 頁籤
 
-###### tags: `HyUI`
-
-檔案名稱：sass/modual/\_tabs.scss
+?>檔案名稱：sass/ module / `tabs.scss`
 
 提供一組可響應式及通過無障礙 tab 遊走之 tab 頁籤模組。
 
-> - 頁籤沒有數量限制，但請注意畫面上的均衡比例。建議勿超過 5 組為宜。
-> - 可客製不同樣式，於 <font color="#EE428B">tabs</font> 後方新增不同的 <font color="#EE428B">classname</font> 即可。
-> - 可自訂響應式斷點(breakpoit)，目前是以 <font color="#EE428B">wwSmall</font> 為預設斷點，如有 特殊需求，可另外替換變數或數值。
+- 頁籤沒有數量限制，但請注意畫面上的均衡比例。建議勿超過 5 組為宜。
+- 可客製不同樣式，於`tabs`後方新增不同的 `classname`即可。>
+- 可自訂響應式斷點(Breakpoints)，如有 特殊需求，可另外替換變數或數值。
 
-## HTML 範本 1
-
-<iframe height="500" style="width: 100%;" scrolling="no" title="Tabs / 頁籤 1" src="https://codepen.io/u00hyui/embed/PopZyGm?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/PopZyGm'>Tabs / 頁籤 1</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-### <font color="#EE428B">tabs</font> 後方新增不同的 <font color="#EE428B">classname</font> ，可客製不同樣式
-
-<iframe height="500" style="width: 100%;" scrolling="no" title="Tabs / 頁籤2" src="https://codepen.io/u00hyui/embed/VwpeVgB?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/VwpeVgB'>Tabs / 頁籤2</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-```htmlmixed=
 <div class="tabSet">
-    <section class="tabs example-2">
-        <button type="button" class="tabItem active">第一個頁籤</button>
-        <!--選到的頁籤項目-->
-        <div class="tabContent">
-            <ul>
-                <li><a href="#">1第一則消息消息消息消息消息消息</a><time>107-01-01</time></li>
-                <li><a href="#">第二則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第三則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第四則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第五則消息</a><time>107-01-01</time></li>
-            </ul>
-            <div class="more"><a href="#">更多</a></div>
-        </div>
-        <button type="button" class="tabItem">第二個頁籤</button>
-        <div class="tabContent">
-            <ul>
-                <li><a href="#">2第一則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第二則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第三則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第四則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第五則消息</a><time>107-01-01</time></li>
-            </ul>
-            <div class="more"><a href="#">更多</a></div>
-        </div>
-        <button type="button" class="tabItem">第三個頁籤</button>
-        <div class="tabContent">
-            <ul>
-                <li><a href="#">3第一則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第二則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第三則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第四則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第五則消息</a><time>107-01-01</time></li>
-            </ul>
-            <div class="more"><a href="#">更多</a></div>
-        </div>
-        <button type="button" class="tabItem">第四個頁籤</button>
-        <div class="tabContent">
-            <ul>
-                <li><a href="#">4第一則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第二則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第三則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第四則消息</a><time>107-01-01</time></li>
-                <li><a href="#">第五則消息</a><time>107-01-01</time></li>
-            </ul>
-            <div class="more"><a href="#">更多</a></div>
-        </div>
-    </section>
+                <div class="tabItems">
+                  <button type="button" class="item">頁籤A</button>
+                  <button type="button" class="item">頁籤B</button>
+                  <button type="button" class="item">頁籤C</button>
+                  <button type="button" class="item">頁籤D</button>
+                </div>
+                <div class="tabContentGroup">
+                  <div class="tabContent" title="頁籤A內容">
+                    <div>頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容</div>
+                    <p><a href="#">頁籤項目一的內容1-1</a></p>
+                    <p><a href="#">頁籤項目一的內容1-2</a></p>
+                    <p><a href="#">頁籤項目一的內容1-3</a></p>
+                  </div>
+                  <div class="tabContent" title="頁籤B內容">
+                    <div>頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容</div>
+                    <p><a href="#">頁籤項目二的內容2-1</a></p>
+                    <p><a href="#">頁籤項目二的內容2-2</a></p>
+                    <p><a href="#">頁籤項目二的內容2-3</a></p>
+                    <div><a href="#">more</a></div>
+                  </div>
+                  <div class="tabContent" title="頁籤C內容">
+                    <div>頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容</div>
+                    <p>＊＊＊這個頁籤內容沒有 a 或其他 focusable 元件</p>
+                  </div>
+                  <div class="tabContent" title="頁籤D內容">
+                    <div>頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容</div>
+                    <p><a href="#">頁籤項目四的內容4-1</a></p>
+                    <p><a href="#">頁籤項目四的內容4-2</a></p>
+                  </div>
+                </div>
+              </div>
+
+<!-- tabs:start -->
+
+#### **HTML**
+
+```html
+<div class="tabSet">
+  <div class="tabItems">
+    <button type="button" class="item">頁籤A</button>
+    <button type="button" class="item">頁籤B</button>
+    <button type="button" class="item">頁籤C</button>
+    <button type="button" class="item">頁籤D</button>
+  </div>
+  <div class="tabContentGroup">
+    <div class="tabContent" title="頁籤A內容">
+      <div>頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容</div>
+      <p><a href="#">頁籤項目一的內容1-1</a></p>
+      <p><a href="#">頁籤項目一的內容1-2</a></p>
+      <p><a href="#">頁籤項目一的內容1-3</a></p>
+    </div>
+    <div class="tabContent" title="頁籤B內容">
+      <div>頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容</div>
+      <p><a href="#">頁籤項目二的內容2-1</a></p>
+      <p><a href="#">頁籤項目二的內容2-2</a></p>
+      <p><a href="#">頁籤項目二的內容2-3</a></p>
+      <div><a href="#">more</a></div>
+    </div>
+    <div class="tabContent" title="頁籤C內容">
+      <div>頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容</div>
+      <p>＊＊＊這個頁籤內容沒有 a 或其他 focusable 元件</p>
+    </div>
+    <div class="tabContent" title="頁籤D內容">
+      <div>頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容頁籤內容</div>
+      <p><a href="#">頁籤項目四的內容4-1</a></p>
+      <p><a href="#">頁籤項目四的內容4-2</a></p>
+    </div>
+  </div>
 </div>
 ```
 
-## JQuery 設定:round_pushpin:
+#### **JavaScript**
 
 ```javascript
-var _window = $(window),
-  ww = _window.outerWidth(),
-  wh = _window.height(),
-  _body = $('body'),
-  wwNormal = 1400,
-  wwMedium = 992,
-  wwSmall = 768,
-  wwxs = 576;
-var tab_headerHeight = Math.floor($('.header').outerHeight(true));
-
-var resizeTimer1;
-_window.resize(function () {
-  clearTimeout(resizeTimer1);
-  resizeTimer1 = setTimeout(function () {
-    ww = _window.outerWidth();
-    tabSet();
-  }, 50);
-});
-
-function tabSet() {
-  $('.tabs').each(function () {
-    var _tab = $(this),
-      _tabItem = _tab.find('.tabItem'),
-      // _tabItemA = _tabItem.children('a'), //改button後，這行沒有
-      _tabContent = _tab.find('.tabContent'),
-      tabwidth = _tab.width(),
-      tabItemHeight = _tabItem.outerHeight(),
-      tabContentHeight = _tab.find('.active').next().innerHeight(),
-      tiGap = 0,
-      tabItemLength = _tabItem.length,
-      tabItemWidth;
-    _tab.find('.active').next('.tabContent').show();
-    if (ww >= wwSmall) {
-      _tabContent.css('top', tabItemHeight);
-      _tab.height(tabContentHeight + tabItemHeight);
-      tabItemWidth = (tabwidth - (tabItemLength - 1) * tiGap) / tabItemLength;
-      _tabItem.width(tabItemWidth).css('margin-left', tiGap);
-      _tabItem.first().css('margin-left', 0);
-      _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).width(tabItemWidth);
-    } else {
-      _tab.css('height', 'auto');
-      _tabItem.width(tabwidth);
-      _tabItem.css('margin-left', 0).last().css('position', 'relative');
-    }
-    _tabItem.focus(tabs); //改button後，前面改_tabItem
-    _tabItem.click(tabs); //改button後，前面改_tabItem
-    function tabs(e) {
-      var _tabItemNow = $(this), //改button後，原來$(this).parent(),改$(this)
-        tvp = _tab.offset().top,
-        tabIndex = _tabItemNow.index() / 2,
-        scollDistance = tvp + tabItemHeight * tabIndex - tab_headerHeight;
-      _tabItem.removeClass('active');
-      _tabItemNow.addClass('active');
-      if (ww <= wwSmall) {
-        _tabItem.not('.active').next().slideUp();
-        _tabItemNow.next().slideDown();
-        $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
-      } else {
-        _tabItem.not('.active').next().hide();
-        _tabItemNow.next().show();
-        tabContentHeight = _tabItemNow.next().innerHeight();
-        _tab.height(tabContentHeight + tabItemHeight);
+function tabFunction(elem) {
+  const activeClass = 'active'; // --- 啟動的 class
+  const tabSet = document.querySelectorAll(elem); // --- tab名稱
+  tabSet.forEach((a) => {
+    const tabBtn = a.querySelectorAll('.tabItems button'); // --- 頁籤按鈕
+    const tabBtnLength = tabBtn.length; // --- 頁籤按鈕數量
+    const tabContent = a.querySelectorAll('.tabContentGroup .tabContent'); // --- 頁籤內容
+    tabBtn[0].classList.add('active');
+    tabContent[0].classList.add('active');
+    tabBtn.forEach((v, i) => {
+      const thisBtn = tabBtn[i]; // --- 綁定這一個頁籤按鈕
+      const thisContent = tabContent[i]; // --- 綁定這一個頁籤內容
+      const thisPrevItem = tabContent[i - 1]; // --- 綁定前一個頁籤按鈕
+      const itemAllA = thisContent.querySelectorAll('[href], input'); // --- 這一個頁籤內容所有a和input項目
+      let prevItemAllA;
+      if (thisPrevItem !== undefined) {
+        prevItemAllA = thisPrevItem.querySelectorAll('[href], input'); // --- 前一個頁籤內容所有a和input項目
       }
-      e.preventDefault();
-    }
+      const isFirstTab = i === 0; // --- 如果是第一個頁籤
+      const isLastTab = i === tabBtnLength - 1; // --- 如果是最後一個頁籤
+      const itemFirstA = itemAllA[0]; // --- 頁籤內容第一個a或是input
+      const itemLastA = itemAllA[itemAllA.length - 1]; // --- 頁籤內容最後一個a或是input
+      let prevItemLastA;
+      if (thisPrevItem !== undefined) {
+        prevItemLastA = prevItemAllA[prevItemAllA.length - 1]; // --- 前一個頁籤的最後一個a或是input
+      }
+      // --- thisBtn頁籤觸發focus內容裡的第一個a
+      thisBtn.addEventListener('keydown', (e) => {
+        // --- 頁籤第幾個按鈕觸發時
+        if (e.which === 9 && !e.shiftKey) {
+          // --- e.which偵測按下哪個案件，9代表tab，shiftKey代表shift
+          e.preventDefault();
+          startTab(i, tabBtn, tabContent); // --- 啟動頁籤切換功能
+          if (itemAllA.length) {
+            // --- type number = true，0是false
+            itemFirstA.focus(); // --- 第一個a或是input focus
+          } else {
+            tabBtn[i + 1].focus(); // --- 當內容沒有a或是input跳轉下一個tab
+          }
+        } else if (e.which === 9 && e.shiftKey && !isFirstTab) {
+          e.preventDefault();
+          startTab(i - 1, tabBtn, tabContent); // --- 啟動頁籤切換功能
+          if (prevItemAllA.length) {
+            prevItemLastA.focus(); // --- 前一個頁籤內容的最後一個a或是input focus
+          } else {
+            tabBtn[i - 1].focus(); // --- 當內容沒有a或是input跳轉上一個tab
+          }
+        }
+      });
+      // --- 當按下shift+tab且為該內容的第一個a或是input
+      // --- 將focus目標轉回tab頁籤上，呼叫上方功能startTab(i - 1);往前一個頁籤
+      if (itemFirstA !== undefined) {
+        itemFirstA.addEventListener('keydown', (e) => {
+          if (e.which === 9 && e.shiftKey) {
+            e.preventDefault();
+            tabBtn[i].focus();
+          }
+        });
+      }
+      // --- 當按下tab且為該內容的最後一個a或是input
+      // --- focus到下一個頁籤
+      if (itemLastA !== undefined) {
+        itemLastA.addEventListener('keydown', (e) => {
+          if (e.which === 9 && !e.shiftKey && !isLastTab) {
+            e.preventDefault();
+            tabBtn[i + 1].focus();
+          }
+        });
+      }
+      // --- 滑鼠點擊事件
+      tabBtn[i].addEventListener(
+        'click',
+        (e) => {
+          startTab(i, tabBtn, tabContent);
+        },
+        false
+      );
+    });
   });
+  function startTab(now, tabBtn, tabContent) {
+    if (tabBtn !== undefined) {
+      tabBtn.forEach((i) => {
+        i.classList.remove(activeClass);
+      });
+      tabBtn[now].classList.add(activeClass);
+      // --- 頁籤按鈕增加指定class(active)，其他頁籤移除指定class
+      tabContent.forEach((i) => {
+        i.classList.remove(activeClass);
+      });
+      tabContent[now].classList.add(activeClass);
+      // --- 顯示當下頁籤內，隱藏其他內容
+    }
+  }
 }
-$('.tabs>.tabItem:first-child>a').trigger('click');
-tabSet();
+tabFunction('.tabSet'); // tab功能
 ```
 
-<style>
-.ui-infobar{
-max-width:95%;
+<!-- tabs:end -->
+
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<script>
+  function tabFunction(elem) {
+  const activeClass = 'active'; // --- 啟動的 class
+  const tabSet = document.querySelectorAll(elem); // --- tab名稱
+  tabSet.forEach((a) => {
+    const tabBtn = a.querySelectorAll('.tabItems button'); // --- 頁籤按鈕
+    const tabBtnLength = tabBtn.length; // --- 頁籤按鈕數量
+    const tabContent = a.querySelectorAll('.tabContentGroup .tabContent'); // --- 頁籤內容
+    tabBtn[0].classList.add('active');
+    tabContent[0].classList.add('active');
+    tabBtn.forEach((v, i) => {
+      const thisBtn = tabBtn[i]; // --- 綁定這一個頁籤按鈕
+      const thisContent = tabContent[i]; // --- 綁定這一個頁籤內容
+      const thisPrevItem = tabContent[i - 1]; // --- 綁定前一個頁籤按鈕
+      const itemAllA = thisContent.querySelectorAll('[href], input'); // --- 這一個頁籤內容所有a和input項目
+      let prevItemAllA;
+      if (thisPrevItem !== undefined) {
+        prevItemAllA = thisPrevItem.querySelectorAll('[href], input'); // --- 前一個頁籤內容所有a和input項目
+      }
+      const isFirstTab = i === 0; // --- 如果是第一個頁籤
+      const isLastTab = i === tabBtnLength - 1; // --- 如果是最後一個頁籤
+      const itemFirstA = itemAllA[0]; // --- 頁籤內容第一個a或是input
+      const itemLastA = itemAllA[itemAllA.length - 1]; // --- 頁籤內容最後一個a或是input
+      let prevItemLastA;
+      if (thisPrevItem !== undefined) {
+        prevItemLastA = prevItemAllA[prevItemAllA.length - 1]; // --- 前一個頁籤的最後一個a或是input
+      }
+      // --- thisBtn頁籤觸發focus內容裡的第一個a
+      thisBtn.addEventListener('keydown', (e) => {
+        // --- 頁籤第幾個按鈕觸發時
+        if (e.which === 9 && !e.shiftKey) {
+          // --- e.which偵測按下哪個案件，9代表tab，shiftKey代表shift
+          e.preventDefault();
+          startTab(i, tabBtn, tabContent); // --- 啟動頁籤切換功能
+          if (itemAllA.length) {
+            // --- type number = true，0是false
+            itemFirstA.focus(); // --- 第一個a或是input focus
+          } else {
+            tabBtn[i + 1].focus(); // --- 當內容沒有a或是input跳轉下一個tab
+          }
+        } else if (e.which === 9 && e.shiftKey && !isFirstTab) {
+          e.preventDefault();
+          startTab(i - 1, tabBtn, tabContent); // --- 啟動頁籤切換功能
+          if (prevItemAllA.length) {
+            prevItemLastA.focus(); // --- 前一個頁籤內容的最後一個a或是input focus
+          } else {
+            tabBtn[i - 1].focus(); // --- 當內容沒有a或是input跳轉上一個tab
+          }
+        }
+      });
+      // --- 當按下shift+tab且為該內容的第一個a或是input
+      // --- 將focus目標轉回tab頁籤上，呼叫上方功能startTab(i - 1);往前一個頁籤
+      if (itemFirstA !== undefined) {
+        itemFirstA.addEventListener('keydown', (e) => {
+          if (e.which === 9 && e.shiftKey) {
+            e.preventDefault();
+            tabBtn[i].focus();
+          }
+        });
+      }
+      // --- 當按下tab且為該內容的最後一個a或是input
+      // --- focus到下一個頁籤
+      if (itemLastA !== undefined) {
+        itemLastA.addEventListener('keydown', (e) => {
+          if (e.which === 9 && !e.shiftKey && !isLastTab) {
+            e.preventDefault();
+            tabBtn[i + 1].focus();
+          }
+        });
+      }
+      // --- 滑鼠點擊事件
+      tabBtn[i].addEventListener(
+        'click',
+        (e) => {
+          startTab(i, tabBtn, tabContent);
+        },
+        false
+      );
+    });
+  });
+  function startTab(now, tabBtn, tabContent) {
+    if (tabBtn !== undefined) {
+      tabBtn.forEach((i) => {
+        i.classList.remove(activeClass);
+      });
+      tabBtn[now].classList.add(activeClass);
+      // --- 頁籤按鈕增加指定class(active)，其他頁籤移除指定class
+      tabContent.forEach((i) => {
+        i.classList.remove(activeClass);
+      });
+      tabContent[now].classList.add(activeClass);
+      // --- 顯示當下頁籤內，隱藏其他內容
+    }
 }
-.markdown-body{
-max-width:95%;
 }
-</style>
+tabFunction('.tabSet'); // tab功能
+</script>
+
+<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="Tabs / 頁籤 1" src="https://codepen.io/u00hyui/embed/PopZyGm?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/u00hyui/pen/PopZyGm'>Tabs / 頁籤 1</a> by u00hyui
+  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe> -->
+<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="Tabs / 頁籤2" src="https://codepen.io/u00hyui/embed/VwpeVgB?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/u00hyui/pen/VwpeVgB'>Tabs / 頁籤2</a> by u00hyui
+  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe> -->

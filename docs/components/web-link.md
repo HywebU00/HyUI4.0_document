@@ -1,10 +1,10 @@
 # Web link / 網頁連結
 
-?>檔案名稱：sass/page/`cp.scss`
+?>檔案名稱：sass/ page /`cp.scss`
 
 此模組通常是用於在`CP一般內容頁`的常用模組之一，亦可單獨使用於任何頁面。
 
-## HTML 範本
+## 預設網頁連結
 
 <div class="webLink">
   <h3>外部連結</h3>

@@ -2,7 +2,7 @@
 
 ?>檔案名稱：sass/modual/`paginations.scss`
 
-## 基本樣式
+## 預設分頁導覽
 
   <div class="demo">
   <div class="pagination">
