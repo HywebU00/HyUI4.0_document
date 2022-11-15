@@ -7,7 +7,7 @@
   - [V HTML 範本](quick-start/hemlTemplate.md)
   - [SASS 架構](quick-start/sass.md)
   - [ mixin / extend 引用列表](quick-start/mixin.md)
-  - [ 無障礙與列印 ](quick-start/print.md)
+  - [V 無障礙與列印 ](quick-start/print.md)
 
 - 排版系統
 

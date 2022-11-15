@@ -113,7 +113,7 @@ $mGutter: 4px;
 
 ### 漸層
 
-?> 原始設定：：../sass/common/mixins/`_gradient.scss`
+?> 原始設定：../sass/common/mixins/`_gradient.scss`
 
 ```sass
 @include gradient(#07c, #06f, vertical);      // 水平
@@ -153,6 +153,14 @@ $mGutter: 4px;
 
 ```sass
 font-size:rem(16);                   // 文字大小，16px = 1rem
+```
+
+### 針對視覺隱藏，螢幕閱讀器會讀到
+
+?> 原始設定：：../sass/common/mixins/`_sronly.scss`
+
+```sass
+@include srOnly;                  // 無障礙螢幕閱讀器會讀到
 ```
 
 <h4>附加說明</h4>

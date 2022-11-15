@@ -2,7 +2,7 @@
 
 ## 選擇優雅降級(Graceful Degradation)的開發流程
 
-?> 目前大部分的網站規格是以 IE9+、FireFox、Chrome 以及 Safari 為主流瀏覽器，且 UI 設計師產出之 mockup 大部分以 PC 版本作為風格確認，因此先以主流瀏覽器為測試對象，再往下兼容行動版以及各種不同瀏覽器的呈現。
+?> 目前大部分的網站規格是以 **IE9+** 、 **FireFox** 、 **Chrome** 以及 **Safari** 為主流瀏覽器，且 UI 設計師產出之 mockup 大部分以 PC 版本作為風格確認，因此先以主流瀏覽器為測試對象，再往下兼容行動版以及各種不同瀏覽器的呈現。
 
 ![](https://i.imgur.com/7de2I7B.jpg)
 
