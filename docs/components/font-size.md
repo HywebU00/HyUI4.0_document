@@ -21,7 +21,7 @@
   (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> -->
 
-## SCSS 預設的文字大中小設定
+## SCSS 預設的文字設定
 
 > 可於 `_font.scss`設定文字的大小，預設為 `medium`適中字型 `1em` 大小，為網站的基本設定，因此只需要設定小、大的字級即可，目前字級大小設定設於`.innerPage`內，如有特殊需求，可自行修改預設值。
 

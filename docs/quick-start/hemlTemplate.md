@@ -55,7 +55,7 @@ HTML 的 `lang` 屬性可用於網頁或部分網頁的語言。這對搜索引�
 | 繁體中文 Chinese (Traditional) | lang='zh-Hant' |
 | 簡體中文 Chinese (Simplified)  | Text           |
 
-為了無障礙於關閉 Javascript 的檢測，請先預留此 <font color="#ff0000">class="no-js"</font> 的設定。更多內容請參考<font color="#009ee7">無障礙單元</font>。
+為了無障礙於關閉 Javascript 的檢測，請先預留此`class="no-js"` 的設定。更多內容請參考`無障礙單元`。
 
 ---
 
@@ -161,12 +161,3 @@ HTML 的 `lang` 屬性可用於網頁或部分網頁的語言。這對搜索引�
 ```xml
 <script src="js/customize.js"></script>
 ```
-
-<style>
-.ui-infobar{
-max-width:95%;
-}
-.markdown-body{
-max-width:95%;
-}
-</style>

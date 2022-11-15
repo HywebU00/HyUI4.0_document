@@ -68,7 +68,7 @@
 ## sass
 
 :::warning
-分成三個資料夾：共通 common、 元件 element、 模組 modual
+分成三個資料夾：共通 common、 元件 element、 模組 module
 :::
 
 ### 共通 common

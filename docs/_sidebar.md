@@ -3,8 +3,8 @@
 
 - 快速開始
 
-  - [下載](quick-start/download.md)
-  - [HTML 範本](quick-start/hemlTemplate.md)
+  - [V 下載](quick-start/download.md)
+  - [V HTML 範本](quick-start/hemlTemplate.md)
   - [SASS 架構](quick-start/sass.md)
   - [ mixin / extend 引用列表](quick-start/mixin.md)
   - [ 無障礙與列印 ](quick-start/print.md)
@@ -38,14 +38,14 @@
     - [Search 搜尋](components/search.md)
     - [Menu 主選單](components/menu.md)
     - [Language 選擇語系選單](components/language.md)
-  - [Accordion 收合式選單](components/accordion.md)
+  - [V Accordion 收合式選單](components/accordion.md)
   - [Album+Lightbox 相簿(縮圖)+燈箱](components/lightbox.md)
   - [V Breadcrumb 頁面路徑](components/breadcrumb.md)
   - [V Category 分類目錄](components/category.md)
   - [V Function Panel 內頁控制及顯示模組](components/function-panel.md)
     - [V Font-Size 控制文章字體大小](components/font-size.md)
-    - [Function 功能選單](components/function.md)
-    - [Share 社群分享](components/share.md)
+    - [V Function 功能選單](components/function.md)
+    - [V Share 社群分享](components/share.md)
   - [V File-download 檔案下載](components/file-download.md)
   - [V Fixed-sidebar 固定側邊欄](components/fixed-sidebar.md)
   - [V Fat-footer 頁尾選單](components/fat-footer.md)
