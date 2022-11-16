@@ -13,14 +13,22 @@ HyUI 提供跑馬燈的範例，有使用 <font color="#009ee7">slick</font> 的
 
 ## HTML 範本
 
-```htmlmixed=
+```html
 <div class="marquee">
-    <ul>
-        <li><a href="javascript:;"><span>2018-11-13</span>因尼莎颱風來襲，7/31下午2時之我國化學物質管理政策綱領第一次跨部會研商會取消。</a></li>
-        <li><a href="javascript:;"><span>2018-11-13</span>因尼莎颱風來襲，7/31下午2時之我國化學物質管理政策綱領第一次跨部會研商會取消。</a></li>
-        <li><a href="javascript:;"><span>2018-11-13</span>因尼莎颱風來襲，7/31下午2時之我國化學物質管理政策綱領第一次跨部會研商會取消。</a></li>
-        <li><a href="javascript:;"><span>2018-11-13</span>因尼莎颱風來襲，7/31下午2時之我國化學物質管理政策綱領第一次跨部會研商會取消。</a></li>
-    </ul>
+  <ul>
+    <li>
+      <a href="javascript:;"><span>2018-11-13</span>因尼莎颱風來襲，7/31下午2時之我國化學物質管理政策綱領第一次跨部會研商會取消。</a>
+    </li>
+    <li>
+      <a href="javascript:;"><span>2018-11-13</span>因尼莎颱風來襲，7/31下午2時之我國化學物質管理政策綱領第一次跨部會研商會取消。</a>
+    </li>
+    <li>
+      <a href="javascript:;"><span>2018-11-13</span>因尼莎颱風來襲，7/31下午2時之我國化學物質管理政策綱領第一次跨部會研商會取消。</a>
+    </li>
+    <li>
+      <a href="javascript:;"><span>2018-11-13</span>因尼莎颱風來襲，7/31下午2時之我國化學物質管理政策綱領第一次跨部會研商會取消。</a>
+    </li>
+  </ul>
 </div>
 ```
 

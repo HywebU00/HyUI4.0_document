@@ -13,13 +13,13 @@
 
 ## HTML 範本
 
-```htmlmixed=
+```html
 <button type="button" id="openModal" class="btn">開啟視窗</button>
 <!--視窗-->
 <div id="modal1" class="modal">
-    <!--     div內的內容可以自行設定 -->
-    <h2>標題</h2>
-    <p>內文</p>
+  <!--     div內的內容可以自行設定 -->
+  <h2>標題</h2>
+  <p>內文</p>
 </div>
 ```
 

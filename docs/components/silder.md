@@ -1,237 +1,417 @@
-# Slider/圖片輪播
+# swiper 圖片輪播
 
 ###### tags: `HyUI`
 
-檔案名稱：vendor/slick/slick-theme.css
-檔案名稱：vendor/slick/slick.css
-檔案名稱：sass/modual/\_slick.scss (合併上面兩個)
+檔案名稱：vendor/swiper/swiper-bundle.min.css
+檔案名稱：sass/modual/\_swiper
 
-HyUI 使用 <font color="#009ee7">slick</font> 的輪播模組，目前 hyUI <font color="#EE428B">vendor</font> 內含 <font color="#EE428B">slick</font> 已經有加入客製化設定，如需要最新版，請到 <font color="#009ee7">[slick](https://kenwheeler.github.io/slick/)</font> 官網下載。
+HyUI 使用 <font color="#009ee7">slick</font> 的輪播模組，目前 hyUI <font color="#EE428B">vendor</font> 內含 <font color="#EE428B">swiper</font> ，如需要最新版，請到 <font color="#009ee7">[swiper](https://swiperjs.com/)</font> 官網下載。<br/>
+[中文版](https://www.swiper.com.cn/)
 
-## 請在網頁中匯入 slick 外掛
+## 請在網頁中匯入 swiper 外掛
 
-slick 屬於外掛，故放在 <font color="#EE428B">vendor</font> 資料夾裡，包括所有的圖檔、js、css
+swiper 屬於外掛，故放在 <font color="#EE428B">vendor</font> 資料夾裡，包括所有的圖檔、js、css
 
 ## 匯入外掛 CSS
 
-```htmlmixed=
-<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
-<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+```html
+<link rel="stylesheet" type="text/css" href="vendor/swiper/swiper-bundle.min.css" />
 ```
 
 ## 匯入 JS
 
-```htmlmixed=
-<script src="vendor/slick/slick.min.js "></script>
+```html
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
 ```
 
-## Slick 的基本設定
+## swiper 的基本設定
 
-使用設定以 slick 官方文件為準。
-
-```javascript
-$(document).ready(function () {
-  $('.your-class').slick({
-    arrows: true, //左右箭頭
-    autoplay: false, //自動播放
-    autoplaySpeed: 3000, //自動播放秒數
-    dots: false, //顯示圓點
-    dotsClass: 'slick-dots', //原點css
-    draggable: true, //滑鼠可以拖曳
-    infinite: true, //無限輪播
-    pauseOnHover: true, //滑鼠移過後暫停自動撥放
-    pauseOnDotsHover: false, //滑鼠移過圓點後暫停自動撥放
-    rtl: false, //改變輪播方向
-    slidesToShow: 1, //一次顯示幾張
-    slidesToScroll: 1, //一次輪播幾張
-    vertical: false, //改成垂直方向
-    fade: true, // 淡入
-    centerMode: true, //圖片中心模式
-  });
-});
-```
+使用設定以 swiper 官方文件為準。<br/>
+swiper 功能非常多可自行到 [中文版 API](https://www.swiper.com.cn/api/index.html) 觀看
 
 ## <font color="#009ee7">01.大圖輪播範例</font>
 
 本版本輪播圖檔可使用 <font color="#EE428B">obect-fit</font> 設定，故上稿內容不限尺寸，皆可正常呈現。
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Slider 大圖輪播" src="https://codepen.io/u00hyui/embed/poeMgrd?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/poeMgrd">
-  Slider 大圖輪播</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+<div class="mpSlider">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/01.jpg" class="swiper-lazy" alt="圖說1" />
+          <span class="caption">圖說1</span>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/02.jpg" class="swiper-lazy" alt="圖說2" />
+          <span class="caption">圖說1</span>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/03.jpg" class="swiper-lazy" alt="圖說3" />
+          <span class="caption">圖說1</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-pagination"></div>
+</div>
 
-## HTML 範本
+<!-- tabs:start -->
 
-圖檔顯示比例可參考 image.htm
+#### **HTML**
 
-```htmlmixed=
+```html
 <!-- 圖片輪播 start -->
 <div class="mpSlider">
-    <div class="img-container">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- 此區塊以下為一筆 -->
+      <div class="swiper-slide">
         <a href="#" title="">
-            <picture>
-                <source media="(min-width: 1200px)" data-srcset="images/demo/01.jpg">
-                <source media="(min-width: 992px)" data-srcset="images/demo/01.jpg">
-                <source media="(min-width: 576px)" data-srcset="images/demo/01.jpg">
-                <source media="(max-width: 575px)" data-srcset="images/demo/01.jpg">
-                <img data-src="images/demo/01.jpg" class="cover lazy" alt="圖說1">
-                <noscript><img src="images/demo/01.jpg" alt="圖說1"></noscript>
-            </picture>
-            <span class="caption">圖說1</span>
+          <picture>
+            <source media="(min-width: 1200px)" data-srcset="images/demo/01.jpg" />
+            <source media="(min-width: 992px)" data-srcset="images/demo/01.jpg" />
+            <source media="(min-width: 576px)" data-srcset="images/demo/01.jpg" />
+            <source media="(max-width: 575px)" data-srcset="images/demo/01.jpg" />
+            <img data-src="images/demo/01.jpg" class="cover swiper-lazy" alt="圖說1" />
+            <noscript><img src="images/demo/01.jpg" alt="圖說1" /></noscript>
+          </picture>
+          <span class="caption">圖說1</span>
         </a>
+      </div>
+      <!-- 此區塊以上為一筆 -->
+      。 。 。
     </div>
-    <div class="img-container">
-        <a href="#" title="">
-            <picture>
-                <source media="(min-width: 1200px)" data-srcset="images/demo/02.jpg">
-                <source media="(min-width: 992px)" data-srcset="images/demo/02.jpg">
-                <source media="(min-width: 576px)" data-srcset="images/demo/02.jpg">
-                <source media="(max-width: 575px)" data-srcset="images/demo/02.jpg">
-                <img data-src="images/demo/02.jpg" class="cover lazy" alt="圖說2">
-                <noscript><img src="images/demo/02.jpg" alt="圖說2"></noscript>
-            </picture>
-            <span class="caption">圖說2</span>
-        </a>
-    </div>
-    <div class="img-container">
-        <a href="#" title="">
-            <picture>
-                <source media="(min-width: 1200px)" data-srcset="images/demo/03.jpg">
-                <source media="(min-width: 992px)" data-srcset="images/demo/03.jpg">
-                <source media="(min-width: 576px)" data-srcset="images/demo/03.jpg">
-                <source media="(max-width: 575px)" data-srcset="images/demo/03.jpg">
-                <img data-src="images/demo/03.jpg" class="cover lazy" alt="圖說3">
-                <noscript><img src="images/demo/03.jpg" alt="圖說3"></noscript>
-            </picture>
-            <span class="caption">圖說3</span>
-        </a>
-    </div>
+  </div>
+
+  <!--操控物件可以隨意放，但注意設定要對應到-->
+  <!--前一筆-->
+  <div class="swiper-button-prev"></div>
+  <!--下一筆-->
+  <div class="swiper-button-next"></div>
+  <!--圓點-->
+  <div class="swiper-pagination"></div>
 </div>
 <!-- 圖片輪播 end -->
 ```
 
+#### **CSS**
+
+```css
+.mpSlider {
+  overflow: hidden;
+}
+.mpSlider .swiper-slide {
+  position: relative;
+  line-height: 0;
+}
+.mpSlider .swiper-slide span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  line-height: 1;
+}
+.mpSlider .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+```
+
+#### **JAVASCRIPT**
+
+```javascript
+const mpSlider = new Swiper('.mpSlider .swiper', {
+  slidesPerView: 1, //顯示張數
+  navigation: {
+    nextEl: '.mpSlider .swiper-button-next', //下一張class
+    prevEl: '.mpSlider .swiper-button-prev', //前一張class
+  },
+  pagination: {
+    //顯示圓點
+    el: '.swiper-pagination', //圓點 class
+    type: 'bullets', //樣式參考 https://www.swiper.com.cn/api/pagination/299.html
+    clickable: true, //設定後圓點才可以點擊
+  },
+  autoplay: {
+    //自動播放
+    delay: 5000, //自動播放的間隔
+  },
+  loop: true, //無限輪播
+  effect: 'fade', //淡入
+  fadeEffect: {
+    crossFade: true, //上一張淡出，false上一張不淡出，下一張疊在上方
+  },
+  lazy: true,
+});
+```
+
+<!-- tabs:end -->
+
 ## <font color="#009ee7">02.廣告輪播範例</font>
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="廣告輪播範例" src="https://codepen.io/u00hyui/embed/oNZKobG?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/oNZKobG">
-  廣告輪播範例</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+<div class="adSlider">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/ad_01.jpg" class="swiper-lazy" alt="圖說1" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/ad_02.jpg" class="swiper-lazy" alt="圖說2" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/ad_03.jpg" class="swiper-lazy" alt="圖說3" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/ad_04.jpg" class="swiper-lazy" alt="圖說4" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/ad_05.jpg" class="swiper-lazy" alt="圖說5" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/ad_06.jpg" class="swiper-lazy" alt="圖說6" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/ad_07.jpg" class="swiper-lazy" alt="圖說7" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
 
-## HTML 範本
+<!-- tabs:start -->
 
-```htmlmixed=
+#### **HTML**
+
+```html
 <!-- 廣告輪播   start -->
 <div class="adSlider">
-    <div class="img-container">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- 此區塊以下為一筆 -->
+      <div class="swiper-slide">
         <a href="#" title="">
-            <img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明1">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/ad_01.jpg" class="cover" alt="圖說1" />
         </a>
+      </div>
+      <!-- 此區塊以上為一筆 -->
+      。。。
     </div>
-    <div class="img-container">
-        <a href="#" title="">
-            <img data-lazy="images/demo/ad_02.jpg" class="contain" alt="圖片說明2">
-        </a>
-    </div>
-    <div class="img-container">
-        <a href="#" title="">
-            <img data-lazy="images/demo/ad_03.jpg" class="contain" alt="圖片說明3">
-        </a>
-    </div>
-    <div class="img-container">
-        <a href="#" title="">
-            <img data-lazy="images/demo/ad_04.jpg" class="contain" alt="圖片說明4">
-        </a>
-    </div>
-    <div class="img-container">
-        <a href="#" title="">
-            <img data-lazy="images/demo/ad_05.jpg" class="contain" alt="圖片說明5">
-        </a>
-    </div>
-    <div class="img-container">
-        <a href="#" title="">
-            <img data-lazy="images/demo/ad_06.jpg" class="contain" alt="圖片說明6">
-        </a>
-    </div>
-    <div class="img-container">
-        <a href="#" title="">
-            <img data-lazy="images/demo/ad_07.jpg" class="cover" alt="圖片說明7">
-        </a>
-    </div>
+  </div>
+
+  <!--操控物件可以隨意放，但注意設定要對應到-->
+  <!--前一筆-->
+  <div class="swiper-button-prev"></div>
+  <!--下一筆-->
+  <div class="swiper-button-next"></div>
 </div>
 <!-- 廣告輪播   end -->
 ```
 
+### **css**
+
+```css
+.adSlider {
+  overflow: hidden;
+}
+.adSlider {
+  position: relative;
+  line-height: 0;
+}
+.adSlider span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  line-height: 1;
+}
+.adSlider .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.adSlider .swiper-slide {
+  height: 55px;
+}
+```
+
+#### **JAVASCRIPT**
+
+```javascript
+const adSlider = new Swiper('.adSlider .swiper', {
+  slidesPerView: 5, //顯示張數
+  navigation: {
+    nextEl: '.adSlider .swiper-button-next', //下一張class
+    prevEl: '.adSlider .swiper-button-prev', //前一張class
+  },
+  loop: true, //無限輪播
+  lazy: true, // lazy load
+  preloadImages: false, // 多筆設定lazy時須設定
+  centeredSlides: false, // 多筆設定lazy時須設定
+  watchSlidesVisibility: true, // 多筆設定lazy時須設定
+});
+```
+
+<!-- tabs:end -->
+
 ## <font color="#009ee7">03.照片輪播範例</font>
 
-<iframe height="750" style="width: 100%;" scrolling="no" title="照片輪播" src="https://codepen.io/u00hyui/embed/vYxoWRz?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/vYxoWRz">
-  照片輪播</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+<div class="syncingSlider">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/01.jpg" class="swiper-lazy" alt="圖說1" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/02.jpg" class="swiper-lazy" alt="圖說2" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/03.jpg" class="swiper-lazy" alt="圖說3" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/04.jpg" class="swiper-lazy" alt="圖說4" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/05.jpg" class="swiper-lazy" alt="圖說5" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="navSlider">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/01.jpg" class="swiper-lazy" alt="圖說1" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/02.jpg" class="swiper-lazy" alt="圖說2" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/03.jpg" class="swiper-lazy" alt="圖說3" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/04.jpg" class="swiper-lazy" alt="圖說4" />
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="javascript:;" title="">
+          <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/05.jpg" class="swiper-lazy" alt="圖說5" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## HTML 範本
 
-```htmlmixed=
+```html
 <div class="Syncing_slider">
-    <!--大圖slider-for-->
-    <div class="Slider-for">
-        <div>
-            <div class="img-container">
-                <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=500&h=480&fit=crop&auto=format%2Cenhance&usm=20">
-            </div>
-            <p>第一張圖說</p>
-        </div>
-        <div>
-            <div class="img-container">
-                <img src="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20">
-            </div>
-            <p>第二張圖說</p>
-        </div>
-        <div>
-            <div class="img-container">
-                <img src="https://assets.imgix.net/examples/womanlandscape.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20">
-            </div>
-            <p>第三張圖說</p>
-        </div>
-        <div>
-            <div class="img-container">
-                <img src="https://assets.imgix.net/unsplash/paperlamp.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20">
-            </div>
-            <p>第四張圖說</p>
-        </div>
+  <!--大圖slider-for-->
+  <div class="Slider-for">
+    <div>
+      <div class="img-container">
+        <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=500&h=480&fit=crop&auto=format%2Cenhance&usm=20" />
+      </div>
+      <p>第一張圖說</p>
     </div>
-    <!-- slider-for end-->
-    <div class="controls"></div>
-    <!--小圖slider-nav-->
-    <div class="Slider-nav">
-        <div>
-            <div class="img-container">
-                <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20">
-            </div>
-            <p>第一張圖說</p>
-        </div>
-        <div>
-            <div class="img-container">
-                <img src="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20">
-            </div>
-            <p>第二張圖說</p>
-        </div>
-        <div>
-            <div class="img-container">
-                <img src="https://assets.imgix.net/examples/womanlandscape.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20">
-            </div>
-            <p>第三張圖說</p>
-        </div>
-        <div>
-            <div class="img-container">
-                <img src="https://assets.imgix.net/unsplash/paperlamp.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20">
-            </div>
-            <p>第四張圖說</p>
-        </div>
+    <div>
+      <div class="img-container">
+        <img src="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" />
+      </div>
+      <p>第二張圖說</p>
     </div>
-    <!-- slider-nav end-->
+    <div>
+      <div class="img-container">
+        <img src="https://assets.imgix.net/examples/womanlandscape.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" />
+      </div>
+      <p>第三張圖說</p>
+    </div>
+    <div>
+      <div class="img-container">
+        <img src="https://assets.imgix.net/unsplash/paperlamp.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" />
+      </div>
+      <p>第四張圖說</p>
+    </div>
+  </div>
+  <!-- slider-for end-->
+  <div class="controls"></div>
+  <!--小圖slider-nav-->
+  <div class="Slider-nav">
+    <div>
+      <div class="img-container">
+        <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" />
+      </div>
+      <p>第一張圖說</p>
+    </div>
+    <div>
+      <div class="img-container">
+        <img src="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" />
+      </div>
+      <p>第二張圖說</p>
+    </div>
+    <div>
+      <div class="img-container">
+        <img src="https://assets.imgix.net/examples/womanlandscape.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" />
+      </div>
+      <p>第三張圖說</p>
+    </div>
+    <div>
+      <div class="img-container">
+        <img src="https://assets.imgix.net/unsplash/paperlamp.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" />
+      </div>
+      <p>第四張圖說</p>
+    </div>
+  </div>
+  <!-- slider-nav end-->
 </div>
 ```
 
@@ -299,4 +479,100 @@ max-width:95%;
 .markdown-body{
 max-width:95%;
 }
+.swiper-slide {
+  position:relative;
+  line-height:0;
+}
+.swiper-slide span{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  display:block;
+  text-align: center;
+  color:#FFF;
+  padding:10px;
+  background:rgba(0,0,0,0.8);
+  line-height:1;
+}
+.navSlider,
+.mpSlider,
+.adSlider{
+  overflow:hidden;
+}
+.navSlider .swiper-slide img,
+.mpSlider .swiper-slide img,
+.adSlider .swiper-slide img{
+  height:100%;
+  width:100%;
+  object-fit:contain;
+}
+.adSlider .swiper-slide{
+  height:55px
+}
+.navSlider .swiper-slide{
+  height:172px
+}
 </style>
+
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+<script>
+const mpSlider = new Swiper('.mpSlider .swiper', {
+  slidesPerView: 1, //顯示張數
+  navigation: {
+    nextEl: '.mpSlider .swiper-button-next', //下一張class
+    prevEl: '.mpSlider .swiper-button-prev', //前一張class
+  },
+  pagination: {
+    //顯示圓點
+    el: '.mpSlider .swiper-pagination', //圓點 class
+    type: 'bullets', //樣式參考 https://www.swiper.com.cn/api/pagination/299.html
+    clickable :true,
+  },
+  autoplay: {
+    //自動播放
+    delay: 5000, //自動播放的間隔
+  },
+  loop: true, //無限輪播
+  effect: 'fade', //淡入
+  fadeEffect: {
+    crossFade: true, //上一張淡出，false上一張不淡出，下一張疊在上方
+  },
+  lazy: true, //延遲載入
+});
+
+const adSlider = new Swiper('.adSlider .swiper', {
+  slidesPerView: 5, //顯示張數
+  navigation: {
+    nextEl: '.adSlider .swiper-button-next', //下一張class
+    prevEl: '.adSlider .swiper-button-prev', //前一張class
+  },
+  loop: true, //無限輪播
+  lazy: true, // lazy load
+  preloadImages: false, // 多筆設定lazy時須設定
+  centeredSlides: false, // 多筆設定lazy時須設定
+  watchSlidesVisibility: true, // 多筆設定lazy時須設定
+});
+
+const navSlider = new Swiper('.navSlider .swiper', {
+  lazy: true, // lazy load
+  preloadImages: false, // 多筆設定lazy時須設定
+  centeredSlides: false, // 多筆設定lazy時須設定
+  slidesPerView: 4,
+  watchSlidesProgress: true,
+});
+
+const syncingSlider = new Swiper('.syncingSlider .swiper', {
+  slidesPerView: 1, //顯示張數
+  effect: 'fade', //淡入
+  fadeEffect: {
+    crossFade: true, //上一張淡出，false上一張不淡出，下一張疊在上方
+  },
+  lazy: true,
+  thumbs: {
+    swiper: navSlider,
+  },
+});
+</script>

@@ -2,31 +2,44 @@
 
 檔案名稱：檔案名稱：sass/modual/\_header.scss
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="search 搜尋" src="https://codepen.io/u00hyui/embed/LYxwjyz?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/LYxwjyz'>search 搜尋</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<div class="webSearch" role="search">
+  <div class="formGrp">
+    <label for="mustSameAsId">搜尋</label>
+    <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S" title="請輸入文字" aria-label="搜尋網站內容" />
+    <button type="button" class="btn btnSearch">查詢</button>
+  </div>
+  <div class="btnGrp">
+    <button type="button" class="btn">進階搜尋</button>
+  </div>
+  <div class="keywordHot">
+    <ul>
+      <li><a href="#">熱門熱門</a></li>
+      <li><a href="#">查詢</a></li>
+      <li><a href="#">字詞三</a></li>
+    </ul>
+  </div>
+</div>
 
 ## HTML 範本
 
-```htmlmixed=
+```html
 <!-- Search Start -->
 <div class="search" role="search">
-    <div class="form_grp">
-        <label for="mustSameAsId">搜尋</label>
-        <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S" title="請輸入文字" aria-label="搜尋網站內容">
-        <input name="" type="submit" value="查詢" class="btn btn-search" />
-    </div>
-    <div class="btn_grp">
-        <input name="" type="submit" value="進階搜尋" class="btn" />
-    </div>
-    <div class="keywordHot">
-        <ul>
-            <li><a href="#">熱門熱門</a></li>
-            <li><a href="#">查詢</a></li>
-            <li><a href="#">字詞三</a></li>
-        </ul>
-    </div>
+  <div class="formGrp">
+    <label for="mustSameAsId">搜尋</label>
+    <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S" title="請輸入文字" aria-label="搜尋網站內容" />
+    <button type="button" class="btn btnSearch">查詢</button>
+  </div>
+  <div class="btnGrp">
+    <button type="button" class="btn">進階搜尋</button>
+  </div>
+  <div class="keywordHot">
+    <ul>
+      <li><a href="#">熱門熱門</a></li>
+      <li><a href="#">查詢</a></li>
+      <li><a href="#">字詞三</a></li>
+    </ul>
+  </div>
 </div>
 <!-- Search End -->
 ```
@@ -39,3 +52,5 @@ max-width:95%;
 max-width:95%;
 }
 </style>
+
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />

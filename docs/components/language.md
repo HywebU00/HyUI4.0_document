@@ -13,14 +13,14 @@
 
 ## HTML 範本
 
-```htmlmixed=
+```html
 <div class="language">
-    <a href="#">語言選擇</a>
-    <ul>
-        <li><a href="#">繁體中文</a></li>
-        <li><a href="#">简体中文</a></li>
-        <li><a href="#">ENGLISH</a></li>
-    </ul>
+  <a href="#">語言選擇</a>
+  <ul>
+    <li><a href="#">繁體中文</a></li>
+    <li><a href="#">简体中文</a></li>
+    <li><a href="#">ENGLISH</a></li>
+  </ul>
 </div>
 ```
 
