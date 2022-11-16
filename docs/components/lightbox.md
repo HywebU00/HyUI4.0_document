@@ -1,11 +1,9 @@
 # Album+Lightbox/相簿(縮圖)列表+燈箱
 
-###### tags: `HyUI`
+?>檔案名稱：sass/common/ `_gridflex.scss`<br/>
+檔案名稱：sass/ module / `_thumbnail.scss`
 
-檔案名稱：sass/common/\_gridflex.scss<br/>
-檔案名稱：sass/modual/\_thumbnail.scss
-
-HyUI 使用<font color="#009ee7"> fancybox </font>的燈箱套件，目前 hyUI <font color="#EE428B"> vendor </font>內含<font color="#EE428B"> fancybox </font>已經有加入客製化設定，如需要最新版，請到 [fancybox](https://fancyapps.com/docs/ui/fancybox/) 官網參考下載。
+HyUI 使用 **fancybox** 的燈箱套件，目前 hyUI vendor 內含 `fancybox` 已經有加入客製化設定，如需要最新版，請到 [fancybox](https://fancyapps.com/docs/ui/fancybox/) 官網參考下載。
 
 ## 匯入外掛 fancybox CSS
 
@@ -22,14 +20,14 @@ HyUI 使用<font color="#009ee7"> fancybox </font>的燈箱套件，目前 hyUI 
 ```
 
 此為相簿列表模組示範範例。當相簿需要觸發的連結區塊，以及燈箱區塊設定放大瀏覽照片時，
-請將<font color="#009ee7"> 圖片連結 </font>寫入 <font color="#EE428B">href</font> 裡，並在<font color="#EE428B">a </font>裡加上，<font color="#009ee7">data-fancybox</font> 、 <font color="#009ee7">data-caption</font> 及 <font color="#009ee7">data-alt</font><br/><br/>
+請將 **圖片連結**寫入 `href` 裡，並在 `a `裡加上 `data-fancybox` 、 `data-caption` 及 `data-alt`<br/>
 
 ## Thumbnail / 卡片式縮圖
 
-flexEqual_2 為 <font color="#009ee7">2</font>個一列<br/>
-flexEqual_3 為 <font color="#009ee7">3</font>個一列<br/>
-flexEqual_4 為 <font color="#009ee7">4</font>個一列<br/>
-flexEqual_5 為 <font color="#009ee7">5</font>個一列<br/>
+- flexEqual_2 為 `2` 個一列<br/>
+- flexEqual_3 為 `3` 個一列<br/>
+- flexEqual_4 為 `4` 個一列<br/>
+- flexEqual_5 為 `5` 個一列<br/>
 
 <div class="flexEqual_3">
   <div class="flexSet">
@@ -72,7 +70,9 @@ flexEqual_5 為 <font color="#009ee7">5</font>個一列<br/>
   </div>
 </div>
 
-## HTML 範本
+<!-- tabs:start -->
+
+#### **HTML**
 
 ```html
 <!-- grid:flex -->
@@ -106,14 +106,7 @@ flexEqual_5 為 <font color="#009ee7">5</font>個一列<br/>
 </section>
 ```
 
-<style>
-.ui-infobar{
-max-width:95%;
-}
-.markdown-body{
-max-width:95%;
-}
-</style>
+<!-- tabs:end -->
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/vendor/fancybox/fancybox.css"/>
