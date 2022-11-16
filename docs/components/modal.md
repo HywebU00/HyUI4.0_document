@@ -1,63 +1,71 @@
 # Modal 彈出對話框
 
-###### tags: `HyUI`
+?>檔案名稱：sass/ module / `modal.scss`
 
-檔案名稱：sass/modual/\_modal.scss
+此 **燈箱模組** 為示範範例。此功能倚賴 [fancybox](https://fancyapps.com/fancybox/) 的燈箱套件。<br>
+頁面需要觸發的連結按鈕，以及燈箱區塊設定，使用以下的程式碼範例，
+可自行修改所需樣式，可於 `scss` 修改 **顏色**、 **大小** 、 **動畫效果** ...等。
 
-此燈箱模組為示範範例。頁面需要觸發的連結按鈕，以及燈箱區塊設定，使用以下的程式碼範例，可自行修改所需樣式，可於 <font color="#EE428B">scss</font> 修改 <font color="#EE428B">顏色</font> 、 <font color="#EE428B">大小</font> 、 <font color="#EE428B">動畫效果</font> ...等。
+<button class="btn demo" data-fancybox data-src="#dialog-content">
+  開啟視窗
+</button>
+<div class='modal' id="dialog-content" style="display:none;">
+    <!--     div內的內容可以自行設定 -->
+  <h2>標題</h2>
+  <p>內文</p>
+</div>
 
-<iframe height="450" style="width: 100%;" scrolling="no" title="Modal 彈出對話框" src="https://codepen.io/u00hyui/embed/JjWGaWa?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/JjWGaWa'>Modal 彈出對話框</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<!-- tabs:start -->
 
-## HTML 範本
+#### **HTML**
 
 ```html
-<button type="button" id="openModal" class="btn">開啟視窗</button>
-<!--視窗-->
-<div id="modal1" class="modal">
-  <!--     div內的內容可以自行設定 -->
+<button class="btn" data-fancybox data-src="#dialog-content">開啟視窗</button>
+<div class="modal" id="dialog-content" style="display:none;">
+  <!-- div內的內容可以自行設定 -->
   <h2>標題</h2>
   <p>內文</p>
 </div>
 ```
 
-## JQuery 設定
+#### **JavaScript**
 
 ```javascript
-/*-----------------------------------*/
-/////////////modal設定/////////////
-/*-----------------------------------*/
-$(function () {
-  $('#modal1').hide(); //先隱藏視窗
-  $('.modal').after('<div class="modal_overlay"></div>'); //新增透明底
-  $('.modal').prepend('<button type="button" class="close">關閉</button>'); //新增關閉按鈕
-  $('.modal_overlay').hide(); //隱藏透明底
-  //按鈕動作
-  $('#openModal').click(function (e) {
-    $('.modal_overlay').fadeIn(100);
-    $('.modal').fadeIn(100);
-    $('body').addClass('noscroll');
-    e.preventDefault();
-  });
-  //關閉function
-  function closeModal() {
-    $('#modal1').hide();
-    $('.modal_overlay').hide();
-    $('body').removeClass('noscroll');
-  }
-  //點選關閉按鈕及透明底都可關閉
-  $('.modal_overlay').click(closeModal);
-  $('.modal .close').click(closeModal);
+Fancybox.bind('[data-fancybox]', {
+  // Your options go here
 });
 ```
 
+<!-- tabs:end -->
+
+<!-- <iframe height="450" style="width: 100%;" scrolling="no" title="Modal 彈出對話框" src="https://codepen.io/u00hyui/embed/JjWGaWa?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/u00hyui/pen/JjWGaWa">Modal 彈出對話框</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe> -->
+
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>
-.ui-infobar{
-max-width:95%;
-}
-.markdown-body{
-max-width:95%;
-}
+  .modal{
+    width: 400px;
+    height: 300px;
+    background: #FFF;
+    padding: 1.5em;
+    display:none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 15px RGBA(0, 0, 0, 0.5);
+  }
+  .modal h2{
+    border-bottom:1px solid #06c;
+    padding-bottom:0.5em;
+    margin-bottom: 0em;
+  }
+  .fancybox__content>.carousel__button.is-close{
+    top: 0;
+    color: #888;
+  }
+  .carousel__button svg{
+        filter: none;
+  }
+  .demo{
+    margin:4em 0;
+  }
 </style>

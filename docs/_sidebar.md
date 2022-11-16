@@ -51,7 +51,7 @@
   - [V Fat-footer 頁尾選單](components/fat-footer.md)
   - [V Footer 頁尾](components/footer.md)
   - [Marquee 跑馬燈](components/marquee.md)
-  - [Modal 彈出對話框](components/modal.md)
+  - [V Modal 彈出對話框](components/modal.md)
   - [V Notice 提示訊息](components/notice.md)
   - [V Paginations 分頁導覽](components/paginations.md)
   - [Silder 圖片輪播](components/silder.md)

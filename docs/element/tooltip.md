@@ -4,7 +4,7 @@
 
 ### 項目的提示文字
 
-表示小矩形快顯視窗 (Pop-Up Window)，它會在使用者將指標停留在控制項上時，顯示控制項用途的簡短說明。此用法不限用`div`、`span`、`em`、`a`...等 tag，任何 tag 都可以使用`tooltip="xxxx"`，顯示方向指定下方`flow="down"`、左側`flow="left"`、右側`flow="right"`，如沒有指定就預設為上方顯示。
+表示 **小矩形快顯視窗** (Pop-Up Window) ，它會在使用者將指標停留在控制項上時，顯示控制項用途的簡短說明。此用法不限用`div`、`span`、`em`、`a`...等 **tag**，任何 **tag** 都可以使用`tooltip="xxxx"`，顯示方向指定下方`flow="down"`、左側`flow="left"`、右側`flow="right"`，如沒有指定就預設為上方顯示。
 
 <!-- panels:start -->
 <div class="tooltip">

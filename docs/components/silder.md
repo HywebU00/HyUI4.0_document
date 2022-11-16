@@ -3,7 +3,7 @@
 ###### tags: `HyUI`
 
 檔案名稱：vendor/swiper/swiper-bundle.min.css
-檔案名稱：sass/modual/\_swiper
+檔案名稱：sass/ module /\_swiper
 
 HyUI 使用 <font color="#009ee7">slick</font> 的輪播模組，目前 hyUI <font color="#EE428B">vendor</font> 內含 <font color="#EE428B">swiper</font> ，如需要最新版，請到 <font color="#009ee7">[swiper](https://swiperjs.com/)</font> 官網下載。<br/>
 [中文版](https://www.swiper.com.cn/)

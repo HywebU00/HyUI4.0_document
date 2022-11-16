@@ -7,35 +7,7 @@ HyUI 的 flex grid system 分割方式 分為 **均分** 和 **自由分配**
 
 ### 均分
 
-<<<<<<< HEAD
-?>
-每欄 **欄寬都相同** ，預設 2-12 欄。
-=======
-.focus { color: #B20050; }
-.focus2 {
-    color: #222; border: solid 1px #c8c8c8;
-    display: inline-block;
-    padding: 2px 10px; margin: 0 4px;
-    border-radius: 4px;
-    background: #fff;
-}
-.link{ font-size: 20px; color: #B20050;}
-.ui-infobar{ max-width:95%; }
-.markdown-body{ max-width:95%; }
-</style>
-<!-- ## 標題
-:::warning
-簡介
-:::
-```sass=
-.a{
-    text-align: center;
-}
-```
-```html
-<a>123</a>
-``` -->
->>>>>>> bd3c2d3 (更新lightbox、slider更新中)
+?>每欄 **欄寬都相同** ，預設 2-12 欄。
 
 > 算式：100% ÷ 欄數
 

@@ -1,6 +1,6 @@
 # Table / 表格
 
-?>檔案名稱：sass / modual / <span class="focus2">\_table.scss</span>
+?>檔案名稱：sass / module / `_table.scss`
 
 ---
 
@@ -705,4 +705,8 @@ padding: 0.8em 0;
     });
   });
 }
+tableAddDataAttributes({
+  elemClass: '.tableList', // 目標table
+  dataName: 'title', // tableList樣式 加上 data-title
+});
 </script>

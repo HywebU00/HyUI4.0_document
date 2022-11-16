@@ -1,6 +1,6 @@
 # Forms / 表單
 
-?>檔案名稱：sass / modual /`form.scss`
+?>檔案名稱：sass / module /`form.scss`
 
 ---
 

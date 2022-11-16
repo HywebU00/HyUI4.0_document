@@ -24,22 +24,29 @@ $screenXs:        576px  !default;        //極小尺寸
 
 !>請注意順序，如果是使用 HyUI 預設斷點 mixin 是由較寬螢幕至最小寬度依序設定，避免被覆蓋。
 
+<!-- panels:start -->
+<!-- div:left-panel -->
+
+<h5>SCSS 設定</h5>
+
 ```sass
 .wrapper {
-  margin: 0 auto;
-  width: 100%;
-  @include screen('notebook') {
-      width: 85%; }
-  @include screen('tablet') {
-      width: 55%; }
-  @include screen('mobile') {
-      width: 85%; }
-  @include screen('xsMobile') {
-      width: 85%; }
+ margin: 0 auto;
+ width: 100%;
+ @include screen('notebook') {
+     width: 85%; }
+ @include screen('tablet') {
+     width: 55%; }
+ @include screen('mobile') {
+     width: 85%; }
+ @include screen('xsMobile') {
+     width: 85%; }
 }
 ```
 
-CSS 輸出
+<!-- div:right-panel -->
+
+<h5>CSS 輸出</h5>
 
 ```sass
 .wrapper {
@@ -53,9 +60,17 @@ CSS 輸出
     .wrapper {width: 85%; } }
 @media screen and (max-width: 575px) {
     .wrapper {width: 85%; } }
+
+
 ```
 
+<!-- panels:end -->
+
 ### SCSS 設定 min
+
+<!-- panels:start -->
+<!-- div:left-panel -->
+<h5>SCSS 設定</h5>
 
 ```sass
 .wrapper {
@@ -72,7 +87,9 @@ CSS 輸出
 }
 ```
 
-CSS 輸出
+<!-- div:right-panel -->
+
+<h5>CSS 輸出</h5>
 
 ```sass
 .wrapper {
@@ -86,7 +103,11 @@ CSS 輸出
     .wrapper {width: 85%; } }
 @media screen and (min-width: 575px) {
     .wrapper {width: 85%; } }
+
+
 ```
+
+<!-- panels:end -->
 
 <style>
 .ui-infobar{

@@ -157,15 +157,13 @@ font-size:rem(16);                   // 文字大小，16px = 1rem
 
 ### 針對視覺隱藏，螢幕閱讀器會讀到
 
-?> 原始設定：：../sass/common/mixins/`_sronly.scss`
+?> 原始設定：../sass/common/mixins/`_sronly.scss`
 
 ```sass
 @include srOnly;                  // 無障礙螢幕閱讀器會讀到
 ```
 
-<h4>附加說明</h4>
-
-> 上述檔案，全部引用至../sass/`common` 資料夾內
+?>**附加說明**<br>上述檔案，全部引用至../sass/`common` 資料夾內<br>
 
 <style>
     .block-style{

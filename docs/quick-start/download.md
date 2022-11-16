@@ -1,39 +1,20 @@
 # 下載
 
-從 GitHub 網站下載完整的 hyUI kit 原始程式碼。
-
-<style>
-.download{
-    font-size: 22px; color: #5387c9;
-    background-color:#eeeeee;
-    border-radius: 4px;
-    text-align:center;
-    display:inline-block;
-}
-.download a{
- display:block;
- padding: 15px 30px 15px 30px;
-}
-.download a img{
-width:25px;
-height:25px;
-vertical-align: middle;
-}
-</style>
+從 **GitHub** 網站下載完整的 **hyUI kit** 原始程式碼。
 
 ?> 檔案下載連結 [GitHub 檔案下載](https://github.com/HywebU00/HyUI_v4.0)。
 
 下載之後您會得到以下的檔案
 
-- <font >CSS 資料夾</font>
-- <font >SASS 資料夾</font>
-- <font >images 資料夾</font>
-- <font >js 資料夾</font>
-- <font >vendor 資料夾</font>
-- <font >html 檔案</font>
-- <font >README.md</font>
+- CSS 資料夾
+- SASS 資料夾
+- images 資料夾
+- js 資料夾
+- vendor 資料夾
+- html 檔案
+- README.md
 
-?> 本框架需要具有編譯 SASS/SCSS 能力的開發人員使用。
+?> 本框架需要具有編譯 **SASS/SCSS** 能力的開發人員使用。
 
 ## 檔案結構
 
@@ -74,13 +55,3 @@ vertical-align: middle;
     └── ...                             // 專案所需圖檔
 
 ```
-
-<style>
-
-.ui-infobar{
-max-width:95%;
-}
-.markdown-body{
-max-width:95%;
-}
-</style>
