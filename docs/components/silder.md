@@ -466,12 +466,12 @@ const sliderFor = new Swiper('.sliderFor .swiper', {
 
 ## Javascript 設定:round_pushpin:
 
-### 關於 slick 按鈕的 title 語系
+### 關於 swiper 按鈕的 title 語系
 
 因應無障礙需求，在左右箭頭需要有替代文字，但往往因為網站有不同語系需求，因此按鈕需要呈現不同語言的替代文字，例如:
 
-<<font color="#009ee7">html</font> lang="<font color="#EE428B">zh-Hant</font>">中按鈕會呈現<<font color="#009ee7">button</font> class="slick-prev" ... title="<font color="#EE428B">前一則</font>">Previous</button>或是
-<<font color="#009ee7">html</font> lang="<font color="#EE428B">en</font>" >中按鈕會呈現或是<<font color="#009ee7">button</font> class="<font color="#EE428B">slick-prev</font>" ... title="<font color="#EE428B">previous</font>">Previous</button>，
+<<font color="#009ee7">html</font> lang="<font color="#EE428B">zh-Hant</font>">中按鈕會呈現<<font color="#009ee7">button</font> class="prevSlider" ... title="<font color="#EE428B">前一則</font>">Previous</button>或是
+<<font color="#009ee7">html</font> lang="<font color="#EE428B">en</font>" >中按鈕會呈現或是<<font color="#009ee7">button</font> class="<font color="#EE428B">prevSlider</font>" ... title="<font color="#EE428B">previous</font>">Previous</button>，
 此時無法用同一種語言因應各種語系，HyUI 提供一組判斷語系之 javascript 設定，語系參照[W3C ISO Language Codes](https://www.w3schools.com/tags/ref_language_codes.asp)，可自行複製到各專案修改語系及對應之替代文字即可。注意：此程式並無預設放入 <font color="#EE428B">hyui.js</font>。
 
 其中，程式是判斷語系字串中的前面字符作為判斷依據，目的是同一語系可能會有分支語系，但以開頭之語系英文字母做判斷。
