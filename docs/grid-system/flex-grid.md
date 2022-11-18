@@ -97,12 +97,6 @@ $mGutter: 4px;
 
   <!-- tabs:end -->
 
-<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="flex grid system equal" src="https://codepen.io/u00hyui/embed/dyWyGar?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/dyWyGar">
-  flex grid system equal</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
-
 ### 自由分配
 
 ?> **每欄欄寬不相同**，加總等於`12`
@@ -252,24 +246,9 @@ $m-gutter: 4px;
 
 <!-- tabs:end -->
 
-<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="flex grid system mix" src="https://codepen.io/u00hyui/embed/eYWYZZK?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/eYWYZZK">
-  flex grid system mix</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
-
 ?>**附加說明**<br> 1. 二個數值代表順序為：**欄數**、**margin gutter**
 值後面，務必加上**單位**（%、px、em），**數值為『0』一樣要加單位**。</br> 2. **margin gutter** 的數值是**雙側的總和**，例如：**$mGutter: 20px**，欄寬左右各扣除 `10px`，以`space-between`達成對齊的效果</br> 3. flex grid 算式複雜，須配合斷點更改欄數，故 flex grid 的斷點採用`min-width`，極小尺寸為 screen-xs-flex:320px
 
-<!-- <div class="box">
-    <h3>附加說明</h3>
-    <ol>
-        <li>二個數值代表順序為：<span class="focus2">欄數</span>、<span class="focus2">margin gutter</span></li>
-        <li>數值後面，<span class="focus">務必加上單位（%、px、em）</span>，數值為『0』一樣要加單位。</li>
-    <li>margin gutter的數值是<span class="focus2">雙側的總和</span>，</br>例如：$m-gutter: 20px，欄寬左右各扣除10px，以<span class="focus2">space-between</span>達成對齊的效果</li>
-    <li>flex grid算式複雜，須配合斷點更改欄數，故 flex grid 的斷點採用<span class="focus2">min-width</span>，極小尺寸為<span class="focus2"><span class="focus">screen-xs-flex: 320px</span></span></li>
-</ol>
-</div> -->
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>
     .col{

@@ -1,19 +1,19 @@
 # Header 頁首
 
-檔案名稱：sass/modual/\_header.scss
-檔案名稱：sass/modual/\_menu.scss
+?>檔案名稱：sass/module/`_header.scss`<br>
+檔案名稱：sass/module/`_menu.scss`
 
-<font color="#EE428B">頁首</font> 由 <font color="#EE428B">header</font> 標籤包覆，目前已預先設定 <font color="#EE428B">h1 (logo 圖檔)</font> 、 <font color="#EE428B">navigation</font> 、 <font color="#EE428B">search</font> 、 <font color="#EE428B">menu</font>等元素。
+**頁首**由 **header** 標籤包覆，目前已預先設定 **h1 (logo 圖檔)** 、**navigation** 、 **search** 、 **menu** 等元素。
 
-內含預設模組可參考
+**內含預設模組可參考**
 
-- <font color="#009ee7">Navigation 導覽列</font>
-- <font color="#009ee7">Search 搜尋</font>
-- <font color="#009ee7">Menu 主選單</font>
+- Navigation 導覽列
+- Search 搜尋
+- Menu 主選單
 
-以下模組依照無障礙 <font color="#EE428B">tab</font> 遊走順序擺放，如無特殊需求，皆依照由上到下、由左到右之順序呈現。
+以下模組依照無障礙 `tab`遊走順序擺放，如無特殊需求，皆依照由上到下、由左到右之順序呈現。
 
-頁首模組皆已設定響應式風格樣式，目前斷點預設為 <font color="#EE428B">768px</font> ，如需要更改斷點，請至 <font color="#EE428B">main.js</font>更改斷點變數，以及 <font color="#EE428B">\_valuable.scss</font> 更改斷點變數。
+頁首模組皆已設定響應式風格樣式，目前斷點預設為 `768px` ，如需要更改斷點，請至`main.js`更改斷點變數，以及`valuable.scss`更改斷點變數。
 
 ## HTML 範本
 
@@ -182,12 +182,3 @@
 </header>
 <!-- header End -->
 ```
-
-<style>
-.ui-infobar{
-max-width:95%;
-}
-.markdown-body{
-max-width:95%;
-}
-</style>

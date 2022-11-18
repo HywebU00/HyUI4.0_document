@@ -255,12 +255,6 @@
 
 <!-- tabs:end -->
 
-<!-- <iframe height="430" style="width: 100%;" scrolling="no" title="設定圖片外框比例" src="https://codepen.io/u00hyui/embed/OJmJdam?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/OJmJdam">
-  設定圖片外框比例</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
-
 ---
 
 ## 設定圖片 object-fit 屬性
@@ -301,19 +295,7 @@
 
 <!-- tabs:end -->
 
-<!-- <iframe height="430" style="width: 100%;" scrolling="no" title="設定圖片object-fit屬性" src="https://codepen.io/u00hyui/embed/BaRabLY?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/BaRabLY">
-  設定圖片object-fit屬性</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
-
 ### 嵌入 iframe 的結構完全如上述圖片設定
-
-<!-- <iframe height="430" style="width: 100%;" scrolling="no" title="嵌入iframe的結構" src="https://codepen.io/u00hyui/embed/MWmWxmd?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/MWmWxmd">
-  嵌入iframe的結構</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 <!-- panels:start -->
 <div class="single_setting">
@@ -393,19 +375,7 @@
 
 <!-- tabs:end -->
 
-<!-- <iframe height="360" style="width: 100%;" scrolling="no" title="不同object-fit效果" src="https://codepen.io/u00hyui/embed/LYyYazR?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/LYyYazR">
-  不同object-fit效果</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
-
 ## 使用 Lazyload 延遲載入
-
-<!-- <iframe height="650" style="width: 100%;" scrolling="no" title="圖片形狀" src="https://codepen.io/u00hyui/embed/gOWOyLZ?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/gOWOyLZ">
-  圖片形狀</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 <!-- panels:start -->
 <section class="pic_list">
@@ -591,9 +561,3 @@ noscript 為必要加上的設定，因為 `data-src` 和 `data-oringinal` 並�
   threshold: 0,
 });
 </script>
-
-<!-- <iframe height="380" style="width: 100%;" scrolling="no" title="" src="https://codepen.io/u00hyui/embed/ExmxJow?defaultTab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/ExmxJow">
-  </a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->

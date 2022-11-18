@@ -1,16 +1,14 @@
 # swiper 圖片輪播
 
-###### tags: `HyUI`
+?>檔案名稱：vendor/swiper/`swiper-bundle.min.css`<br>
+檔案名稱：sass/ module /`swiper`
 
-檔案名稱：vendor/swiper/swiper-bundle.min.css
-檔案名稱：sass/ module /\_swiper
-
-HyUI 使用 <font color="#009ee7">slick</font> 的輪播模組，目前 hyUI <font color="#EE428B">vendor</font> 內含 <font color="#EE428B">swiper</font> ，如需要最新版，請到 <font color="#009ee7">[swiper](https://swiperjs.com/)</font> 官網下載。<br/>
+HyUI 使用 `slick` 的輪播模組，目前 hyUI **vendor** 內含 **swiper**，如需要最新版，請到 [swiper](https://swiperjs.com/) 官網下載。<br/>
 [中文版](https://www.swiper.com.cn/)
 
 ## 請在網頁中匯入 swiper 外掛
 
-swiper 屬於外掛，故放在 <font color="#EE428B">vendor</font> 資料夾裡，包括所有的圖檔、js、css
+**swiper** 屬於外掛，故放在 `vendor` 資料夾裡，包括所有的圖檔、js、css
 
 ## 匯入外掛 CSS
 
@@ -26,10 +24,10 @@ swiper 屬於外掛，故放在 <font color="#EE428B">vendor</font> 資料夾裡
 
 ## swiper 的基本設定
 
-使用設定以 swiper 官方文件為準。<br/>
-swiper 功能非常多可自行到 [中文版 API](https://www.swiper.com.cn/api/index.html) 觀看
+使用設定以 `swiper` 官方文件為準。<br/>
+**swiper** 功能非常多可自行到 [中文版 API](https://www.swiper.com.cn/api/index.html) 觀看
 
-```javascript
+```javacript
 const bannerSlider = new Swiper('.bannerSlider .swiper', {
   slidesPerView: 1, //顯示筆數
   spaceBetween: 20, //每筆之間的距離
@@ -60,11 +58,11 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
 });
 ```
 
-## <font color="#009ee7">01.大圖輪播範例</font>
+## 大圖輪播範例
 
-本版本輪播圖檔可使用 <font color="#EE428B">obect-fit</font> 設定，故上稿內容不限尺寸，皆可正常呈現。
+本版本輪播圖檔可使用 **obect-fit** 設定，故上稿內容不限尺寸，皆可正常呈現。
 
-<div class="bannerSlider">
+<div class="bannerSlider demo">
 <div class="swiperBox">
   <div class="swiper">
     <div class="swiper-wrapper">
@@ -143,7 +141,7 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
 }
 ```
 
-#### **JAVASCRIPT**
+#### **JavaScript**
 
 ```javascript
 const bannerSlider = new Swiper('.bannerSlider .swiper', {
@@ -173,9 +171,9 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
 
 <!-- tabs:end -->
 
-## <font color="#009ee7">02.廣告輪播範例</font>
+## 廣告輪播範例
 
-<div class="adSlider">
+<div class="adSlider demo">
   <div class="swiperBox">
   <div class="swiper">
     <div class="swiper-wrapper">
@@ -263,7 +261,7 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
 }
 ```
 
-#### **JAVASCRIPT**
+#### **JavaScript**
 
 ```javascript
 const adSlider = new Swiper('.adSlider .swiper', {
@@ -282,9 +280,9 @@ const adSlider = new Swiper('.adSlider .swiper', {
 
 <!-- tabs:end -->
 
-## <font color="#009ee7">03.照片輪播範例</font>
+## 照片輪播範例
 
-<div class="syncingSlider">
+<div class="syncingSlider demo">
 <!--大圖slider-for-->
 <div class="sliderFor">
   <div class="swiperBox">
@@ -429,7 +427,7 @@ const adSlider = new Swiper('.adSlider .swiper', {
 }
 ```
 
-#### **JAVASCRIPT**
+#### **JavaScript**
 
 ```javascript
 //注意小圖的設定一定要放在大圖的上方
@@ -464,15 +462,16 @@ const sliderFor = new Swiper('.sliderFor .swiper', {
 
 <!-- tabs:end -->
 
-## Javascript 設定:round_pushpin:
+## JavaScript 設定
 
-### 關於 swiper 按鈕的 title 語系
+### 關於 Swiper 按鈕的 title 語系
 
 因應無障礙需求，在左右箭頭需要有替代文字，但往往因為網站有不同語系需求，因此按鈕需要呈現不同語言的替代文字，例如:
 
-<<font color="#009ee7">html</font> lang="<font color="#EE428B">zh-Hant</font>">中按鈕會呈現<<font color="#009ee7">button</font> class="prevSlider" ... title="<font color="#EE428B">前一則</font>">Previous</button>或是
-<<font color="#009ee7">html</font> lang="<font color="#EE428B">en</font>" >中按鈕會呈現或是<<font color="#009ee7">button</font> class="<font color="#EE428B">prevSlider</font>" ... title="<font color="#EE428B">previous</font>">Previous</button>，
-此時無法用同一種語言因應各種語系，HyUI 提供一組判斷語系之 javascript 設定，語系參照[W3C ISO Language Codes](https://www.w3schools.com/tags/ref_language_codes.asp)，可自行複製到各專案修改語系及對應之替代文字即可。注意：此程式並無預設放入 <font color="#EE428B">hyui.js</font>。
+`<html lang="zh-Hant">`中按鈕會呈現`<button class="prevSlider" ... title="<font color="#EE428B">前一則">Previous</button>`或是
+
+`<html lang="en" >中按鈕會呈現或是<button class="prevSlider" ... title="previous">Previous</button>`，
+此時無法用同一種語言因應各種語系，**HyUI** 提供一組判斷語系之 javaScript 設定，語系參照[W3C ISO Language Codes](https://www.w3schools.com/tags/ref_language_codes.asp)，可自行複製到各專案修改語系及對應之替代文字即可。注意：此程式並無預設放入 **main.js**
 
 其中，程式是判斷語系字串中的前面字符作為判斷依據，目的是同一語系可能會有分支語系，但以開頭之語系英文字母做判斷。
 
@@ -523,11 +522,8 @@ customPaging: function(slider, i) {
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 <style>
-.ui-infobar{
-max-width:95%;
-}
-.markdown-body{
-max-width:95%;
+.demo{
+  margin:4em 0;
 }
 .swiperDots{
   position:relative;

@@ -1,8 +1,8 @@
 # Search 搜尋
 
-檔案名稱：檔案名稱：sass/modual/\_header.scss
+?>檔案名稱：檔案名稱：sass/ module/`header.scss`
 
-<div class="webSearch" role="search">
+<div class="webSearch demo" role="search">
   <div class="formGrp">
     <label for="mustSameAsId">搜尋</label>
     <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S" title="請輸入文字" aria-label="搜尋網站內容" />
@@ -45,11 +45,8 @@
 ```
 
 <style>
-.ui-infobar{
-max-width:95%;
-}
-.markdown-body{
-max-width:95%;
+.demo{
+  margin:4rem 0;
 }
 </style>
 

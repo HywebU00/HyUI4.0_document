@@ -82,11 +82,6 @@ categoryActive();
 
 <!-- tabs:end -->
 
-<!-- <iframe height="265" style="width: 100%;" scrolling="no" title="Category / 分類目錄" src="https://codepen.io/u00hyui/embed/poNmBqz?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/poNmBqz'>Category / 分類目錄</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe> -->
-
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>
 .category {

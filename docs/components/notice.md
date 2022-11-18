@@ -28,11 +28,6 @@
 
 <!-- tabs:end -->
 
-<!-- <iframe height="290" style="width: 100%;" scrolling="no" title="Notice / 提示訊息" src="https://codepen.io/u00hyui/embed/rNyxZdv?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/rNyxZdv'>Notice / 提示訊息</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe> -->
-
 ## 有按鈕的提示訊息
 
 <section class="demo">
@@ -81,11 +76,6 @@ document.querySelectorAll('[class*="notice"] a.close').forEach((i) => {
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="290" style="width: 100%;" scrolling="no" title="Notice / 提示訊息- 有關閉按鈕" src="https://codepen.io/u00hyui/embed/wvJMEXz?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/wvJMEXz'>Notice / 提示訊息- 有關閉按鈕</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe> -->
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>

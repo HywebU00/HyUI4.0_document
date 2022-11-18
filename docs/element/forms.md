@@ -12,12 +12,6 @@
 
 ### 預設文字表單
 
-<!-- <iframe height="200" style="width: 100%;" scrolling="no" title="預設文字表單" src="https://codepen.io/u00hyui/embed/KKWLymN?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/KKWLymN">
-  預設文字表單</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
-
 <!-- panels:start -->
 <div class="flexForm">
   <label for="username">帳號:</label>
@@ -56,11 +50,6 @@
 ```
 
 <!-- tabs:end -->
-<!-- <iframe height="200" style="width: 100%;" scrolling="no" title="預設密碼表單" src="https://codepen.io/u00hyui/embed/QWpRQQX?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/QWpRQQX">
-  預設密碼表單</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ### 預設組合範例
 
@@ -107,12 +96,6 @@
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="350" style="width: 100%;" scrolling="no" title="預設組合範例" src="https://codepen.io/u00hyui/embed/KKWLQbw?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/KKWLQbw">
-  預設組合範例</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ### 預設組合範例 - 行內設定
 
@@ -296,12 +279,6 @@
 
 <!-- tabs:end -->
 
-<!-- <iframe height="200" style="width: 100%;" scrolling="no" title="預設單選方塊" src="https://codepen.io/u00hyui/embed/MWpMRwE?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/MWpMRwE">
-  預設單選方塊</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
-
 ### 預設單選方塊 - 行內設定
 
 <div class="flexForm">
@@ -394,12 +371,6 @@
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="200" style="width: 100%;" scrolling="no" title="下拉選單 - 行內設定" src="https://codepen.io/u00hyui/embed/MWpMRer?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/MWpMRer">
-  下拉選單 - 行內設定</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ## 檔案瀏覽 or 上傳檔案
 
@@ -1154,11 +1125,6 @@ addFile();
 ```
 
 <!-- tabs:end -->
-<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="多欄、格線式表單 1" src="https://codepen.io/u00hyui/embed/GRWbbjw?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/GRWbbjw">
-  多欄、格線式表單 1</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ### 多欄、格線式表單 2
 
@@ -1381,12 +1347,6 @@ addFile();
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="格線式表單 - 多欄、顯示label" src="https://codepen.io/u00hyui/embed/gOmNNmq?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/gOmNNmq">
-  格線式表單 - 多欄、顯示label</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ### 多層次表單
 
@@ -2046,12 +2006,6 @@ addFile();
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="多層次表單" src="https://codepen.io/u00hyui/embed/gOmNNoy?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/gOmNNoy">
-  多層次表單</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <script>

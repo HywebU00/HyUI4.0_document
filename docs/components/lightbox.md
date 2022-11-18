@@ -29,7 +29,7 @@ HyUI 使用 **fancybox** 的燈箱套件，目前 hyUI vendor 內含 `fancybox` 
 - flexEqual_4 為 `4` 個一列<br/>
 - flexEqual_5 為 `5` 個一列<br/>
 
-<div class="flexEqual_3">
+<div class="flexEqual_3 demo">
   <div class="flexSet">
     <div class="thumbnail">
       <a href="https://hywebu00.github.io/hyui_flex/images/demo/01.jpg" data-fancybox="images" data-caption="第1張圖說" data-alt="第1張圖說">
@@ -110,3 +110,8 @@ HyUI 使用 **fancybox** 的燈箱套件，目前 hyUI vendor 內含 `fancybox` 
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/vendor/fancybox/fancybox.css"/>
+<style>
+  .demo{
+    margin:4em 0;
+  }
+</style>

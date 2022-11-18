@@ -108,12 +108,3 @@ $screenXs:        576px  !default;        //極小尺寸
 ```
 
 <!-- panels:end -->
-
-<style>
-.ui-infobar{
-max-width:95%;
-}
-.markdown-body{
-max-width:95%;
-}
-</style>

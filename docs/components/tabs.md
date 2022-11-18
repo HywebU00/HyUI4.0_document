@@ -285,12 +285,3 @@ tabFunction('.tabSet'); // tab功能
 }
 tabFunction('.tabSet'); // tab功能
 </script>
-
-<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="Tabs / 頁籤 1" src="https://codepen.io/u00hyui/embed/PopZyGm?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/PopZyGm'>Tabs / 頁籤 1</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe> -->
-<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="Tabs / 頁籤2" src="https://codepen.io/u00hyui/embed/VwpeVgB?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/VwpeVgB'>Tabs / 頁籤2</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe> -->

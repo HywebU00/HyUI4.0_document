@@ -127,12 +127,6 @@ HyUI 提供一個固定`側邊欄`的作法，固定特定位置，而不隨滾�
 
 ```
 
-<!-- <iframe height="450" style="width: 100%;" scrolling="no" title="側邊選單01" src="https://codepen.io/u00hyui/embed/poPgOjZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/poPgOjZ">
-  側邊選單01</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
-
 <!-- tabs:end -->
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>

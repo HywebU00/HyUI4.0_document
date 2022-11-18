@@ -38,11 +38,6 @@
   </ul>
 </div>
 
-<!-- <iframe height="265" style="width: 100%;" scrolling="no" title="Share / 社群分享 - SVG格式" src="https://codepen.io/u00hyui/embed/abJzdWb?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/abJzdWb'>Share / 社群分享 - SVG格式</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe> -->
-
 <!-- tabs:start -->
 
 #### **HTML**

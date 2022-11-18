@@ -332,8 +332,3 @@ const slider = (function () {
 }
 shareBtnFunction();
 </script>
-<!-- <iframe height="400" style="width: 100%;" scrolling="no" title="Function Panel / 內容頁控制及顯示模組" src="https://codepen.io/u00hyui/embed/qBrWbRr?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/qBrWbRr">
-  Function Panel / 內容頁控制及顯示模組</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->

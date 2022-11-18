@@ -77,11 +77,6 @@
 ```
 
 <!-- tabs:end -->
-<!-- <iframe height="300" style="width: 100%;" scrolling="no" title="基本表格樣式" src="https://codepen.io/u00hyui/embed/PomoQLj?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/PomoQLj">
-  基本表格樣式</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ### td 有 hover 效果
 
@@ -137,12 +132,6 @@ table 加上`tableHover`的 className
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="300" style="width: 100%;" scrolling="no" title="基本表格樣式 - td有hover效果" src="https://codepen.io/u00hyui/embed/mdmdLgN?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/mdmdLgN">
-  基本表格樣式 - td有hover效果</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ### td 有間隔不同背景色
 
@@ -210,23 +199,12 @@ table 加上`table_sprite`的 className
 ```
 
 <!-- tabs:end -->
-<!-- <iframe height="350" style="width: 100%;" scrolling="no" title="基本表格樣式 - td有間隔不同背景色" src="https://codepen.io/u00hyui/embed/zYwYJOo?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/zYwYJOo">
-  基本表格樣式 - td有間隔不同背景色</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ## 響應式排版表格
 
 支援響應式條列式重新排版表格
 
 使用`before`取代`th`，在`table`上一層使用`<div class="tableList"></div>`將`table`包覆住，即可於手機版重新排版表格樣式。
-
-<!-- <iframe height="500" style="width: 100%;" scrolling="no" title="響應式條列式重新排版表格" src="https://codepen.io/u00hyui/embed/eYWYLNz?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/eYWYLNz">
-  響應式條列式重新排版表格</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 <!-- panels:start -->
 <div class="tableList">
@@ -451,12 +429,6 @@ tableAddDataAttributes({
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="300" style="width: 100%;" scrolling="no" title="固定左邊表頭，資料可水平捲動表格" src="https://codepen.io/u00hyui/embed/GRmRXqw?defaultTab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/GRmRXqw">
-  固定左邊表頭，資料可水平捲動表格</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ## Scroll 表格設定
 

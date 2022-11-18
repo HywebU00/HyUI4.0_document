@@ -29,12 +29,6 @@
 
 <!-- tabs:end -->
 
-<!-- <iframe height="300" style="width: 100%;" scrolling="no" title="functionFunction /功能選單" src="https://codepen.io/u00hyui/embed/JjWjOde?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/JjWjOde">
-  functionFunction /功能選單</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
-
 ## 有 icon 的按鈕設定
 
 <div class="function">
@@ -60,12 +54,6 @@
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="300" style="width: 100%;" scrolling="no" title="functionFunction /功能選單   有icon" src="https://codepen.io/u00hyui/embed/oNZNobV?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/oNZNobV">
-  functionFunction /功能選單   有icon</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ## 加入 functionPanel 的按鈕設定
 
@@ -98,12 +86,6 @@
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="300" style="width: 100%;" scrolling="no" title="Function/功能選單- 加入function_panel內" src="https://codepen.io/u00hyui/embed/YzZzEZK?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/YzZzEZK">
-  Function/功能選單- 加入function_panel內</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>

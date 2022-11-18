@@ -34,11 +34,6 @@
 
 <!-- tabs:end -->
 
-<!-- <iframe height="265" style="width: 100%;" scrolling="no" title="Tag / 標籤" src="https://codepen.io/u00hyui/embed/KKWVEpL?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/KKWVEpL'>Tag / 標籤</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe> -->
-
 ## 內容頁範例
 
 <section class="demo">
@@ -81,12 +76,6 @@
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="400" style="width: 100%;" scrolling="no" title="tag內容頁範例" src="https://codepen.io/u00hyui/embed/jOBjJab?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/jOBjJab">
-  tag內容頁範例</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 ## 列表頁範例
 
@@ -182,11 +171,6 @@
 ```
 
 <!-- tabs:end -->
-<!-- <iframe height="550" style="width: 100%;" scrolling="no" title="tag列表頁範例" src="https://codepen.io/u00hyui/embed/vYxqMBw?defaultTab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/u00hyui/pen/vYxqMBw">
-  tag列表頁範例</a> by u00hyui (<a href="https://codepen.io/u00hyui">@u00hyui</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe> -->
 
 <style>
 .demo{

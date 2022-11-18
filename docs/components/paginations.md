@@ -79,11 +79,6 @@
 
 <!-- tabs:end -->
 
-<!-- <iframe height="265" style="width: 100%;" scrolling="no" title="Paginations / 分頁導覽1" src="https://codepen.io/u00hyui/embed/JjWobWJ?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/JjWobWJ'>Paginations / 分頁導覽1</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe> -->
-
 ## 不含 Input 的分頁導覽
 
 <div class="demo">
@@ -128,11 +123,6 @@
 ```
 
 <!-- tabs:end -->
-
-<!-- <iframe height="265" style="width: 100%;" scrolling="no" title="Paginations / 分頁導覽2" src="https://codepen.io/u00hyui/embed/zYZxowN?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/u00hyui/pen/zYZxowN'>Paginations / 分頁導覽2</a> by u00hyui
-  (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe> -->
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 

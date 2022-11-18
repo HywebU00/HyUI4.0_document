@@ -3,17 +3,17 @@
 
 - 快速開始
 
-  - [V 下載](quick-start/download.md)
-  - [V HTML 範本](quick-start/hemlTemplate.md)
-  - [V SASS 架構](quick-start/sass.md)
-  - [V mixin / extend 引用列表](quick-start/mixin.md)
-  - [V 無障礙與列印 ](quick-start/print.md)
+  - [下載](quick-start/download.md)
+  - [HTML 範本](quick-start/hemlTemplate.md)
+  - [SASS 架構](quick-start/sass.md)
+  - [mixin / extend 引用列表](quick-start/mixin.md)
+  - [無障礙與列印 ](quick-start/print.md)
 
 - 排版系統
 
-  - [V Mediaquery](grid-system/mediaquery.md)
+  - [Mediaquery](grid-system/mediaquery.md)
   <!-- - [Bootstrap grid system](grid-system/bootstrap.md) -->
-  - [V flex grid system](grid-system/flex-grid.md)
+  - [flex grid system](grid-system/flex-grid.md)
 
 - 範例頁面
 
@@ -34,40 +34,39 @@
 
 - 模組
 
-  - [V Header 頁首](components/header.md)
-    - [V Search 搜尋](components/search.md)
-    - [V Menu 主選單](components/menu.md)
-    - [V Language 選擇語系選單](components/language.md)
-  - [V Accordion 收合式選單](components/accordion.md)
-  - [V Album+Lightbox 相簿(縮圖)+燈箱](components/lightbox.md)
-  - [V Breadcrumb 頁面路徑](components/breadcrumb.md)
-  - [V Category 分類目錄](components/category.md)
-  - [V Function Panel 內頁控制及顯示模組](components/function-panel.md)
-    - [V Font-Size 控制文章字體大小](components/font-size.md)
-    - [V Function 功能選單](components/function.md)
-    - [V Share 社群分享](components/share.md)
-  - [V File-download 檔案下載](components/file-download.md)
-  - [V Fixed-sidebar 固定側邊欄](components/fixed-sidebar.md)
-  - [V Fat-footer 頁尾選單](components/fat-footer.md)
-  - [V Footer 頁尾](components/footer.md)
+  - [Header 頁首](components/header.md)
+    - [Search 搜尋](components/search.md)
+    - [Menu 主選單](components/menu.md)
+    - [Language 選擇語系選單](components/language.md)
+  - [Accordion 收合式選單](components/accordion.md)
+  - [Album+Lightbox 相簿(縮圖)+燈箱](components/lightbox.md)
+  - [Breadcrumb 頁面路徑](components/breadcrumb.md)
+  - [Category 分類目錄](components/category.md)
+  - [Function Panel 內頁控制及顯示模組](components/function-panel.md)
+    - [Font-Size 控制文章字體大小](components/font-size.md)
+    - [Function 功能選單](components/function.md)
+    - [Share 社群分享](components/share.md)
+  - [File-download 檔案下載](components/file-download.md)
+  - [Fixed-sidebar 固定側邊欄](components/fixed-sidebar.md)
+  - [Fat-footer 頁尾選單](components/fat-footer.md)
+  - [Footer 頁尾](components/footer.md)
   - [Marquee 跑馬燈](components/marquee.md)
-  - [V Modal 彈出對話框](components/modal.md)
-  - [V Notice 提示訊息](components/notice.md)
-  - [V Paginations 分頁導覽](components/paginations.md)
+  - [Modal 彈出對話框](components/modal.md)
+  - [Notice 提示訊息](components/notice.md)
+  - [Paginations 分頁導覽](components/paginations.md)
   - [Silder 圖片輪播](components/silder.md)
-  - [V Tabs 頁籤](components/tabs.md)
-  - [V Tag 標籤](components/tag.md)
-  - [V Web link 網頁連結](components/web-link.md)
+  - [Tabs 頁籤](components/tabs.md)
+  - [Tag 標籤](components/tag.md)
+  - [Web link 網頁連結](components/web-link.md)
 
 - 網頁元素
-  - [V Buttons 按鈕](element/buttons.md)
-  - [V Forms 表單](element/forms.md)
-  - [V Tables 表格](element/tables.md)
-  - [V Tooltip 提示框](element/tooltip.md)
-  - [V Images 圖片](element/images.md)
-  - [V Icon 圖示](element/icon.md)
-  - [V hr & divider 分隔線](element/divider.md)
-  - [V 測試頁面](element/thisistestpage.md)
+  - [Buttons 按鈕](element/buttons.md)
+  - [Forms 表單](element/forms.md)
+  - [Tables 表格](element/tables.md)
+  - [Tooltip 提示框](element/tooltip.md)
+  - [Images 圖片](element/images.md)
+  - [Icon 圖示](element/icon.md)
+  - [hr & divider 分隔線](element/divider.md)
 
 <style>
   .search {
