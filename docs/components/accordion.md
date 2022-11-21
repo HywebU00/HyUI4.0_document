@@ -187,26 +187,31 @@ function accordionSlider(obj) {
     }, 50);
   });
 }
+```
+
+<!-- tabs:end -->
+
+```javascript
 // 手風琴功能
 accordionSlider({
-  accordionList: '.accordionList', // 問題區塊
-  accordionContent: '.accordionContent', // 回答區塊
-  accordionInfo: {
+  list: '.accordionList', // 問題區塊
+  content: '.accordionContent', // 回答區塊
+  autoSlider: true,
+  info: {
     open: '展開', // 收合時顯示
     close: '收合', // 展開時顯示
   },
 });
 ```
 
-<!-- tabs:end -->
-
 ## 用法
 
-| Name             | Type                 | Default                     | Description             |
-| :--------------- | :------------------- | --------------------------- | ----------------------- |
-| accordionList    | selector DOM element | .accordionList              | 問題區塊                |
-| accordionContent | selector DOM element | .accordionContent           | 回答區塊                |
-| accordionInfo    | string               | open:'展開'｜ close: '收合' | 收合時顯示 / 展開時顯示 |
+| Name       | Type                 | Default                     | Description                            |
+| :--------- | :------------------- | --------------------------- | -------------------------------------- |
+| list       | selector DOM element | .accordionList              | 問題區塊                               |
+| content    | selector DOM element | .accordionContent           | 回答區塊                               |
+| autoSlider | true / false         | true                        | 點選其他項目時是否要自動關閉已開啟項目 |
+| info       | string               | open:'展開'｜ close: '收合' | 收合時顯示 / 展開時顯示                |
 
 ## 方法
 

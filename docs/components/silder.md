@@ -478,7 +478,7 @@ const sliderFor = new Swiper('.sliderFor .swiper', {
 ## main.js 中設定箭頭的語系
 
 ```javascript
-//無障礙切換swiper箭頭語系
+//無障礙切換swiper箭頭語系，修改請用main.js
 //swiper 箭頭設定
 swiperArrows({
   next: '.nextSlider',
