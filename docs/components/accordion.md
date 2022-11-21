@@ -89,28 +89,28 @@
 
 ```javascript
 function accordionSlider(obj) {
-  const accordionList = document.querySelectorAll(obj.accordionList);
-  const accordion = document.querySelector(obj.accordionList) !== null ? document.querySelector(obj.accordionList).parentNode.parentNode : '';
-  const accordionContent = obj.accordionContent;
-  const accordionInfo = obj.accordionInfo.switch;
-  const accordionInfoOpen = obj.accordionInfo.open;
-  const accordionInfoClose = obj.accordionInfo.close;
+  const list = document.querySelectorAll(obj.list);
+  const accordion = document.querySelector(obj.list) !== null ? document.querySelector(obj.list).parentNode.parentNode : '';
+  let { autoSlider } = obj;
+  const { open, close } = obj.info;
   const fontBtn = document.querySelectorAll('.fontSize ul li a');
   // ---初始化
-  fontBtn.forEach((i) => {
-    i.addEventListener('click', function () {
-      checkContentHeight();
+  if (fontBtn !== null) {
+    fontBtn.forEach((i) => {
+      i.addEventListener('click', function () {
+        checkContentHeight();
+      });
     });
-  });
+  }
 
-  accordionList.forEach((i) => {
-    i.innerHTML += `<span class="accordionBtn">${accordionInfoOpen}</span>`;
+  list.forEach((i) => {
+    i.innerHTML += `<span class="accordionBtn">${open}</span>`;
     i.innerHTML += `<span class="accordionArrow"></span>`;
   });
 
   // ---抓取高度
   function checkContentHeight() {
-    accordionList.forEach((i) => {
+    list.forEach((i) => {
       let itemContent = i.nextElementSibling;
       itemContent.setAttribute('style', '');
       itemContent.dataset.itemHeight = itemContent.offsetHeight;
@@ -121,11 +121,11 @@ function accordionSlider(obj) {
   }
   // ---操控開合
   function toggleAccordion() {
-    accordionList.forEach((i, index) => {
+    list.forEach((i, index) => {
       const isFirstAccordion = index === 0; // --- 如果是第一個頁籤
       const contentHeight = i.nextElementSibling.dataset.itemHeight || 0;
 
-      const thisPrevItem = accordionList[index - 1]; // --- 綁定前一個頁籤按鈕
+      const thisPrevItem = list[index - 1]; // --- 綁定前一個頁籤按鈕
       let prevItemAllA;
       if (thisPrevItem !== undefined) {
         prevItemAllA = thisPrevItem.nextElementSibling.querySelectorAll('[href], input'); // --- 前一個頁籤內容所有a和input項目
@@ -135,43 +135,55 @@ function accordionSlider(obj) {
         prevItemLastA = prevItemAllA[prevItemAllA.length];
       }
 
-      i.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
+      i.querySelector('.accordionBtn').innerHTML = `${open}`;
       i.addEventListener('keydown', (e) => {
         if (e.which === 9 && !e.shiftKey) {
-          accordionList.forEach((s) => {
+          list.forEach((s) => {
             s.nextElementSibling.style.height = `0px`;
             s.parentNode.classList.remove('active');
-            s.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
+            s.querySelector('.accordionBtn').innerHTML = `${open}`;
           });
           i.nextElementSibling.style.height = `${contentHeight}px`;
           i.parentNode.classList.add('active');
-          i.querySelector('.accordionBtn').innerHTML = `${accordionInfoClose}`;
+          i.querySelector('.accordionBtn').innerHTML = `${close}`;
         } else if (e.which === 9 && e.shiftKey && !isFirstAccordion) {
           if (prevItemAllA.length) {
-            accordionList.forEach((s) => {
+            list.forEach((s) => {
               s.nextElementSibling.style.height = `0px`;
               s.parentNode.classList.remove('active');
-              s.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
+              s.querySelector('.accordionBtn').innerHTML = `${open}`;
             });
-            accordionList[index - 1].parentNode.classList.add('active');
-            accordionList[index - 1].nextElementSibling.style.height = `${accordionList[index - 1].nextElementSibling.dataset.itemHeight}px`;
-            accordionList[index - 1].querySelector('.accordionBtn').innerHTML = `${accordionInfoClose}`;
+            list[index - 1].parentNode.classList.add('active');
+            list[index - 1].nextElementSibling.style.height = `${list[index - 1].nextElementSibling.dataset.itemHeight}px`;
+            list[index - 1].querySelector('.accordionBtn').innerHTML = `${close}`;
           }
         }
       });
 
-      i.addEventListener('click', (e) => {
-        //取消Ａ連結預設行為
-        e.preventDefault();
-        accordionList.forEach((s) => {
-          s.parentNode.classList.remove('active');
-          s.nextElementSibling.style.height = `0px`;
-          s.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
-        });
-        i.nextElementSibling.style.height = `${contentHeight}px`;
-        i.parentNode.classList.add('active');
-        i.querySelector('.accordionBtn').innerHTML = `${accordionInfoClose}`;
-      });
+      i.addEventListener(
+        'click',
+        (e) => {
+          //取消Ａ連結預設行為
+          e.preventDefault();
+          if (autoSlider) {
+            list.forEach((s) => {
+              s.parentNode.classList.remove('active');
+              s.nextElementSibling.style.height = `0px`;
+              s.querySelector('.accordionBtn').innerHTML = `${open}`;
+            });
+          }
+          if (i.nextElementSibling.offsetHeight < contentHeight) {
+            i.nextElementSibling.style.height = `${contentHeight}px`;
+            i.parentNode.classList.add('active');
+            i.querySelector('.accordionBtn').innerHTML = `${close}`;
+          } else {
+            i.nextElementSibling.style.height = `0px`;
+            i.parentNode.classList.remove('active');
+            i.querySelector('.accordionBtn').innerHTML = `${open}`;
+          }
+        },
+        false
+      );
     });
   }
 
@@ -179,34 +191,40 @@ function accordionSlider(obj) {
     // --- 算出 menu 距離上方的高度
     setTimeout(() => {
       checkContentHeight();
-      accordionList.forEach((v) => {
+      list.forEach((v) => {
         v.parentNode.classList.remove('active');
         v.nextElementSibling.style.height = `0px`;
-        v.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
+        v.querySelector('.accordionBtn').innerHTML = `${open}`;
       });
     }, 50);
   });
+  window.addEventListener('load', checkContentHeight);
 }
+```
+
+<!-- tabs:end -->
+
+```javascript
 // 手風琴功能
 accordionSlider({
-  accordionList: '.accordionList', // 問題區塊
-  accordionContent: '.accordionContent', // 回答區塊
-  accordionInfo: {
+  list: '.accordionList', // 問題區塊
+  content: '.accordionContent', // 回答區塊
+  autoSlider: true,
+  info: {
     open: '展開', // 收合時顯示
     close: '收合', // 展開時顯示
   },
 });
 ```
 
-<!-- tabs:end -->
-
 ## 用法
 
-| Name             | Type                 | Default                     | Description             |
-| :--------------- | :------------------- | --------------------------- | ----------------------- |
-| accordionList    | selector DOM element | .accordionList              | 問題區塊                |
-| accordionContent | selector DOM element | .accordionContent           | 回答區塊                |
-| accordionInfo    | string               | open:'展開'｜ close: '收合' | 收合時顯示 / 展開時顯示 |
+| Name       | Type                 | Default                     | Description                            |
+| :--------- | :------------------- | --------------------------- | -------------------------------------- |
+| list       | selector DOM element | .accordionList              | 問題區塊                               |
+| content    | selector DOM element | .accordionContent           | 回答區塊                               |
+| autoSlider | true / false         | true                        | 點選其他項目時是否要自動關閉已開啟項目 |
+| info       | string               | open:'展開'｜ close: '收合' | 收合時顯示 / 展開時顯示                |
 
 ## 方法
 
@@ -273,20 +291,26 @@ accordionSlider({
 </style>
 <script>
   function accordionSlider(obj) {
-  const accordionList = document.querySelectorAll(obj.accordionList);
-  const accordion = document.querySelector(obj.accordionList) !== null ? document.querySelector(obj.accordionList).parentNode.parentNode : '';
-  const accordionContent = obj.accordionContent;
-  const accordionInfo = obj.accordionInfo.switch;
-  const accordionInfoOpen = obj.accordionInfo.open;
-  const accordionInfoClose = obj.accordionInfo.close;
-  accordionList.forEach((i) => {
-    i.innerHTML += `<span class="accordionBtn">${accordionInfoOpen}</span>`;
+  const list = document.querySelectorAll(obj.list);
+  const accordion = document.querySelector(obj.list) !== null ? document.querySelector(obj.list).parentNode.parentNode : '';
+  let { autoSlider } = obj;
+  const { open, close } = obj.info;
+  const fontBtn = document.querySelectorAll('.fontSize ul li a');
+  // ---初始化
+  if (fontBtn !== null) {
+    fontBtn.forEach((i) => {
+      i.addEventListener('click', function () {
+        checkContentHeight();
+      });
+    });
+  }
+  list.forEach((i) => {
+    i.innerHTML += `<span class="accordionBtn">${open}</span>`;
     i.innerHTML += `<span class="accordionArrow"></span>`;
   });
-  // ---抓取高度
-  checkContentHeight();
+// ---抓取高度
   function checkContentHeight() {
-    accordionList.forEach((i) => {
+    list.forEach((i) => {
       let itemContent = i.nextElementSibling;
       itemContent.setAttribute('style', '');
       itemContent.dataset.itemHeight = itemContent.offsetHeight;
@@ -297,11 +321,10 @@ accordionSlider({
   }
   // ---操控開合
   function toggleAccordion() {
-     console.log("3")
-    accordionList.forEach((i, index) => {
+    list.forEach((i, index) => {
       const isFirstAccordion = index === 0; // --- 如果是第一個頁籤
       const contentHeight = i.nextElementSibling.dataset.itemHeight || 0;
-      const thisPrevItem = accordionList[index - 1]; // --- 綁定前一個頁籤按鈕
+      const thisPrevItem = list[index - 1]; // --- 綁定前一個頁籤按鈕
       let prevItemAllA;
       if (thisPrevItem !== undefined) {
         prevItemAllA = thisPrevItem.nextElementSibling.querySelectorAll('[href], input'); // --- 前一個頁籤內容所有a和input項目
@@ -310,61 +333,75 @@ accordionSlider({
       if (thisPrevItem !== undefined) {
         prevItemLastA = prevItemAllA[prevItemAllA.length];
       }
-      i.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
+      i.querySelector('.accordionBtn').innerHTML = `${open}`;
       i.addEventListener('keydown', (e) => {
         if (e.which === 9 && !e.shiftKey) {
-          accordionList.forEach((s) => {
+          list.forEach((s) => {
             s.nextElementSibling.style.height = `0px`;
             s.parentNode.classList.remove('active');
-            s.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
+            s.querySelector('.accordionBtn').innerHTML = `${open}`;
           });
           i.nextElementSibling.style.height = `${contentHeight}px`;
           i.parentNode.classList.add('active');
-          i.querySelector('.accordionBtn').innerHTML = `${accordionInfoClose}`;
+          i.querySelector('.accordionBtn').innerHTML = `${close}`;
         } else if (e.which === 9 && e.shiftKey && !isFirstAccordion) {
           if (prevItemAllA.length) {
-            accordionList.forEach((s) => {
+            list.forEach((s) => {
               s.nextElementSibling.style.height = `0px`;
               s.parentNode.classList.remove('active');
-              s.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
+              s.querySelector('.accordionBtn').innerHTML = `${open}`;
             });
-            accordionList[index - 1].parentNode.classList.add('active');
-            accordionList[index - 1].nextElementSibling.style.height = `${accordionList[index - 1].nextElementSibling.dataset.itemHeight}px`;
-            accordionList[index - 1].querySelector('.accordionBtn').innerHTML = `${accordionInfoClose}`;
+            list[index - 1].parentNode.classList.add('active');
+            list[index - 1].nextElementSibling.style.height = `${list[index - 1].nextElementSibling.dataset.itemHeight}px`;
+            list[index - 1].querySelector('.accordionBtn').innerHTML = `${close}`;
           }
         }
       });
-      i.addEventListener('click', (e) => {
-        //取消Ａ連結預設行為
-        e.preventDefault();
-        accordionList.forEach((s) => {
-          s.parentNode.classList.remove('active');
-          s.nextElementSibling.style.height = `0px`;
-          s.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
-        });
-        i.nextElementSibling.style.height = `${contentHeight}px`;
-        i.parentNode.classList.add('active');
-        i.querySelector('.accordionBtn').innerHTML = `${accordionInfoClose}`;
-      });
+      i.addEventListener(
+        'click',
+        (e) => {
+          //取消Ａ連結預設行為
+          e.preventDefault();
+          if (autoSlider) {
+            list.forEach((s) => {
+              s.parentNode.classList.remove('active');
+              s.nextElementSibling.style.height = `0px`;
+              s.querySelector('.accordionBtn').innerHTML = `${open}`;
+            });
+          }
+          if (i.nextElementSibling.offsetHeight < contentHeight) {
+            i.nextElementSibling.style.height = `${contentHeight}px`;
+            i.parentNode.classList.add('active');
+            i.querySelector('.accordionBtn').innerHTML = `${close}`;
+          } else {
+            i.nextElementSibling.style.height = `0px`;
+            i.parentNode.classList.remove('active');
+            i.querySelector('.accordionBtn').innerHTML = `${open}`;
+          }
+        },
+        false
+      );
     });
   }
   window.addEventListener('resize', (e) => {
     // --- 算出 menu 距離上方的高度
     setTimeout(() => {
       checkContentHeight();
-      accordionList.forEach((v) => {
+      list.forEach((v) => {
         v.parentNode.classList.remove('active');
         v.nextElementSibling.style.height = `0px`;
-        v.querySelector('.accordionBtn').innerHTML = `${accordionInfoOpen}`;
+        v.querySelector('.accordionBtn').innerHTML = `${open}`;
       });
     }, 50);
   });
+  window.addEventListener('load', checkContentHeight);
 }
 // 手風琴功能
 accordionSlider({
-  accordionList: '.accordionList', // 問題區塊
-  accordionContent: '.accordionContent', // 回答區塊
-  accordionInfo: {
+  list: '.accordionList', // 問題區塊
+  content: '.accordionContent', // 回答區塊
+  autoSlider: true, // true 點選其他項目時會關閉已開啟的內容，false 需要再點一次才會關閉
+  info: {
     open: '展開', // 收合時顯示
     close: '收合', // 展開時顯示
   },
