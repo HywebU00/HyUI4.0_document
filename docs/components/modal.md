@@ -28,15 +28,14 @@
 </div>
 ```
 
-#### **JavaScript**
-
-```javascript
-Fancybox.bind('[data-fancybox]', {
-  // Your options go here
-});
-```
-
 <!-- tabs:end -->
+
+## 匯入外掛 fancybox js
+
+```html
+<!-- 燈箱facybox -->
+<script src="vendor/fancybox/fancybox.js"></script>
+```
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>

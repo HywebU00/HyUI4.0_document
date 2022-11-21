@@ -4,9 +4,9 @@
 
 HyUI 提供跑馬燈的範例，有使用 `slick` 的輪播模組，需先在網頁中匯入外掛 CSS 及 js，可參考模組 [Slider 圖片輪播](/VkhALd3wTYSt_ctD6W0XPQ)說明。
 
-<div class="marquee">
+<div class="marquee ">
   <h3>跑馬燈</h3>
-  <div class="swiperBox">
+  <div class="swiperBox demo">
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -62,7 +62,7 @@ HyUI 提供跑馬燈的範例，有使用 `slick` 的輪播模組，需先在網
 </div>
 ```
 
-#### **JAVASCRIPT**
+#### **JavaScript**
 
 ```javascript
 const marqueeSwiper = new Swiper('.marquee .swiper', {
@@ -81,6 +81,11 @@ const marqueeSwiper = new Swiper('.marquee .swiper', {
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<style>
+  .demo{
+    margin:4em 0;
+  }
+</style>
 
 <script>
   const marqueeSwiper = new Swiper('.marquee .swiper', {
