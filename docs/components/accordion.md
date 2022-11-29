@@ -202,8 +202,6 @@ function accordionSlider(obj) {
 }
 ```
 
-<!-- tabs:end -->
-
 ```javascript
 // 手風琴功能
 accordionSlider({
@@ -216,6 +214,8 @@ accordionSlider({
   },
 });
 ```
+
+<!-- tabs:end -->
 
 ## 用法
 

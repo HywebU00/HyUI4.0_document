@@ -550,8 +550,6 @@ noscript 為必要加上的設定，因為 `data-src` 和 `data-oringinal` 並�
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 
-<!-- lazyload -->
-<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 <script>
   let lazyLoadInstance = new LazyLoad({
   elements_selector: 'img.lazy',
