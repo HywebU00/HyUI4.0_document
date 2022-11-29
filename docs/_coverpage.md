@@ -4,7 +4,7 @@
 
 <div class="info">
 <div class="logo">
-      <img src="../logo.png" alt="" class="imgResponsive" />
+      <img src="logo.png" alt="" class="imgResponsive" />
     <span>4.0</span>
 </div>
 
@@ -85,7 +85,7 @@ width: 100%;
 .cover.show{
 background-repeat: no-repeat !important;
 background-size:36% !important;
-background-image: url(../cover.png) !important;
+background-image: url(cover.png) !important;
 background-position: left bottom !important;
 
 }
@@ -112,7 +112,7 @@ margin: 0 0 10% 0;
 }
 .cover.show:after{
 content:'';
-background-image: url(../cover_bg.png) !important;
+background-image: url(cover_bg.png) !important;
 width: 100%;
 position: absolute;
 height: 100%;
