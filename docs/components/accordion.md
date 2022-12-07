@@ -90,115 +90,122 @@
 ```javascript
 function accordionSlider(obj) {
   const list = document.querySelectorAll(obj.list);
-  const accordion = document.querySelector(obj.list) !== null ? document.querySelector(obj.list).parentNode.parentNode : '';
   let { autoSlider } = obj;
   const { open, close } = obj.info;
-  const fontBtn = document.querySelectorAll('.fontSize ul li a');
-  // ---初始化
-  if (fontBtn !== null) {
-    fontBtn.forEach((i) => {
-      i.addEventListener('click', function () {
-        checkContentHeight();
-      });
+  const duration = obj.duration || 300;
+  list.forEach((item, index) => {
+    let random = randomLetter(4) + randomFloor(0, 9999);
+    let contentA = item.nextElementSibling.querySelectorAll('[href],input,button');
+    let content = item.parentElement.querySelector('.accordionContent');
+    let contentFirstA = contentA[0];
+    item.innerHTML += `<span class="accordionBtn">${open}</span>`;
+    item.innerHTML += `<span class="accordionArrow"></span>`;
+    item.setAttribute('aria-expanded', 'false');
+    item.setAttribute('aria-controls', random);
+    content.setAttribute('id', random);
+    item.addEventListener('click', function () {
+      toggleAccordion(item, index, content);
     });
-  }
-
-  list.forEach((i) => {
-    i.innerHTML += `<span class="accordionBtn">${open}</span>`;
-    i.innerHTML += `<span class="accordionArrow"></span>`;
-  });
-
-  // ---抓取高度
-  function checkContentHeight() {
-    list.forEach((i) => {
-      let itemContent = i.nextElementSibling;
-      itemContent.setAttribute('style', '');
-      itemContent.dataset.itemHeight = itemContent.offsetHeight;
-      itemContent.style.height = 0;
-      accordion.querySelectorAll('.active').forEach((s) => s.classList.remove('active'));
-    });
-    toggleAccordion();
-  }
-  // ---操控開合
-  function toggleAccordion() {
-    list.forEach((i, index) => {
-      const isFirstAccordion = index === 0; // --- 如果是第一個頁籤
-      const contentHeight = i.nextElementSibling.dataset.itemHeight || 0;
-
-      const thisPrevItem = list[index - 1]; // --- 綁定前一個頁籤按鈕
-      let prevItemAllA;
-      if (thisPrevItem !== undefined) {
-        prevItemAllA = thisPrevItem.nextElementSibling.querySelectorAll('[href], input'); // --- 前一個頁籤內容所有a和input項目
-      }
-      let prevItemLastA;
-      if (thisPrevItem !== undefined) {
-        prevItemLastA = prevItemAllA[prevItemAllA.length];
-      }
-
-      i.querySelector('.accordionBtn').innerHTML = `${open}`;
-      i.addEventListener('keydown', (e) => {
-        if (e.which === 9 && !e.shiftKey) {
-          list.forEach((s) => {
-            s.nextElementSibling.style.height = `0px`;
-            s.parentNode.classList.remove('active');
-            s.querySelector('.accordionBtn').innerHTML = `${open}`;
-          });
-          i.nextElementSibling.style.height = `${contentHeight}px`;
-          i.parentNode.classList.add('active');
-          i.querySelector('.accordionBtn').innerHTML = `${close}`;
-        } else if (e.which === 9 && e.shiftKey && !isFirstAccordion) {
-          if (prevItemAllA.length) {
-            list.forEach((s) => {
-              s.nextElementSibling.style.height = `0px`;
-              s.parentNode.classList.remove('active');
-              s.querySelector('.accordionBtn').innerHTML = `${open}`;
-            });
-            list[index - 1].parentNode.classList.add('active');
-            list[index - 1].nextElementSibling.style.height = `${list[index - 1].nextElementSibling.dataset.itemHeight}px`;
-            list[index - 1].querySelector('.accordionBtn').innerHTML = `${close}`;
+    //無障礙
+    item.addEventListener('keydown', (e) => {
+      if (e.which === 9 && !e.shiftKey) {
+        if (!item.parentElement.classList.contains('active')) {
+          toggleAccordion(item, index, content);
+        }
+      } else if (e.which === 9 && e.shiftKey) {
+        if (autoSlider) {
+          e.preventDefault();
+          toggleAccordion(item, index, content);
+          if (contentA.length) {
+            contentA[contentA.length - 1].focus();
+          } else {
+            list[index - 1].focus();
           }
+        } else {
+          toggleAccordion(item, index, content);
+        }
+      }
+    });
+    if (contentFirstA !== undefined && autoSlider) {
+      contentFirstA.addEventListener('keydown', (e) => {
+        if (e.which === 9 && e.shiftKey) {
+          list[index].focus();
         }
       });
+    }
+  });
+  function randomFloor(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  // 亂數英文字
+  function randomLetter(max) {
+    var text = '';
+    var letter = 'abcdefghijklmnopqrstuvwxyz';
 
-      i.addEventListener(
-        'click',
-        (e) => {
-          //取消Ａ連結預設行為
-          e.preventDefault();
-          if (autoSlider) {
-            list.forEach((s) => {
-              s.parentNode.classList.remove('active');
-              s.nextElementSibling.style.height = `0px`;
-              s.querySelector('.accordionBtn').innerHTML = `${open}`;
-            });
-          }
-          if (i.nextElementSibling.offsetHeight < contentHeight) {
-            i.nextElementSibling.style.height = `${contentHeight}px`;
-            i.parentNode.classList.add('active');
-            i.querySelector('.accordionBtn').innerHTML = `${close}`;
-          } else {
-            i.nextElementSibling.style.height = `0px`;
-            i.parentNode.classList.remove('active');
-            i.querySelector('.accordionBtn').innerHTML = `${open}`;
-          }
-        },
-        false
-      );
-    });
+    for (let i = 0; i < max; i++) text += letter.charAt(Math.floor(Math.random() * letter.length));
+    return text;
   }
 
-  window.addEventListener('resize', (e) => {
-    // --- 算出 menu 距離上方的高度
-    setTimeout(() => {
-      checkContentHeight();
-      list.forEach((v) => {
-        v.parentNode.classList.remove('active');
-        v.nextElementSibling.style.height = `0px`;
-        v.querySelector('.accordionBtn').innerHTML = `${open}`;
-      });
-    }, 50);
-  });
-  window.addEventListener('load', checkContentHeight);
+  function toggleAccordion(item, index, content) {
+    let display = window.getComputedStyle(content).display;
+    item.parentElement.classList.add('active');
+    content.style.display = display;
+
+    if (display === 'none') {
+      display = 'block';
+      content.style.display = display;
+      item.setAttribute('aria-expanded', 'true');
+      let height = content.offsetHeight;
+      content.style.height = 0;
+      content.offsetHeight;
+      content.style.transitionProperty = 'height';
+      content.style.transitionDuration = `${duration}ms`;
+      content.style.height = height + 'px';
+      item.querySelector('.accordionBtn').innerHTML = `${close}`;
+      if (autoSlider) {
+        const siblings = [...item.parentNode.parentNode.children].filter((child) => {
+          return child !== item.parentNode;
+        });
+        siblings.forEach((v) => {
+          v.classList.remove('active');
+          item.setAttribute('aria-expanded', 'false');
+          let siblingsContent = v.querySelector('.accordionContent');
+          siblingsContent.style.height = `${siblingsContent.offsetHeight}px`;
+          siblingsContent.style.transitionProperty = 'height';
+          siblingsContent.style.transitionDuration = `${duration}ms`;
+          siblingsContent.offsetHeight;
+          siblingsContent.style.height = 0;
+          v.querySelector('.accordionBtn').innerHTML = `${open}`;
+          window.setTimeout(() => {
+            siblingsContent.style.display = 'none';
+            siblingsContent.style.removeProperty('height');
+            siblingsContent.style.removeProperty('transition-duration');
+            siblingsContent.style.removeProperty('transition-property');
+          }, duration);
+        });
+      }
+      setTimeout(() => {
+        content.style.removeProperty('height');
+        content.style.removeProperty('transition-duration');
+        content.style.removeProperty('transition-property');
+      }, duration);
+    } else {
+      item.setAttribute('aria-expanded', 'false');
+      content.style.height = `${content.offsetHeight}px`;
+      content.style.transitionProperty = 'height';
+      content.style.transitionDuration = `${duration}ms`;
+      content.offsetHeight;
+      content.style.height = 0;
+      item.querySelector('.accordionBtn').innerHTML = `${open}`;
+      item.parentElement.classList.remove('active');
+      setTimeout(() => {
+        content.style.display = 'none';
+        content.style.removeProperty('height');
+        content.style.removeProperty('transition-duration');
+        content.style.removeProperty('transition-property');
+      }, duration);
+    }
+  }
 }
 ```
 
@@ -207,7 +214,8 @@ function accordionSlider(obj) {
 accordionSlider({
   list: '.accordionList', // 問題區塊
   content: '.accordionContent', // 回答區塊
-  autoSlider: true,
+  autoSlider: true, // true 點選其他項目時會關閉已開啟的內容，false 需要再點一次才會關閉
+  duration: 300, // 展開/縮起時間
   info: {
     open: '展開', // 收合時顯示
     close: '收合', // 展開時顯示
@@ -224,6 +232,7 @@ accordionSlider({
 | list       | selector DOM element | .accordionList              | 問題區塊                               |
 | content    | selector DOM element | .accordionContent           | 回答區塊                               |
 | autoSlider | true / false         | true                        | 點選其他項目時是否要自動關閉已開啟項目 |
+| duration   | number               | 300                         | 展開/縮起時間                          |
 | info       | string               | open:'展開'｜ close: '收合' | 收合時顯示 / 展開時顯示                |
 
 ## 方法
@@ -235,172 +244,182 @@ accordionSlider({
 
 <link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
 <style>
-.demo{
-  margin:4em 0 ;
-}  
-  .accordion ul {
-	list-style: none;
-	padding: 0;
+.demo {
+  margin: 4em 0;
+}
+.accordion ul {
+  list-style: none;
+  padding: 0;
 }
 .accordion ul li {
-	margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 .accordion ul li .accordionList {
-	display: block;
-	background-color: #21baff;
-	color: #fff;
-	text-decoration: none;
-	padding: 5px;
-	position: relative;
+  display: block;
+  background-color: #21baff;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  position: relative;
 }
 .accordion .accordionContent {
-	line-height: 1.45em;
-	transition: height 0.3s linear;
-	overflow: hidden;
+  line-height: 1.45em;
+  transition: height 0.3s linear;
+  overflow: hidden;
+  display: none;
 }
 .accordion .accordionContent .content {
-	padding: 10px;
-  position: relative;
-    right: auto;
-    left: auto;
+  padding: 10px;
 }
 .accordion .accordionBtn {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 .accordion .accordionArrow {
-	position: absolute;
-	right: 40px;
+  position: absolute;
+  right: 40px;
 }
 .accordion .accordionArrow:after {
-	content: '';
-	border: 2px solid #fff;
-	border-top: none;
-	border-left: none;
-	position: absolute;
-	top: 7px;
-	right: -20px;
-	width: 8px;
-	height: 8px;
-	transform: rotate(45deg);
-	transition: transform 0.5s;
+  content: '';
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 7px;
+  right: -20px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  transition: transform 0.5s;
 }
 .accordion .accordionArrow.open:after {
-	top: 8px;
-	transform: rotate(225deg);
+  top: 8px;
+  transform: rotate(225deg);
 }
+
 </style>
 <script>
-  function accordionSlider(obj) {
+function accordionSlider(obj) {
   const list = document.querySelectorAll(obj.list);
-  const accordion = document.querySelector(obj.list) !== null ? document.querySelector(obj.list).parentNode.parentNode : '';
   let { autoSlider } = obj;
   const { open, close } = obj.info;
-  const fontBtn = document.querySelectorAll('.fontSize ul li a');
-  // ---初始化
-  if (fontBtn !== null) {
-    fontBtn.forEach((i) => {
-      i.addEventListener('click', function () {
-        checkContentHeight();
-      });
+  const duration = obj.duration || 300;
+  list.forEach((item, index) => {
+    let random = randomLetter(4) + randomFloor(0, 9999);
+    let contentA = item.nextElementSibling.querySelectorAll('[href],input,button');
+    let content = item.parentElement.querySelector('.accordionContent');
+    let contentFirstA = contentA[0];
+    item.innerHTML += `<span class="accordionBtn">${open}</span>`;
+    item.innerHTML += `<span class="accordionArrow"></span>`;
+    item.setAttribute('aria-expanded', 'false');
+    item.setAttribute('aria-controls', random);
+    content.setAttribute('id', random);
+    item.addEventListener('click', function () {
+      toggleAccordion(item, index, content);
     });
-  }
-  list.forEach((i) => {
-    i.innerHTML += `<span class="accordionBtn">${open}</span>`;
-    i.innerHTML += `<span class="accordionArrow"></span>`;
-  });
-// ---抓取高度
-  function checkContentHeight() {
-    list.forEach((i) => {
-      let itemContent = i.nextElementSibling;
-      itemContent.setAttribute('style', '');
-      itemContent.dataset.itemHeight = itemContent.offsetHeight;
-      itemContent.style.height = 0;
-      accordion.querySelectorAll('.active').forEach((s) => s.classList.remove('active'));
-    });
-    toggleAccordion();
-  }
-  // ---操控開合
-  function toggleAccordion() {
-    list.forEach((i, index) => {
-      const isFirstAccordion = index === 0; // --- 如果是第一個頁籤
-      const contentHeight = i.nextElementSibling.dataset.itemHeight || 0;
-      const thisPrevItem = list[index - 1]; // --- 綁定前一個頁籤按鈕
-      let prevItemAllA;
-      if (thisPrevItem !== undefined) {
-        prevItemAllA = thisPrevItem.nextElementSibling.querySelectorAll('[href], input'); // --- 前一個頁籤內容所有a和input項目
-      }
-      let prevItemLastA;
-      if (thisPrevItem !== undefined) {
-        prevItemLastA = prevItemAllA[prevItemAllA.length];
-      }
-      i.querySelector('.accordionBtn').innerHTML = `${open}`;
-      i.addEventListener('keydown', (e) => {
-        if (e.which === 9 && !e.shiftKey) {
-          list.forEach((s) => {
-            s.nextElementSibling.style.height = `0px`;
-            s.parentNode.classList.remove('active');
-            s.querySelector('.accordionBtn').innerHTML = `${open}`;
-          });
-          i.nextElementSibling.style.height = `${contentHeight}px`;
-          i.parentNode.classList.add('active');
-          i.querySelector('.accordionBtn').innerHTML = `${close}`;
-        } else if (e.which === 9 && e.shiftKey && !isFirstAccordion) {
-          if (prevItemAllA.length) {
-            list.forEach((s) => {
-              s.nextElementSibling.style.height = `0px`;
-              s.parentNode.classList.remove('active');
-              s.querySelector('.accordionBtn').innerHTML = `${open}`;
-            });
-            list[index - 1].parentNode.classList.add('active');
-            list[index - 1].nextElementSibling.style.height = `${list[index - 1].nextElementSibling.dataset.itemHeight}px`;
-            list[index - 1].querySelector('.accordionBtn').innerHTML = `${close}`;
+    //無障礙
+    item.addEventListener('keydown', (e) => {
+      if (e.which === 9 && !e.shiftKey) {
+        if (!item.parentElement.classList.contains('active')) {
+          toggleAccordion(item, index, content);
+        }
+      } else if (e.which === 9 && e.shiftKey) {
+        if (autoSlider) {
+          e.preventDefault();
+          toggleAccordion(item, index, content);
+          if (contentA.length) {
+            contentA[contentA.length - 1].focus();
+          } else {
+            list[index - 1].focus();
           }
+        } else {
+          toggleAccordion(item, index, content);
+        }
+      }
+    });
+    if (contentFirstA !== undefined && autoSlider) {
+      contentFirstA.addEventListener('keydown', (e) => {
+        if (e.which === 9 && e.shiftKey) {
+          list[index].focus();
         }
       });
-      i.addEventListener(
-        'click',
-        (e) => {
-          //取消Ａ連結預設行為
-          e.preventDefault();
-          if (autoSlider) {
-            list.forEach((s) => {
-              s.parentNode.classList.remove('active');
-              s.nextElementSibling.style.height = `0px`;
-              s.querySelector('.accordionBtn').innerHTML = `${open}`;
-            });
-          }
-          if (i.nextElementSibling.offsetHeight < contentHeight) {
-            i.nextElementSibling.style.height = `${contentHeight}px`;
-            i.parentNode.classList.add('active');
-            i.querySelector('.accordionBtn').innerHTML = `${close}`;
-          } else {
-            i.nextElementSibling.style.height = `0px`;
-            i.parentNode.classList.remove('active');
-            i.querySelector('.accordionBtn').innerHTML = `${open}`;
-          }
-        },
-        false
-      );
-    });
-  }
-  window.addEventListener('resize', (e) => {
-    // --- 算出 menu 距離上方的高度
-    setTimeout(() => {
-      checkContentHeight();
-      list.forEach((v) => {
-        v.parentNode.classList.remove('active');
-        v.nextElementSibling.style.height = `0px`;
-        v.querySelector('.accordionBtn').innerHTML = `${open}`;
-      });
-    }, 50);
+    }
   });
-  window.addEventListener('load', checkContentHeight);
+  function randomFloor(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  // 亂數英文字
+  function randomLetter(max) {
+    var text = '';
+    var letter = 'abcdefghijklmnopqrstuvwxyz';
+    for (let i = 0; i < max; i++) text += letter.charAt(Math.floor(Math.random() * letter.length));
+    return text;
+}
+function toggleAccordion(item, index, content) {
+let display = window.getComputedStyle(content).display;
+item.parentElement.classList.add('active');
+content.style.display = display;
+    if (display === 'none') {
+      display = 'block';
+      content.style.display = display;
+      item.setAttribute('aria-expanded', 'true');
+      let height = content.offsetHeight;
+      content.style.height = 0;
+      content.offsetHeight;
+      content.style.transitionProperty = 'height';
+      content.style.transitionDuration = `${duration}ms`;
+      content.style.height = height + 'px';
+      item.querySelector('.accordionBtn').innerHTML = `${close}`;
+      if (autoSlider) {
+        const siblings = [...item.parentNode.parentNode.children].filter((child) => {
+          return child !== item.parentNode;
+        });
+        siblings.forEach((v) => {
+          v.classList.remove('active');
+          item.setAttribute('aria-expanded', 'false');
+          let siblingsContent = v.querySelector('.accordionContent');
+          siblingsContent.style.height = `${siblingsContent.offsetHeight}px`;
+          siblingsContent.style.transitionProperty = 'height';
+          siblingsContent.style.transitionDuration = `${duration}ms`;
+          siblingsContent.offsetHeight;
+          siblingsContent.style.height = 0;
+          v.querySelector('.accordionBtn').innerHTML = `${open}`;
+          window.setTimeout(() => {
+            siblingsContent.style.display = 'none';
+            siblingsContent.style.removeProperty('height');
+            siblingsContent.style.removeProperty('transition-duration');
+            siblingsContent.style.removeProperty('transition-property');
+          }, duration);
+        });
+      }
+      setTimeout(() => {
+        content.style.removeProperty('height');
+        content.style.removeProperty('transition-duration');
+        content.style.removeProperty('transition-property');
+      }, duration);
+    } else {
+      item.setAttribute('aria-expanded', 'false');
+      content.style.height = `${content.offsetHeight}px`;
+      content.style.transitionProperty = 'height';
+      content.style.transitionDuration = `${duration}ms`;
+      content.offsetHeight;
+      content.style.height = 0;
+      item.querySelector('.accordionBtn').innerHTML = `${open}`;
+      item.parentElement.classList.remove('active');
+      setTimeout(() => {
+        content.style.display = 'none';
+        content.style.removeProperty('height');
+        content.style.removeProperty('transition-duration');
+        content.style.removeProperty('transition-property');
+      }, duration);
+    }
+}
 }
 // 手風琴功能
 accordionSlider({
   list: '.accordionList', // 問題區塊
   content: '.accordionContent', // 回答區塊
   autoSlider: true, // true 點選其他項目時會關閉已開啟的內容，false 需要再點一次才會關閉
+  duration:300, // 展開/縮起時間
   info: {
     open: '展開', // 收合時顯示
     close: '收合', // 展開時顯示

@@ -27,7 +27,14 @@ HyUI 使用 `slick` 的輪播模組，目前 hyUI **vendor** 內含 **swiper**�
 使用設定以 `swiper` 官方文件為準。<br/>
 **swiper** 功能非常多可自行到 [中文版 API](https://www.swiper.com.cn/api/index.html) 觀看
 
-```javacript
+```javascript
+//無障礙pagination設定，不同的swiper命名要變更
+let mpSliderItem = document.querySelectorAll('.bannerSlider .swiper-slide');
+let mpSliderPagination = [];
+mpSliderItem.forEach((item, index) => {
+  mpSliderPagination.push(item.dataset.title);
+});
+
 const bannerSlider = new Swiper('.bannerSlider .swiper', {
   slidesPerView: 1, //顯示筆數
   spaceBetween: 20, //每筆之間的距離
@@ -41,8 +48,9 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
     el: '.swiperDots', //圓點 class
     type: 'bullets', //樣式參考 https://www.swiper.com.cn/api/pagination/299.html
     clickable: true, //設定後圓點才可以點擊
+    //無障礙pagination設定
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
+      return `<button class="${className} noFonts" aria-label="${mpSliderPagination[index]}">${mpSliderPagination[index]}</button>`;
     },
   },
   autoplay: {
@@ -66,19 +74,19 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
 <div class="swiperBox">
   <div class="swiper">
     <div class="swiper-wrapper">
-      <div class="imgContainer swiper-slide">
+      <div class="imgContainer swiper-slide" data-title="圖說">
         <a href="javascript:;" title="">
           <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/01.jpg" class="swiper-lazy" alt="圖說1" />
           <span class="caption">圖說</span>
         </a>
       </div>
-      <div class="imgContainer swiper-slide">
+      <div class="imgContainer swiper-slide" data-title="圖說2">
         <a href="javascript:;" title="">
           <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/02.jpg" class="swiper-lazy" alt="圖說2" />
           <span class="caption">圖說2</span>
         </a>
       </div>
-      <div class="imgContainer swiper-slide">
+      <div class="imgContainer swiper-slide" data-title="圖說3">
         <a href="javascript:;" title="">
           <img data-src="https://hywebu00.github.io/hyui_flex/images/demo/03.jpg" class="swiper-lazy" alt="圖說3" />
           <span class="caption">圖說3</span>
@@ -86,8 +94,8 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
       </div>
     </div>
   </div>
-  <div class="prevSlider swiperArrow"></div>
-  <div class="nextSlider swiperArrow"></div>
+  <button class="prevSlider swiperArrow"></button>
+  <button class="nextSlider swiperArrow"></button>
   <div class="swiperDots"></div>
   </div>
 </div>
@@ -103,7 +111,7 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
     <div class="swiper">
       <div class="swiper-wrapper">
         <!-- 此區塊以下為一筆 -->
-        <div class="imgContainer swiper-slide">
+        <div class="imgContainer swiper-slide" data-title="圖說1">
           <a href="#" title="">
             <picture>
               <source media="(min-width: 1200px)" data-srcset="images/demo/01.jpg" />
@@ -123,9 +131,9 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
 
     <!--操控物件可以隨意放，但注意設定要對應到-->
     <!--前一筆-->
-    <div class="prevSlider swiperArrow"></div>
+    <button class="prevSlider swiperArrow"></button>
     <!--下一筆-->
-    <div class="nextSlider swiperArrow"></div>
+    <button class="nextSlider swiperArrow"></button>
     <!--圓點-->
     <div class="swiperDots"></div>
   </div>
@@ -216,9 +224,9 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
   </div>
   <!--操控物件可以隨意放，但注意設定要對應到-->
   <!--前一筆-->
-  <div class="prevSlider swiperArrow"></div>
+  <button class="prevSlider swiperArrow"></button>
   <!--下一筆-->
-  <div class="nextSlider swiperArrow"></div>
+  <button class="nextSlider swiperArrow"></button>
 </div>
   </div>
 
@@ -246,9 +254,9 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
 
   <!--操控物件可以隨意放，但注意設定要對應到-->
   <!--前一筆-->
-  <div class="prevSlider swiperArrow"></div>
+  <button class="prevSlider swiperArrow"></button>
   <!--下一筆-->
-  <div class="nextSlider swiperArrow"></div>
+  <button class="nextSlider swiperArrow"></button>
 </div>
 <!-- 廣告輪播   end -->
 ```
@@ -356,9 +364,9 @@ const adSlider = new Swiper('.adSlider .swiper', {
     </div>
     <!--操控物件可以隨意放，但注意設定要對應到-->
     <!--前一筆-->
-    <div class="prevSlider swiperArrow"></div>
+    <button class="prevSlider swiperArrow"></button>
     <!--下一筆-->
-    <div class="nextSlider swiperArrow"></div>
+    <button class="nextSlider swiperArrow"></button>
   </div>
 </div>
 
@@ -410,9 +418,9 @@ const adSlider = new Swiper('.adSlider .swiper', {
       </div>
       <!--操控物件可以隨意放，但注意設定要對應到-->
       <!--前一筆-->
-      <div class="prevSlider swiperArrow"></div>
+      <button class="prevSlider swiperArrow"></button>
       <!--下一筆-->
-      <div class="nextSlider swiperArrow"></div>
+      <button class="nextSlider swiperArrow"></button>
     </div>
     <!-- slider-nav end-->
   </div>
@@ -468,10 +476,10 @@ const sliderFor = new Swiper('.sliderFor .swiper', {
 
 因應無障礙需求，在左右箭頭需要有替代文字，但往往因為網站有不同語系需求，因此按鈕需要呈現不同語言的替代文字，例如:
 
-`<html lang="zh-Hant">`中按鈕會呈現`<button class="prevSlider" ... title="<font color="#EE428B">前一則">Previous</button>`或是
+`<html lang="zh-Hant">`中按鈕會呈現`<button class="nextSlider swiperArrow" title="下一筆" ... ></button>`或是
 
-`<html lang="en" >中按鈕會呈現或是<button class="prevSlider" ... title="previous">Previous</button>`，
-此時無法用同一種語言因應各種語系，**HyUI** 提供一組判斷語系之 javaScript 設定，語系參照[W3C ISO Language Codes](https://www.w3schools.com/tags/ref_language_codes.asp)，可自行複製到各專案修改語系及對應之替代文字即可。注意：此程式並無預設放入 **main.js**
+`<html lang="en" >`中按鈕會呈現或是`<button class="prevSlider swiperArrow" title="previous" ... ></button>`，
+此時無法用同一種語言因應各種語系，**HyUI** 提供一組判斷語系之 javaScript 設定，語系參照[W3C ISO Language Codes](https://www.w3schools.com/tags/ref_language_codes.asp)，可自行複製到各專案修改語系及對應之替代文字即可。
 
 其中，程式是判斷語系字串中的前面字符作為判斷依據，目的是同一語系可能會有分支語系，但以開頭之語系英文字母做判斷。
 
@@ -541,6 +549,12 @@ customPaging: function(slider, i) {
 </style>
 
 <script>
+//無障礙pagination設定，不同的swiper命名要變更
+let mpSliderItem = document.querySelectorAll('.bannerSlider .swiper-slide');
+let mpSliderPagination = [];
+mpSliderItem.forEach((item, index) => {
+  mpSliderPagination.push(item.dataset.title);
+});
 const bannerSlider = new Swiper('.bannerSlider .swiper', {
   slidesPerView: 1, //顯示張數
   navigation: {
@@ -553,6 +567,10 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
     bulletElement: 'button',
     type: 'bullets', //樣式參考 https://www.swiper.com.cn/api/pagination/299.html
     clickable :true,
+    //無障礙pagination設定
+    renderBullet: function (index, className) {
+      return `<button class="${className} noFonts" aria-label="${mpSliderPagination[index]}">${mpSliderPagination[index]}</button>`;
+    },
   },
   autoplay: {
     //自動播放
