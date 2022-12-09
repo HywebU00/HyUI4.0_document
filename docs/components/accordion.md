@@ -9,40 +9,49 @@
 - `.accordionContent`會在轉換的過程中被套用。
 - 透過 `.active` 來顯示內容。
 - 透過 `.active` 來更改`.accordionBtn`顯示說明的文字。
-<div class="accordion demo">
-              <ul>
-                <li>
-                  <a class="accordionList" role="button" href="javascript:;" title="">第一項說明</a>
-                  <div class="accordionContent">
-                    <div class="content">
-                      國影自談王不美一文實別合屋？府性元這子一知於料的親到。一用技年不得就資公，也星樣團怎英班水灣個種決以因世書發定很功行何，下飯通反代命假到一不離護麼錯絕懷旅元人。弟新過，道給仍覺裡水國、醫灣了可實界一上德字什心成但創大品隨品。難但所雜笑事禮年專阿戲經愛眾背起，間自個；獎小業美有義交安辦一則龍足，年開多！景唱而賽用出說建樣以經<br />
-                      <a href="#">連結</a>
-                      <a href="#">連結</a>
-                      <a href="#">連結</a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <a class="accordionList" role="button" href="javascript:;" title="">第二項說明</a>
-                  <div class="accordionContent">
-                    <div class="content">
-                      國影自談王不美一文實別合屋？府性元這子一知於料的親到。一用技年不得就資公，也星樣團怎英班水灣個種決以因世書發定很功行何，下飯通反代命假到一不離護麼錯絕懷旅元人。弟新過，道給仍覺裡水國、醫灣了可實界一上德字什心成但創大品隨品。<br />
-                      <a href="#">連結</a>
-                      <a href="#">連結</a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <a class="accordionList" role="button" href="javascript:;" title="">第三項說</a>
-                  <div class="accordionContent">
-                    <div class="content">
-                      國影自談王不美一文實別合屋？府性元這子一知於料的親到。一用技年不得就資公，也星樣團怎英班水灣個種決以因世書發定很功行何，下飯通反代命假到一不離護麼錯絕懷旅元人。弟新過，道給仍覺裡水國、醫灣了可實界一上德字什心成但創大品隨品。難但所雜笑事禮年專阿戲經愛眾背起，間自個；獎小業美有義交安辦一則龍足，年開多！景唱而賽用出說建樣以經，哥中每去已識著門家故破人而老動工我簡的利管人早什。葉禮名交，都說為一失到就招投高畫。月錢產，機力燈自體日關工車之土庭，件年真經書？<br />
-                      <a href="#">連結</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+
+<div class="accordion">
+  <ul>
+    <li>
+      <a class="accordionList" role="button" href="javascript:;" title="">第一項說明</a>
+      <div class="accordionContent">
+        <div class="content">
+          國影自談王不美一文實別合屋？府性元這子一知於料的親到。一用技年不得就資公，也星樣團怎英班水灣個種決以因世書發定很功行何，下飯通反代命假到一不離護麼錯絕懷旅元人。弟新過，道給仍覺裡水國、醫灣了可實界一上德字什心成但創大品隨品。難但所雜笑事禮年專阿戲經愛眾背起，間自個；獎小業美有義交安辦一則龍足，年開多！景唱而賽用出說建樣以經<br />
+          <a href="#">連結</a>
+          <a href="#">連結</a>
+          <a href="#">連結</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a class="accordionList" role="button" href="javascript:;" title="">第二項說明</a>
+      <div class="accordionContent">
+        <div class="content">
+          國影自談王不美一文實別合屋？府性元這子一知於料的親到。一用技年不得就資公，也星樣團怎英班水灣個種決以因世書發定很功行何，下飯通反代命假到一不離護麼錯絕懷旅元人。弟新過，道給仍覺裡水國、醫灣了可實界一上德字什心成但創大品隨品。<br />
+          <a href="#">連結</a>
+          <a href="#">連結</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a class="accordionList" role="button" href="javascript:;" title="">第三項說明</a>
+      <div class="accordionContent">
+        <div class="content">
+          國影自談王不美一文實別合屋？府性元這子一知於料的親到。一用技年不得就資公，也星樣團怎英班水灣個種決以因世書發定很功行何，下飯通反代命假到一不離護麼錯絕懷旅元人。弟新過，道給仍覺裡水國、醫灣了可實界一上德字什心成但創大品隨品。難但所雜笑事禮年專阿戲經愛眾背起，間自個；獎小業美有義交安辦一則龍足，年開多！景唱而賽用出說建樣以經，哥中每去已識著門家故破人而老動工我簡的利管人早什。葉禮名交，都說為一失到就招投高畫。月錢產，機力燈自體日關工車之土庭，件年真經書？<br />
+          <a href="#">連結</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a class="accordionList" role="button" href="javascript:;" title="">第四項說明</a>
+      <div class="accordionContent">
+        <div class="content">
+          國影自談王不美一文實別合屋？府性元這子一知於料的親到。一用技年不得就資公，也星樣團怎英班水灣個種決以因世書發定很功行何，下飯通反代命假到一不離護麼錯絕懷旅元人。弟新過，道給仍覺裡水國、醫灣了可實界一上德字什心成但創大品隨品。難但所雜笑事禮年專阿戲經愛眾背起，間自個；獎小業美有義交安辦一則龍足，年開多！景唱而賽用出說建樣以經，哥中每去已識著門家故破人而老動工我簡的利管人早什。葉禮名交，都說為一失到就招投高畫。月錢產，機力燈自體日關工車之土庭，件年真經書？<br />
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
 
 <!-- tabs:start -->
 
@@ -55,7 +64,7 @@
       <a class="accordionList" role="button" href="javascript:;" title="">第一項說明</a>
       <div class="accordionContent">
         <div class="content">
-          .....<br />
+          ...<br />
           <a href="#">連結</a>
           <a href="#">連結</a>
           <a href="#">連結</a>
@@ -66,19 +75,25 @@
       <a class="accordionList" role="button" href="javascript:;" title="">第二項說明</a>
       <div class="accordionContent">
         <div class="content">
-          .....<br />
+          ...<br />
           <a href="#">連結</a>
           <a href="#">連結</a>
         </div>
       </div>
     </li>
     <li>
-      <a class="accordionList" role="button" href="javascript:;" title="">第三項說</a>
+      <a class="accordionList" role="button" href="javascript:;" title="">第三項說明</a>
       <div class="accordionContent">
         <div class="content">
-          .....<br />
+          ...<br />
           <a href="#">連結</a>
         </div>
+      </div>
+    </li>
+    <li>
+      <a class="accordionList" role="button" href="javascript:;" title="">第四項說明</a>
+      <div class="accordionContent">
+        <div class="content">...<br /></div>
       </div>
     </li>
   </ul>
@@ -134,10 +149,11 @@ function accordionSlider(obj) {
       });
     }
   });
+  //亂數產生數字
   function randomFloor(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
-  // 亂數英文字
+  // 亂數產生英文字
   function randomLetter(max) {
     var text = '';
     var letter = 'abcdefghijklmnopqrstuvwxyz';
@@ -154,6 +170,7 @@ function accordionSlider(obj) {
     if (display === 'none') {
       display = 'block';
       content.style.display = display;
+      content.style.overflow = 'hidden';
       item.setAttribute('aria-expanded', 'true');
       let height = content.offsetHeight;
       content.style.height = 0;
@@ -170,6 +187,7 @@ function accordionSlider(obj) {
           v.classList.remove('active');
           item.setAttribute('aria-expanded', 'false');
           let siblingsContent = v.querySelector('.accordionContent');
+          siblingsContent.style.overflow = 'hidden';
           siblingsContent.style.height = `${siblingsContent.offsetHeight}px`;
           siblingsContent.style.transitionProperty = 'height';
           siblingsContent.style.transitionDuration = `${duration}ms`;
@@ -178,6 +196,7 @@ function accordionSlider(obj) {
           v.querySelector('.accordionBtn').innerHTML = `${open}`;
           window.setTimeout(() => {
             siblingsContent.style.display = 'none';
+            siblingsContent.style.removeProperty('overflow');
             siblingsContent.style.removeProperty('height');
             siblingsContent.style.removeProperty('transition-duration');
             siblingsContent.style.removeProperty('transition-property');
@@ -185,12 +204,14 @@ function accordionSlider(obj) {
         });
       }
       setTimeout(() => {
+        content.style.removeProperty('overflow');
         content.style.removeProperty('height');
         content.style.removeProperty('transition-duration');
         content.style.removeProperty('transition-property');
       }, duration);
     } else {
       item.setAttribute('aria-expanded', 'false');
+      content.style.overflow = 'hidden';
       content.style.height = `${content.offsetHeight}px`;
       content.style.transitionProperty = 'height';
       content.style.transitionDuration = `${duration}ms`;
@@ -200,6 +221,7 @@ function accordionSlider(obj) {
       item.parentElement.classList.remove('active');
       setTimeout(() => {
         content.style.display = 'none';
+        content.style.removeProperty('overflow');
         content.style.removeProperty('height');
         content.style.removeProperty('transition-duration');
         content.style.removeProperty('transition-property');
@@ -247,55 +269,17 @@ accordionSlider({
 .demo {
   margin: 4em 0;
 }
-.accordion ul {
-  list-style: none;
-  padding: 0;
+.accordion ul{
+  padding:0px
 }
-.accordion ul li {
-  margin-bottom: 0.5em;
+.accordion .accordionList{
+  color:#FFF;
 }
-.accordion ul li .accordionList {
-  display: block;
-  background-color: #21baff;
-  color: #fff;
-  text-decoration: none;
-  padding: 5px;
-  position: relative;
+.accordion .content{
+  position:relative;
+  padding-top:0px;
+  left:auto;
 }
-.accordion .accordionContent {
-  line-height: 1.45em;
-  transition: height 0.3s linear;
-  overflow: hidden;
-  display: none;
-}
-.accordion .accordionContent .content {
-  padding: 10px;
-}
-.accordion .accordionBtn {
-  margin-left: 10px;
-}
-.accordion .accordionArrow {
-  position: absolute;
-  right: 40px;
-}
-.accordion .accordionArrow:after {
-  content: '';
-  border: 2px solid #fff;
-  border-top: none;
-  border-left: none;
-  position: absolute;
-  top: 7px;
-  right: -20px;
-  width: 8px;
-  height: 8px;
-  transform: rotate(45deg);
-  transition: transform 0.5s;
-}
-.accordion .accordionArrow.open:after {
-  top: 8px;
-  transform: rotate(225deg);
-}
-
 </style>
 <script>
 function accordionSlider(obj) {
@@ -344,23 +328,25 @@ function accordionSlider(obj) {
       });
     }
   });
+  //亂數產生數字
   function randomFloor(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
-  // 亂數英文字
+  // 亂數產生英文字
   function randomLetter(max) {
     var text = '';
     var letter = 'abcdefghijklmnopqrstuvwxyz';
     for (let i = 0; i < max; i++) text += letter.charAt(Math.floor(Math.random() * letter.length));
     return text;
-}
-function toggleAccordion(item, index, content) {
-let display = window.getComputedStyle(content).display;
-item.parentElement.classList.add('active');
-content.style.display = display;
+  }
+  function toggleAccordion(item, index, content) {
+    let display = window.getComputedStyle(content).display;
+    item.parentElement.classList.add('active');
+    content.style.display = display;
     if (display === 'none') {
       display = 'block';
       content.style.display = display;
+      content.style.overflow = 'hidden';
       item.setAttribute('aria-expanded', 'true');
       let height = content.offsetHeight;
       content.style.height = 0;
@@ -377,6 +363,7 @@ content.style.display = display;
           v.classList.remove('active');
           item.setAttribute('aria-expanded', 'false');
           let siblingsContent = v.querySelector('.accordionContent');
+          siblingsContent.style.overflow = 'hidden';
           siblingsContent.style.height = `${siblingsContent.offsetHeight}px`;
           siblingsContent.style.transitionProperty = 'height';
           siblingsContent.style.transitionDuration = `${duration}ms`;
@@ -385,6 +372,7 @@ content.style.display = display;
           v.querySelector('.accordionBtn').innerHTML = `${open}`;
           window.setTimeout(() => {
             siblingsContent.style.display = 'none';
+            siblingsContent.style.removeProperty('overflow');
             siblingsContent.style.removeProperty('height');
             siblingsContent.style.removeProperty('transition-duration');
             siblingsContent.style.removeProperty('transition-property');
@@ -392,12 +380,14 @@ content.style.display = display;
         });
       }
       setTimeout(() => {
+        content.style.removeProperty('overflow');
         content.style.removeProperty('height');
         content.style.removeProperty('transition-duration');
         content.style.removeProperty('transition-property');
       }, duration);
     } else {
       item.setAttribute('aria-expanded', 'false');
+      content.style.overflow = 'hidden';
       content.style.height = `${content.offsetHeight}px`;
       content.style.transitionProperty = 'height';
       content.style.transitionDuration = `${duration}ms`;
@@ -407,12 +397,13 @@ content.style.display = display;
       item.parentElement.classList.remove('active');
       setTimeout(() => {
         content.style.display = 'none';
+        content.style.removeProperty('overflow');
         content.style.removeProperty('height');
         content.style.removeProperty('transition-duration');
         content.style.removeProperty('transition-property');
       }, duration);
     }
-}
+  }
 }
 // 手風琴功能
 accordionSlider({
