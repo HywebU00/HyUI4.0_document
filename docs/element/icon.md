@@ -3,7 +3,7 @@
 ?> 檔案名稱：sass / element /`icon.scss`
 
 - hyUI 提供一套可快速套用的 icon 圖示，本圖示是用`svg`呈現，非網路字型技術。
-- icon 預設白色，黑色 icon 則在檔名後加`_deep`，例如：`i_search`為白色 icon，`i_search_deep`為黑色 icon
+- icon 預設白色，黑色 icon 則在檔名後加`_dark`，例如：`i_search`為白色 icon，`i_search_dark`為黑色 icon
 - svg icon 反白效果，可使用 css 濾鏡`filter`的 `invert`設定。
 
 ## Icon 黑色
@@ -14,77 +14,77 @@ Icon 順序依英文字母排序
 <div class="icon_demo">
   <ul>
     <!-- A -->
-    <li class="i_add_deep"></li>
-    <li class="i_apple_deep"></li>
-    <li class="i_arrowLeft_deep"></li>
-    <li class="i_arrowRight_deep"></li>
-    <li class="i_arrowUp_deep"></li>
-    <li class="i_arrowDown_deep"></li>
+    <li class="i_add_dark"></li>
+    <li class="i_apple_dark"></li>
+    <li class="i_arrowLeft_dark"></li>
+    <li class="i_arrowRight_dark"></li>
+    <li class="i_arrowUp_dark"></li>
+    <li class="i_arrowDown_dark"></li>
     <!-- B -->
-    <li class="i_bookmark_deep"></li>
+    <li class="i_bookmark_dark"></li>
     <!-- C -->
-    <li class="i_calendar_deep"></li>
-    <li class="i_chat_deep"></li>
-    <li class="i_check_deep"></li>
-    <li class="i_clock_deep"></li>
-    <li class="i_close_deep"></li>
-    <li class="i_copy_deep"></li>
+    <li class="i_calendar_dark"></li>
+    <li class="i_chat_dark"></li>
+    <li class="i_check_dark"></li>
+    <li class="i_clock_dark"></li>
+    <li class="i_close_dark"></li>
+    <li class="i_copy_dark"></li>
     <!-- D -->
-    <li class="i_dot_deep"></li>
+    <li class="i_dot_dark"></li>
     <!-- E -->
-    <li class="i_edit_deep"></li>
+    <li class="i_edit_dark"></li>
     <!-- F -->
-    <li class="i_facebook_deep"></li>
+    <li class="i_facebook_dark"></li>
     <!-- G -->
-    <li class="i_global_deep"></li>
-    <li class="i_googleplus_deep"></li>
-    <li class="i_grid_deep"></li>
+    <li class="i_global_dark"></li>
+    <li class="i_googleplus_dark"></li>
+    <li class="i_grid_dark"></li>
     <!-- H -->
-    <li class="i_heart_deep"></li>
-    <li class="i_home_deep"></li>
+    <li class="i_heart_dark"></li>
+    <li class="i_home_dark"></li>
     <!-- I -->
-    <li class="i_info_deep"></li>
+    <li class="i_info_dark"></li>
     <!-- J -->
     <!-- K -->
     <!-- L -->
-    <li class="i_layout_deep"></li>
-    <li class="i_link_deep"></li>
-    <li class="i_linkedin_deep"></li>
-    <li class="i_lock_deep"></li>
+    <li class="i_layout_dark"></li>
+    <li class="i_link_dark"></li>
+    <li class="i_linkedin_dark"></li>
+    <li class="i_lock_dark"></li>
     <!-- M -->
-    <li class="i_mail_deep"></li>
-    <li class="i_man_deep"></li>
-    <li class="i_minus_deep"></li>
-    <li class="i_move_deep"></li>
+    <li class="i_mail_dark"></li>
+    <li class="i_man_dark"></li>
+    <li class="i_minus_dark"></li>
+    <li class="i_move_dark"></li>
     <!-- N -->
     <!-- O -->
-    <li class="i_order_deep"></li>
+    <li class="i_order_dark"></li>
     <!-- P -->
-    <li class="i_photo_deep"></li>
-    <li class="i_pick_deep"></li>
-    <li class="i_play_deep"></li>
+    <li class="i_photo_dark"></li>
+    <li class="i_pick_dark"></li>
+    <li class="i_play_dark"></li>
     <!-- Q -->
     <!-- R -->
-    <li class="i_reflash_deep"></li>
-    <li class="i_rss_deep"></li>
+    <li class="i_reflash_dark"></li>
+    <li class="i_rss_dark"></li>
     <!-- S -->
-    <li class="i_search_deep"></li>
-    <li class="i_setting_deep"></li>
-    <li class="i_sort_deep"></li>
-    <li class="i_star_deep"></li>
+    <li class="i_search_dark"></li>
+    <li class="i_setting_dark"></li>
+    <li class="i_sort_dark"></li>
+    <li class="i_star_dark"></li>
     <!-- T -->
-    <li class="i_top_deep"></li>
-    <li class="i_trash_deep"></li>
-    <li class="i_twitter_deep"></li>
+    <li class="i_top_dark"></li>
+    <li class="i_trash_dark"></li>
+    <li class="i_twitter_dark"></li>
     <!-- U -->
     <!-- V -->
-    <li class="i_video_deep"></li>
-    <li class="i_view_deep"></li>
-    <li class="i_vimeo_deep"></li>
+    <li class="i_video_dark"></li>
+    <li class="i_view_dark"></li>
+    <li class="i_vimeo_dark"></li>
     <!-- W -->
     <!-- X -->
     <!-- Y -->
-    <li class="i_youtube_deep"></li>
+    <li class="i_youtube_dark"></li>
     <!-- Z -->
   </ul>
 </div>
@@ -96,77 +96,77 @@ Icon 順序依英文字母排序
 ```html
 <!-- Icon 黑色 -->
 <!-- A -->
-<li class="i_add_deep"></li>
-<li class="i_apple_deep"></li>
-<li class="i_arrowLeft_deep"></li>
-<li class="i_arrowRight_deep"></li>
-<li class="i_arrowUp_deep"></li>
-<li class="i_arrowDown_deep"></li>
+<li class="i_add_dark"></li>
+<li class="i_apple_dark"></li>
+<li class="i_arrowLeft_dark"></li>
+<li class="i_arrowRight_dark"></li>
+<li class="i_arrowUp_dark"></li>
+<li class="i_arrowDown_dark"></li>
 <!-- B -->
-<li class="i_bookmark_deep"></li>
+<li class="i_bookmark_dark"></li>
 <!-- C -->
-<li class="i_calendar_deep"></li>
-<li class="i_chat_deep"></li>
-<li class="i_check_deep"></li>
-<li class="i_clock_deep"></li>
-<li class="i_close_deep"></li>
-<li class="i_copy_deep"></li>
+<li class="i_calendar_dark"></li>
+<li class="i_chat_dark"></li>
+<li class="i_check_dark"></li>
+<li class="i_clock_dark"></li>
+<li class="i_close_dark"></li>
+<li class="i_copy_dark"></li>
 <!-- D -->
-<li class="i_dot_deep"></li>
+<li class="i_dot_dark"></li>
 <!-- E -->
-<li class="i_edit_deep"></li>
+<li class="i_edit_dark"></li>
 <!-- F -->
-<li class="i_facebook_deep"></li>
+<li class="i_facebook_dark"></li>
 <!-- G -->
-<li class="i_global_deep"></li>
-<li class="i_googleplus_deep"></li>
-<li class="i_grid_deep"></li>
+<li class="i_global_dark"></li>
+<li class="i_googleplus_dark"></li>
+<li class="i_grid_dark"></li>
 <!-- H -->
-<li class="i_heart_deep"></li>
-<li class="i_home_deep"></li>
+<li class="i_heart_dark"></li>
+<li class="i_home_dark"></li>
 <!-- I -->
-<li class="i_info_deep"></li>
+<li class="i_info_dark"></li>
 <!-- J -->
 <!-- K -->
 <!-- L -->
-<li class="i_layout_deep"></li>
-<li class="i_link_deep"></li>
-<li class="i_linkedin_deep"></li>
-<li class="i_lock_deep"></li>
+<li class="i_layout_dark"></li>
+<li class="i_link_dark"></li>
+<li class="i_linkedin_dark"></li>
+<li class="i_lock_dark"></li>
 <!-- M -->
-<li class="i_mail_deep"></li>
-<li class="i_man_deep"></li>
-<li class="i_minus_deep"></li>
-<li class="i_move_deep"></li>
+<li class="i_mail_dark"></li>
+<li class="i_man_dark"></li>
+<li class="i_minus_dark"></li>
+<li class="i_move_dark"></li>
 <!-- N -->
 <!-- O -->
-<li class="i_order_deep"></li>
+<li class="i_order_dark"></li>
 <!-- P -->
-<li class="i_photo_deep"></li>
-<li class="i_pick_deep"></li>
-<li class="i_play_deep"></li>
+<li class="i_photo_dark"></li>
+<li class="i_pick_dark"></li>
+<li class="i_play_dark"></li>
 <!-- Q -->
 <!-- R -->
-<li class="i_reflash_deep"></li>
-<li class="i_rss_deep"></li>
+<li class="i_reflash_dark"></li>
+<li class="i_rss_dark"></li>
 <!-- S -->
-<li class="i_search_deep"></li>
-<li class="i_setting_deep"></li>
-<li class="i_sort_deep"></li>
-<li class="i_star_deep"></li>
+<li class="i_search_dark"></li>
+<li class="i_setting_dark"></li>
+<li class="i_sort_dark"></li>
+<li class="i_star_dark"></li>
 <!-- T -->
-<li class="i_top_deep"></li>
-<li class="i_trash_deep"></li>
-<li class="i_twitter_deep"></li>
+<li class="i_top_dark"></li>
+<li class="i_trash_dark"></li>
+<li class="i_twitter_dark"></li>
 <!-- U -->
 <!-- V -->
-<li class="i_video_deep"></li>
-<li class="i_view_deep"></li>
-<li class="i_vimeo_deep"></li>
+<li class="i_video_dark"></li>
+<li class="i_view_dark"></li>
+<li class="i_vimeo_dark"></li>
 <!-- W -->
 <!-- X -->
 <!-- Y -->
-<li class="i_youtube_deep"></li>
+<li class="i_youtube_dark"></li>
 <!-- Z -->
 ```
 
