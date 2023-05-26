@@ -113,10 +113,15 @@ margin: 0 0 10% 0;
 .cover.show:after{
 content:'';
 background-image: url(cover_bg.png) !important;
+
 width: 100%;
 position: absolute;
 height: 100%;
 z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
 }
 section.cover h1{
 color:#336699;
