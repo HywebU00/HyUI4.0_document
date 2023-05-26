@@ -38,31 +38,31 @@
               <div class="share">
                 <ul>
       <li>
-        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/icon_facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4/images/basic/icon_facebook.svg" alt="facebook" /></a>
       </li>
       <li>
-        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/icon_twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4/images/basic/icon_twitter.svg" alt="twitter" /></a>
       </li>
       <li>
-        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/icon_line.svg" alt="line" /></a>
+        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4/images/basic/icon_line.svg" alt="line" /></a>
       </li>
       <li>
-        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/icon_youtube.svg" alt="youtube" /></a>
+        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4/images/basic/icon_youtube.svg" alt="youtube" /></a>
       </li>
       <li>
-        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/icon_googleplus.svg" alt="google plus" /></a>
+        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4/images/basic/icon_googleplus.svg" alt="google plus" /></a>
       </li>
       <li>
-        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/icon_instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4/images/basic/icon_instagram.svg" alt="instagram" /></a>
       </li>
       <li>
-        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/icon_linkedin.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4/images/basic/icon_linkedin.svg" alt="LinkedIn" /></a>
       </li>
       <li>
-        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/icon_rss.svg" alt="RSS" /></a>
+        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4/images/basic/icon_rss.svg" alt="RSS" /></a>
       </li>
       <li>
-        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/icon_plurk.svg" alt="Plurk" /></a>
+        <a href="#"><img src="https://hywebu00.github.io/HyUI_v4/images/basic/icon_plurk.svg" alt="Plurk" /></a>
       </li>
     </ul>
               </div>
@@ -129,7 +129,7 @@
 ```
 
 <!-- tabs:end -->
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/css/style.css" />
 <style>
   .functionPanel{
     margin:4em 0;

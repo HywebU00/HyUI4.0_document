@@ -26,7 +26,7 @@
 </div>
 ```
 
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/css/style.css" />
 <style>
 .language button {
   width: 150px;

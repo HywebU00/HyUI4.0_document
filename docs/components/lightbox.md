@@ -108,8 +108,8 @@ HyUI 使用 **fancybox** 的燈箱套件，目前 hyUI vendor 內含 `fancybox` 
 
 <!-- tabs:end -->
 
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/vendor/fancybox/fancybox.css"/>
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/css/style.css" />
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/vendor/fancybox/fancybox.css"/>
 <style>
   .demo{
     margin:4em 0;

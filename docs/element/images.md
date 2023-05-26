@@ -167,19 +167,19 @@
 <section class="pic_list"> 
      <div class="col">
         <div class="imgContainer">
-             <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/11.jpg" alt=""   class="lazy loaded cover" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/11.jpg" data-was-processed="true">
+             <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/11.jpg" alt=""   class="lazy loaded cover" src="https://hywebu00.github.io/HyUI_v4/images/demo/11.jpg" data-was-processed="true">
         </div>
         <h3>無class</h3>
       </div>
       <div class="col">
         <div class="imgContainer">
-             <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/11.jpg" alt=""   class="lazy imgCircle loaded cover" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/11.jpg" data-was-processed="true">
+             <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/11.jpg" alt=""   class="lazy imgCircle loaded cover" src="https://hywebu00.github.io/HyUI_v4/images/demo/11.jpg" data-was-processed="true">
         </div>
         <h3>class="imgCircle"</h3>
       </div>
       <div class="col">
         <div class="imgContainer">
-             <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/11.jpg" alt=""   class="lazy imgRounded loaded cover" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/11.jpg" data-was-processed="true">
+             <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/11.jpg" alt=""   class="lazy imgRounded loaded cover" src="https://hywebu00.github.io/HyUI_v4/images/demo/11.jpg" data-was-processed="true">
         </div>
         <h3>class="imgRounded"</h3>
       </div>
@@ -211,18 +211,18 @@
 <!-- panels:start-->
 <div class="single_setting">
   <div class="thumbnail">
-    <div class="imgContainer"><img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" data-was-processed="true">
+    <div class="imgContainer"><img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" data-was-processed="true">
     </div>
     <h3>1:1</h3>
   </div>
   <div class="thumbnail">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" data-was-processed="true">
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" data-was-processed="true">
     </div>
     <h3>4:3</h3>
   </div>
   <div class="thumbnail">
-    <div class="imgContainer"><img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" data-was-processed="true">
+    <div class="imgContainer"><img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" data-was-processed="true">
     </div>
     <h3>16:9</h3>
   </div>
@@ -265,18 +265,18 @@
 
 <div class="single_setting">
   <div class="thumbnail">
-    <div class="imgContainer"><img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" data-was-processed="true">
+    <div class="imgContainer"><img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" data-was-processed="true">
     </div>
     <h3>1:1 (object-fit:cover)</h3>
   </div>
   <div class="thumbnail">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" data-was-processed="true">
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" data-was-processed="true">
     </div>
     <h3>4:3 (object-fit:cover)</h3>
   </div>
   <div class="thumbnail">
-    <div class="imgContainer"><img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon.png" data-was-processed="true">
+    <div class="imgContainer"><img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon.png" data-was-processed="true">
     </div>
     <h3>16:9 (object-fit:cover)</h3>
   </div>
@@ -338,25 +338,25 @@
 <section class="pic_list pic_list_object-fit">
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon1.png" alt="" class="lazy loaded none" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon1.png" data-was-processed="true">
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon1.png" alt="" class="lazy loaded none" src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon1.png" data-was-processed="true">
     </div>
     <h3>none</h3>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon1.png" alt="" class="lazy loaded contain" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon1.png" data-was-processed="true">
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon1.png" alt="" class="lazy loaded contain" src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon1.png" data-was-processed="true">
     </div>
     <h3>contain</h3>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon1.png" alt="" class="lazy loaded fill" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon1.png" data-was-processed="true">
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon1.png" alt="" class="lazy loaded fill" src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon1.png" data-was-processed="true">
     </div>
     <h3>fill</h3>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon1.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/doraemon1.png" data-was-processed="true">
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon1.png" alt="" class="lazy loaded cover" src="https://hywebu00.github.io/HyUI_v4/images/demo/doraemon1.png" data-was-processed="true">
     </div>
     <h3>cover</h3>
   </div>
@@ -381,56 +381,56 @@
 <section class="pic_list">
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/01.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/01.jpg" data-was-processed="true">
-      <noscript><img src="https://hywebu00.github.io/HyUI_v4.0/images/demo/01.jpg"></noscript>
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/01.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/01.jpg" data-was-processed="true">
+      <noscript><img src="https://hywebu00.github.io/HyUI_v4/images/demo/01.jpg"></noscript>
     </div>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/02.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/02.jpg" data-was-processed="true">
-      <noscript><img src="https://hywebu00.github.io/HyUI_v4.0/images/demo/02.jpg"></noscript>
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/02.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/02.jpg" data-was-processed="true">
+      <noscript><img src="https://hywebu00.github.io/HyUI_v4/images/demo/02.jpg"></noscript>
     </div>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/03.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/03.jpg" data-was-processed="true">
-      <noscript><img src="https://hywebu00.github.io/HyUI_v4.0/images/demo/03.jpg"></noscript>
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/03.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/03.jpg" data-was-processed="true">
+      <noscript><img src="https://hywebu00.github.io/HyUI_v4/images/demo/03.jpg"></noscript>
     </div>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/04.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/04.jpg" data-was-processed="true">
-      <noscript><img src="https://hywebu00.github.io/HyUI_v4.0/images/demo/04.jpg"></noscript>
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/04.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/04.jpg" data-was-processed="true">
+      <noscript><img src="https://hywebu00.github.io/HyUI_v4/images/demo/04.jpg"></noscript>
     </div>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/05.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/05.jpg" data-was-processed="true">
-      <noscript><img src="https://hywebu00.github.io/HyUI_v4.0/images/demo/05.jpg"></noscript>
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/05.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/05.jpg" data-was-processed="true">
+      <noscript><img src="https://hywebu00.github.io/HyUI_v4/images/demo/05.jpg"></noscript>
     </div>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/06.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/06.jpg" data-was-processed="true">
-      <noscript><img src="https://hywebu00.github.io/HyUI_v4.0/images/demo/06.jpg"></noscript>
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/06.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/06.jpg" data-was-processed="true">
+      <noscript><img src="https://hywebu00.github.io/HyUI_v4/images/demo/06.jpg"></noscript>
     </div>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/07.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/07.jpg" data-was-processed="true">
-      <noscript><img src="https://hywebu00.github.io/HyUI_v4.0/images/demo/07.jpg"></noscript>
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/07.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/07.jpg" data-was-processed="true">
+      <noscript><img src="https://hywebu00.github.io/HyUI_v4/images/demo/07.jpg"></noscript>
     </div>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/08.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/08.jpg" data-was-processed="true">
-      <noscript><img src="https://hywebu00.github.io/HyUI_v4.0/images/demo/08.jpg"></noscript>
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/08.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/08.jpg" data-was-processed="true">
+      <noscript><img src="https://hywebu00.github.io/HyUI_v4/images/demo/08.jpg"></noscript>
     </div>
   </div>
   <div class="col">
     <div class="imgContainer">
-      <img data-src="https://hywebu00.github.io/HyUI_v4.0/images/demo/09.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4.0/images/demo/09.jpg" data-was-processed="true">
-      <noscript><img src="https://hywebu00.github.io/HyUI_v4.0/images/demo/09.jpg"></noscript>
+      <img data-src="https://hywebu00.github.io/HyUI_v4/images/demo/09.jpg" alt="" class="lazy loaded" src="https://hywebu00.github.io/HyUI_v4/images/demo/09.jpg" data-was-processed="true">
+      <noscript><img src="https://hywebu00.github.io/HyUI_v4/images/demo/09.jpg"></noscript>
     </div>
   </div>
 </section>
@@ -548,7 +548,7 @@ noscript 為必要加上的設定，因為 `data-src` 和 `data-oringinal` 並�
 
 `sourece media`的部分可調整斷點數值，目前是使用 hyUI 預設的[斷點](/demo ':disabled')，`srcset`在製作時可用[placeholder]('https://placeholder.com/](https://placeholder.com/') 產生最佳的圖像大小。 特別注意的是：在不支援`picture`或是關閉無障礙時，的`data-src`以及`noscript`的`src`都帶入最大尺寸的圖像尤佳。
 
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/css/style.css" />
 
 <script>
   let lazyLoadInstance = new LazyLoad({

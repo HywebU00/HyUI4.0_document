@@ -182,7 +182,7 @@ tabFunction('.tabSet'); // tab功能
 
 <!-- tabs:end -->
 
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/css/style.css" />
 <style>
   .tabSet{
     margin:4em 0;

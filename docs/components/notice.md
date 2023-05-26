@@ -31,15 +31,15 @@
 ## 有按鈕的提示訊息
 
 <section class="demo">
-<div class="notice">這是一般提醒訊息區塊 <a href="#" class="close"><img src="https://raw.githubusercontent.com/HywebU00/HyUI_v4.0/f4c5bef45e00de3d367ac27c2484d7ca1c5a49d8/images/basic/icon_close.svg" alt=""></a>
+<div class="notice">這是一般提醒訊息區塊 <a href="#" class="close"><img src="https://raw.githubusercontent.com/HywebU00/HyUI_v4/f4c5bef45e00de3d367ac27c2484d7ca1c5a49d8/images/basic/icon_close.svg" alt=""></a>
 </div>
-<div class="noticeInfo">這是一般提醒訊息區塊 <a href="#" class="close"><img src="https://raw.githubusercontent.com/HywebU00/HyUI_v4.0/f4c5bef45e00de3d367ac27c2484d7ca1c5a49d8/images/basic/icon_close.svg" alt=""></a>
+<div class="noticeInfo">這是一般提醒訊息區塊 <a href="#" class="close"><img src="https://raw.githubusercontent.com/HywebU00/HyUI_v4/f4c5bef45e00de3d367ac27c2484d7ca1c5a49d8/images/basic/icon_close.svg" alt=""></a>
 </div>
-<div class="noticeSuccess">您已經成功登入 <a href="#" class="close"><img src="https://raw.githubusercontent.com/HywebU00/HyUI_v4.0/f4c5bef45e00de3d367ac27c2484d7ca1c5a49d8/images/basic/icon_close.svg" alt=""></a>
+<div class="noticeSuccess">您已經成功登入 <a href="#" class="close"><img src="https://raw.githubusercontent.com/HywebU00/HyUI_v4/f4c5bef45e00de3d367ac27c2484d7ca1c5a49d8/images/basic/icon_close.svg" alt=""></a>
 </div>
-<div class="noticeWarning">這似乎不是一個正常的Email格式 <a href="#" class="close"><img src="https://raw.githubusercontent.com/HywebU00/HyUI_v4.0/f4c5bef45e00de3d367ac27c2484d7ca1c5a49d8/images/basic/icon_close.svg" alt=""></a>
+<div class="noticeWarning">這似乎不是一個正常的Email格式 <a href="#" class="close"><img src="https://raw.githubusercontent.com/HywebU00/HyUI_v4/f4c5bef45e00de3d367ac27c2484d7ca1c5a49d8/images/basic/icon_close.svg" alt=""></a>
 </div>
-<div class="noticeError">您輸入的帳號密碼有誤！ <a href="#" class="close"><img src="https://raw.githubusercontent.com/HywebU00/HyUI_v4.0/f4c5bef45e00de3d367ac27c2484d7ca1c5a49d8/images/basic/icon_close.svg" alt=""></a>
+<div class="noticeError">您輸入的帳號密碼有誤！ <a href="#" class="close"><img src="https://raw.githubusercontent.com/HywebU00/HyUI_v4/f4c5bef45e00de3d367ac27c2484d7ca1c5a49d8/images/basic/icon_close.svg" alt=""></a>
 </div>
 </section>
 <!-- tabs:start -->
@@ -77,7 +77,7 @@ document.querySelectorAll('[class*="notice"] a.close').forEach((i) => {
 
 <!-- tabs:end -->
 
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/css/style.css" />
 <style>
   .demo{
     margin:4em 0;

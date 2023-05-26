@@ -8,7 +8,7 @@
         <div class="container">
           <a class="accessKey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
           <div class="footerLogo">
-            <img src="https://hywebu00.github.io/HyUI_v4.0/images/logo.png" alt="" class="imgResponsive" />
+            <img src="https://hywebu00.github.io/HyUI_v4/images/logo.png" alt="" class="imgResponsive" />
           </div>
           <div class="footerInfo">
             <ul class="footerLink">
@@ -29,10 +29,10 @@
           </div>
           <div class="footerIcon">
             <a target="_blank" href="javascript:;" title="另開視窗">
-              <img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/accessibility.jpg" alt="" />
+              <img src="https://hywebu00.github.io/HyUI_v4/images/basic/accessibility.jpg" alt="" />
             </a>
             <a target="_blank" href="javascript:;" title="我的e政府,另開新視窗">
-              <img src="https://hywebu00.github.io/HyUI_v4.0/images/basic/egov.png" alt="" />
+              <img src="https://hywebu00.github.io/HyUI_v4/images/basic/egov.png" alt="" />
             </a>
           </div>
         </div>
@@ -86,7 +86,7 @@
   (<a href='https://codepen.io/u00hyui'>@u00hyui</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> -->
 
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/css/style.css" />
 <style>
   footer{
     margin:4em 0;

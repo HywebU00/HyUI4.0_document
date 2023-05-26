@@ -37,7 +37,7 @@
 <script src="vendor/fancybox/fancybox.js"></script>
 ```
 
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/css/style.css" />
 <style>
   .modal{
     width: 400px;

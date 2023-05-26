@@ -620,7 +620,7 @@ scrollTables('table'); // table捲動功能
 
 <!-- tabs:end -->
 
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/css/style.css" />
 <style>
 /* 取消 markdown 預設狀態 */
 .markdown-section p.tip, .markdown-section tr:nth-child(2n) {

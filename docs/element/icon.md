@@ -338,7 +338,7 @@ Icon 順序依英文字母排序
 
 <!-- tabs:end -->
 
-<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4.0/css/style.css" />
+<link rel="stylesheet" href="https://hywebu00.github.io/HyUI_v4/css/style.css" />
 <style>
 .icon_demo {
   width: 1000px;

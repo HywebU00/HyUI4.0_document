@@ -34,17 +34,17 @@
         </ul>
       </div>
       <!-- fontSize -->
-      <div class="fontSize">
-        <span>字型大小：</span>
-        <ul>
-          <li><a role="button" href="#" class="small">小</a></li>
-          <li><a role="button" href="#" class="medium">中</a></li>
-          <li><a role="button" href="#" class="large">大</a></li>
-        </ul>
-      </div>
+      <!-- <div class="fontSize">
+              <span class="font-size-label">字型大小：</span>
+              <ul aria-labelledby="font-size-label">
+                <li><button class="small" title="小">小</button></li>
+                <li><button class="medium" title="中">中</button></li>
+                <li><button class="large" title="大">大</button></li>
+              </ul>
+            </div> -->
       <!-- language -->
       <div class="language">
-        <a role="button">語言選擇</a>
+        <button type="button">語言選擇</button>
         <ul>
           <li><a href="#">繁體中文</a></li>
           <li><a href="#">简体中文</a></li>
@@ -54,10 +54,10 @@
     </nav>
     <!-- navigation End -->
     <h1>
-      <a href="index.html"><img src="images/logo.png" alt="網站標題" /></a>
+      <a href="index.html"><img src="images/logo_.png" alt="網站標題" /></a>
     </h1>
     <!-- Search Start -->
-    <div class="search" role="search">
+    <div class="webSearch" role="search">
       <div class="formGrp">
         <label for="mustSameAsId">搜尋</label>
         <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S" title="請輸入文字" aria-label="搜尋網站內容" />
@@ -180,5 +180,4 @@
     <!-- menu End -->
   </div>
 </header>
-<!-- header End -->
 ```

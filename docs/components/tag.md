@@ -188,7 +188,7 @@
     position: absolute;
     left: 0;
     top: 0.5em;
-    background: url(https://hywebu00.github.io/HyUI_v4.0/images/basic/icon_tag.svg) no-repeat center center;
+    background: url(https://hywebu00.github.io/HyUI_v4/images/basic/icon_tag.svg) no-repeat center center;
     background-size: 16px;
   }
 .demo .tag ul{
