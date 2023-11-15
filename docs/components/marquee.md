@@ -55,9 +55,9 @@ HyUI 提供跑馬燈的範例，有使用 `slick` 的輪播模組，需先在網
       </div>
     </div>
     <!-- swiper 往上-->
-    <div class="marquee-arrow marquee-prev"></div>
+    <button class="marquee-arrow prevSlider"></button>
     <!-- swiper 往下-->
-    <div class="marquee-arrow marquee-next"></div>
+    <button class="marquee-arrow nextSlider"></button>
   </div>
 </div>
 ```
